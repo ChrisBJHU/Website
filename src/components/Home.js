@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 import FadeIn from 'react-fade-in';
 
 const Home = () => {
@@ -50,8 +51,22 @@ const Home = () => {
         position: 'relative',
       };
 
+      const body = {
+        backgroundColor: "#222629"
+      };
+
+      document.body.style.backgroundColor = "#222629";
+
   return (
+    <>
+     <div style={{
+        backgroundColor: '#222629',
+        width: window.innerWidth,
+        height: "1000px",
+      }}>
+    </div>
     <div style = {container}>
+
         <FadeIn style = {{delay: '30000', transitionDuration: '3000'}}>
         <p style = {titleStyle}>Hi, my name is</p>
         <p style = {subTitleStyle}>Christian Bakhit</p>
@@ -60,6 +75,7 @@ const Home = () => {
         <NavLink to='/about'><Button variant="outlined" style={buttonSet}>Explore</Button></NavLink>
         </FadeIn>
     </div>
+    </>
   );
 };
 

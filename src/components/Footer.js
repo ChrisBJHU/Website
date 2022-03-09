@@ -11,7 +11,7 @@ const Footer = () => {
 
   
   return (
-    <div className="footer" style={{ backgroundColor: '#222629', textAlign:"center",}}>
+    <div className="footer" style={{ backgroundColor: '#222629', textAlign:"center", borderTop:"2px solid #66FCF1",}}>
       <a href="https://www.dropbox.com/s/8l917l0gwqrcftw/Christian%20Bakhit%20Resume.pdf?dl=0" target="_blank" rel="noreferrer">
           <img src = {Github} alt = "" style = {imageSet}></img></a>
       <a href="https://www.dropbox.com/s/8l917l0gwqrcftw/Christian%20Bakhit%20Resume.pdf?dl=0" target="_blank" rel="noreferrer">

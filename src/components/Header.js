@@ -1,16 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from '@mui/material';
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/logo.png";
 
 
 
 const Header = () => {
   
   const logoSet = {
-    height: '50px',
+    height: '100px',
     objectFit: 'contain',
     marginRight: '10px',
+    backgroundColor: 'transparent',
+    position: "relative",
+    top: "-25px",
   };
   
   const styleSheet = {
