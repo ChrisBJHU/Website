@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button, IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 import Logo from "../assets/logo.jpg";
 
 
@@ -31,12 +31,6 @@ const Header = () => {
     height: "100px",
 };
 
-const logo = {
-  height: '50px',
-  objectFit: 'contain',
-  marginRight: '10px',
-};
-
 const buttonSet = {
   backgroundColor: '#222629',
   color: "#66FCF1",
@@ -63,7 +57,7 @@ const buttonSet = {
 
     return (
       <div className="footer" style = {color}>
-        <NavLink to='/../'  activeStyle={active} style={styleSheet} ><img src={Logo} alt = "" style={logoSet}  /></NavLink>
+        <NavLink to='/'  activeStyle={active} style={styleSheet} ><img src={Logo} alt = "" style={logoSet}  /></NavLink>
         <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0"></div>
         <div class="mx-auto my-2 order-0 order-md-1 position-relative"></div>
         <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">

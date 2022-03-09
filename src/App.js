@@ -1,31 +1,39 @@
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import BodyOne from "./components/BodyOne";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+
+
+const pageStyle = {
+  height: "1000px",
+  backgroundColor: "gray",
+};
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
-
   render() {
-    const color = {
-      backgroundColor: '#C4AE78',
-      borderBottom:"2px solid #66FCF1",
-      display: "flex",
-  };
-
     return (
-      <>
-      <Header />
-      <div style = {color}>
-      <BodyOne></BodyOne>
-      </div>
-      <Footer />
-      </>
+          <div>
+              <Router>
+                  <Header />
+                  <Switch>
+                    <div style = {pageStyle}> 
+                      <Route exact path="/" component={Home} />
+                      <Route exact path="/about" component={About} />
+                      <Route exact path="/projects" component={Projects} />
+                      <Route exact path="/contact" component={Contact} />
+                    </div>
+                  </Switch>
+                  <Footer />
+              </Router>
+          </div>
     );
   }
 
