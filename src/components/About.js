@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Main from "../assets/ChristianBakhitMain.jpg";
 import Second from "../assets/ChristianBakhitSecond.jpg";
@@ -99,6 +100,7 @@ const About = () => {
                         <p style = {textStyle}> Currently, I am studying Computer Science, and I am working on various projects.</p>
                         <p style = {textStyle}> Most notabilly now, I am the student leader of Delineo. A project that aims to simulate Covid Spread.</p>
                         <ul style = {listStyle}>
+                            <p>My language experience:</p>
                             <li><a href="https://covidweb.isi.jhu.edu/" target="_blank" rel="noreferrer"> Delieno</a> </li>
                             <li> <a href="https://studentaffairs.jhu.edu/dmc/hopmc/" target="_blank" rel="noreferrer"> HopMC</a> </li>
                         </ul>
