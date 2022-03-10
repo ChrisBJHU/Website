@@ -4,17 +4,16 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Header from "./containers/Header";
+import Footer from "./containers/Footer";
+import Home from "./containers/Home";
+import About from "./containers/About";
+import Projects from "./containers/Projects";
+import Contact from "./containers/Contact";
 
 
 const pageStyle = {
   height: "1000px",
-  backgroundColor: "gray",
 };
 
 class App extends Component {

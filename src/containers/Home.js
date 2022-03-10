@@ -34,6 +34,11 @@ const Home = () => {
         left: '30%',
       };
 
+      const pageStyle = {
+        backgroundColor: 'gray',
+        height: "1000px",
+      };
+
       const titleStyle = {
           fontSize: '100px',
           fontStyle: 'oblique',
@@ -49,33 +54,21 @@ const Home = () => {
       const textStyle = {
         left: '20%',
         position: 'relative',
+        fontSize: '20px',
       };
-
-      const body = {
-        backgroundColor: "#222629"
-      };
-
-      document.body.style.backgroundColor = "#222629";
 
   return (
-    <>
-     <div style={{
-        backgroundColor: '#222629',
-        width: window.innerWidth,
-        height: "1000px",
-      }}>
-    </div>
-    <div style = {container}>
-
+    <div style = {pageStyle}>
+      <div style = {container}>
         <FadeIn style = {{delay: '30000', transitionDuration: '3000'}}>
         <p style = {titleStyle}>Hi, my name is</p>
         <p style = {subTitleStyle}>Christian Bakhit</p>
         <p style = {textStyle}> I am a student leader and aspring software developer.</p>
-        <p style = {textStyle}> I am a software engineer who speciallizes in data driven problem solving.</p>
+        <p style = {textStyle}> I speciallize in data driven problem solving.</p>
         <NavLink to='/about'><Button variant="outlined" style={buttonSet}>Explore</Button></NavLink>
         </FadeIn>
+      </div>
     </div>
-    </>
   );
 };
 
