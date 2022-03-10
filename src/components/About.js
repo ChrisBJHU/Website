@@ -12,8 +12,8 @@ const About = () => {
 
     const picStyle = {
         position:'relative',
-        top:'100px',
-        width: "300px", 
+        top:'200px',
+        width: "400px", 
         display: "inline-grid",
     };
 
@@ -34,18 +34,13 @@ const About = () => {
     };
 
     const textBoxStyle = {
-        marginLeft: "100px",
+        marginLeft: "500px",
         position:'absolute',
-        top:'500px',
-        left: '300px',
+        top:'350px',
         //backgroundColor: '#ffff',
+        opacity: '1',
         borderRadius: "10px",
         display: "inline-block",
-    };
-
-
-    const textStyleStart = {
-        textIndent: '1ch',
     };
 
     const textStyle = {
@@ -55,22 +50,9 @@ const About = () => {
 
 
     const listStyle = {
-         //listStyleImage: "linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%)",
-         listStyleImage: {arrow} ,
-         position: 'absolute',
-         left: "40%",
-         color: 'blue',
-         fontColor: 'black',
+        listStyleImage: {arrow} ,
     };
 
-    const listStyle2 = {
-        //listStyleImage: "linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%)",
-        //listStyleImage:,
-        position: 'relative',
-        left: "60%",
-        color: 'blue',
-        fontColor: 'black',
-   };
     return (
         
         <div>
@@ -97,17 +79,31 @@ const About = () => {
                 <div style = {{display: "inline-block",}}>
                     <div style={textBoxStyle}>
                         <p style = {textStyle}> Hello everyone! My name is Christian Bakhit. I am a student at Johns Hopkins University</p>
-                        <p style = {textStyle}> Currently, I am studying Computer Science, and I am working on various projects.</p>
-                        <p style = {textStyle}> Most notabilly now, I am the student leader of Delineo. A project that aims to simulate Covid Spread.</p>
-                        <ul style = {listStyle}>
-                            <p>My language experience:</p>
-                            <li><a href="https://covidweb.isi.jhu.edu/" target="_blank" rel="noreferrer"> Delieno</a> </li>
-                            <li> <a href="https://studentaffairs.jhu.edu/dmc/hopmc/" target="_blank" rel="noreferrer"> HopMC</a> </li>
-                        </ul>
-                        <ul style = {listStyle2}>
-                            <li>Milk2</li>
-                            <li>Cheese</li> 
-                        </ul>
+                        <p style = {textStyle}> I have been coding for a few years now, starting off as a tinkerer with Roblox Lua.</p>
+                        <p style = {textStyle}> This was the building block that launched my love of coding! </p>
+                        <Grid container spacing={12}>
+                            <Grid item xs={8}>
+                                <p>Some technologies I have experience with are:</p>
+                                <li style = {listStyle}>Java</li>
+                                <li style = {listStyle}>Python</li>
+                                <li style = {listStyle}>JavaScript</li>
+                                <li style = {listStyle}>C/C++</li>
+                                <li style = {listStyle}>C#</li>
+                                <li style = {listStyle}>x86 - 64 Assembly</li>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <p>My hobbies include:</p>
+                                <li style = {listStyle}>Building Computers</li>
+                                <li style = {listStyle}>Tennis</li>
+                                <li style = {listStyle}>Cooking/Baking</li>
+                                <li style = {listStyle}>Hiking</li>
+                                <li style = {listStyle}>Coding Competitions</li>
+                            </Grid>
+                        </Grid>
+                        <div style = {{height: '100px'}}></div>
+                        <p style = {textStyle}> For the past year, at Delineo,</p>
+                        <p style = {textStyle}>I have been solving the problem of how to simulate the spread of COVID-19 in an environment,</p>
+                        <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
                     </div>
                 </div>
             </div>

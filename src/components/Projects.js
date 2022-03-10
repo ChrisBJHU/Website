@@ -16,9 +16,19 @@ const Projects = () => {
   const imageStyle = {
 
   };
+
+  const Tile = {
+    
+  };
   return (
     <div>
-      <img></img>
+  <Tile>
+    <View styleName="actions">
+      <Button styleName="tight clear"><Icon name="add-to-favorites" /></Button>
+    </View>
+    <p>HOW TO MAINTAIN YOUR MENTAL HEALTH IN 2016</p>
+    <p>6557 Americo Hills Apt. 118</p>
+  </Tile>
     </div>
   );
 };
