@@ -41,13 +41,13 @@ const boxStyle = {
   backgroundColor: '#222629',
   opacity: '100',
   borderRadius: "10px",
-  height: '20%',
-  marginTop: '10px',
+  height: '250px',
   borderStyle: "none",
+  position: 'relative',
   boxSizing: "border-box",
-  cursor: "pointer",
-  width: '225%',
+  width: '250px',
   display: "inline-block",
+  marginLeft: '10px',
 };
 
 const imageStyle = {
@@ -56,9 +56,13 @@ width: '100px',
 };
 
 const iconStyle = {
-  position: 'relative',
+  position: 'absolute',
   cursor: "pointer",
-  height: '10%',
+  height: '20px',
+  width: '20px',
+  marginLeft: '125px',
+  marginTop: '5px',
+  backgroundColor: 'white'
 };
 
 return (
