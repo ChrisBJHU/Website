@@ -75,8 +75,6 @@ class Tile extends Component {
 
       };
 
-
-  
     return (
         <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
           <div style = {boxStyle}>
