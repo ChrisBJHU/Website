@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Home from "./pages/Christian/Home";
-import Home2 from "./pages/Jonathan/Main";
+import Home from "./pages/Christian/Main";
+import HomeSecond from "./pages/Jonathan/Main";
 import Split from "./pages/Split";
 import './App.css';
 
@@ -18,8 +18,8 @@ class App extends Component {
     return (
           <div>
               <Route exact path="/" component={Split} />
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/home2" component={Home2} />
+              <Route exact path="/homeChristian" component={Home} />
+              <Route exact path="/homeJonathan" component={HomeSecond} />
           </div>
     );
   }

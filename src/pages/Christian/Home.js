@@ -5,7 +5,6 @@ import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
-import NavProvider from '../../nav/NavContext';
 
 
 class Home extends Component {
@@ -24,21 +23,15 @@ class Home extends Component {
   }
   render() {
     return (
-      <div style = {this.state}>
-        <NavProvider>
-        <Header/>
-        <FadeIn>
-        <About/>
-        </FadeIn>
-        <FadeIn>
-        <Projects/>
-        </FadeIn>
-        <FadeIn>
-        <Contact/>
-        </FadeIn>
-        <Footer/>
-        </NavProvider>
-      </div>
+      <main>
+        <div style = {this.state}>
+          <Header/>
+          <About/>
+          <Projects/>
+          <Contact/>
+          <Footer/>
+        </div>
+      </main>
     );
   }
 }

@@ -39,11 +39,11 @@ class Split extends Component {
         <div class="container" style = {this.state} >
           <div class="split left">
             <h1>Christian Bakhit</h1>
-            <a href="Home"class="button">Learn About Me!</a>
+            <a href="homeChristian"class="button">Learn About Me!</a>
           </div>
         <div class="split right">
           <h1>Jonathan Bakhit</h1>
-          <a href="Home2" class="button">Learn About Me!</a>
+          <a href="homeJonathan" class="button">Learn About Me!</a>
         </div>
       </div>
     );
