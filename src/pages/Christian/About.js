@@ -42,7 +42,7 @@ const About = () => {
     const textBoxStyle = {
         position:'relative',
         marginLeft: "500px",
-        //backgroundColor: '#ffff',
+        // backgroundColor: '#fffff',
         opacity: '1',
         borderRadius: "0",
         overflow: 'auto',
@@ -59,6 +59,7 @@ const About = () => {
 
     const listStyle = {
         listStyleImage: {arrow},
+        color: 'lightblue',
     };
 
     const aboutRef = useNav('About');
@@ -91,7 +92,7 @@ const About = () => {
                             <p style = {textStyle}> This was the building block that launched my love of coding! </p>
                             <Grid container spacing={12}>
                                 <Grid item xs={8}>
-                                    <p>Some technologies I have experience with are:</p>
+                                    <p style = {{color: 'white'}}>Some technologies I have experience with are:</p>
                                     <li style = {listStyle}>Java</li>
                                     <li style = {listStyle}>Python</li>
                                     <li style = {listStyle}>JavaScript</li>
@@ -100,7 +101,7 @@ const About = () => {
                                     <li style = {listStyle}>x86 - 64 Assembly</li>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <p>My hobbies include:</p>
+                                    <p style = {{color: 'white'}}>My hobbies include:</p>
                                     <li style = {listStyle}>Building Computers</li>
                                     <li style = {listStyle}>Tennis</li>
                                     <li style = {listStyle}>Cooking/Baking</li>

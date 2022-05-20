@@ -13,9 +13,9 @@ class Tile extends Component {
       }
 
 
-    onMouseEnter = e => { this.setState({ hovered: true }); };
+    onMouseEnter = () => { this.setState({ hovered: true }); };
   
-    onMouseLeave = e => { this.setState({ hovered: false }); };
+    onMouseLeave = () => { this.setState({ hovered: false }); };
 
     render() {
       const boxStyle = {
@@ -29,6 +29,7 @@ class Tile extends Component {
         marginLeft: 'auto',
         marginBottom: '10px',
         paddingBottom: '100px',
+        cursor: "pointer",
       };
       
       const titleStyle = {
@@ -58,25 +59,27 @@ class Tile extends Component {
       };
 
       const iconStyle = {
-        cursor: "pointer",
         position: "relative",
         marginRight: '15px',
         height: '10%',
         float: 'right',
         marginTop: '10px',
         backgroundColor: 'transparent',
-
       };
 
     return (
+      <a href = {this.state.link} className = {'mr-auto text-center'} 
+        target = "_blank" rel = "noreferrer">
         <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
           <div style = {boxStyle}>
           <img src= {this.state.img} alt = "" style = {imageStyle}/>
-          <a href={this.state.link} className = {'mr-auto text-center'} target="_blank" rel="noreferrer">
-            <img src= {redirect} alt = "" style = {iconStyle}/></a>
+            <img src= {redirect} alt = "" style = {iconStyle}/>
           <p style = {titleStyle}> {this.state.title}</p>
           <p style = {textStyle}> {this.state.text}</p>
           </div>
-        </div>  
-    );}
+        </div>
+      </a>
+    );
+
+  }
 } export default Tile;
