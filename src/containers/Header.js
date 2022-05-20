@@ -1,79 +1,94 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button } from '@mui/material';
+import {Button} from '@mui/material';
 import Logo from "../assets/logo.png";
 
 
-
 const Header = () => {
-  
+
   const logoSet = {
-    height: '100px',
-    objectFit: 'contain',
-    marginRight: '10px',
+    height: '100%',
     backgroundColor: 'transparent',
-    position: "relative",
-    top: "-25px",
   };
   
   const styleSheet = {
     color: '#66FCF1',
-    marginRight: "15px",
-    fontSize: "20px",
-  };
-
-
-  const active = {
-    color: "#ffffff", 
+    fontSize: "125%",
+    textDecoration: 'none',
+    marginRight: '5px',
   };
 
   const color = {
     backgroundColor: '#222629',
-    borderBottom:"2px solid #66FCF1",
-    display: "flex",
-    height: "100px",
+    borderBottom:"2px solid #66FCF1",    
+    height: "10%",
+    display: 'flex',
 };
 
-const buttonSet = {
-  backgroundColor: '#222629',
-  color: "#66FCF1",
-  textTransform: "none",
-  backgroundImage: "linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%)",
-  borderRadius: "8px",
-  borderStyle: "none",
-  boxSizing: "border-box",
-  cursor: "pointer",
-  flexShrink: "0",
-  fontSize: "20px",
-  fontWeight: "500",
-  height: "30px",
-  padding: "0 1.6rem",
-  textAlign: "center",
-  textShadow: "rgba(0, 0, 0, 0.25) 0 3px 8px",
-  transition: "all .5s",
-  userSelect: "none",
-  touchAction: "manipulation",
+let buttonSet = {
+  backgroundColor: "#f4511e",
+  border: "none",
+  color: 'white',
+  padding: '0px 1.6rem',
+  textAlign: 'center',
+  fontSize: '16px',
+  margin: '4px 2px',
+  opacity: '0.6',
+  transition: '0.3s',
+  display: 'inline-block',
+  textDecoration: 'none',
+  cursor: 'pointer',
+  '&:hover': {
+    opacity: 1,
+  }
 };
 
-
-
+  const handleColorChange = (type) => {
+    if(type === 'enter') {
+      buttonSet = {
+        backgroundColor: "#f4511e",
+        border: "none",
+        color: 'white',
+        padding: '0px 1.6rem',
+        textAlign: 'center',
+        fontSize: '16px',
+        margin: '4px 2px',
+        opacity: '1',
+        transition: '0.3s',
+        display: 'inline-block',
+        textDecoration: 'none',
+        cursor: 'pointer',
+      }
+    } else {
+      buttonSet = {
+        backgroundColor: "#f4511e",
+        border: "none",
+        color: 'white',
+        padding: '0px 1.6rem',
+        textAlign: 'center',
+        fontSize: '16px',
+        margin: '4px 2px',
+        opacity: '0.6',
+        transition: '0.3s',
+        display: 'inline-block',
+        textDecoration: 'none',
+        cursor: 'pointer',
+      }
+    }
+  }
 
     return (
-      <div className="footer" style = {color}>
-        <NavLink to='/'  activeStyle={active} style={styleSheet} ><img src={Logo} alt = "" style={logoSet}  /></NavLink>
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0"></div>
-        <div class="mx-auto my-2 order-0 order-md-1 position-relative"></div>
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
-          <ul class="navbar-nav mr-auto text-center">
-              <li class="nav-item">
-                <NavLink to='/about'  activeStyle={active} style={styleSheet} >About</NavLink>
-                <NavLink to='/projects' activeClassName='active' activeStyle={active} style={styleSheet}>Projects</NavLink>
-                <NavLink to='/contact' activeClassName='active' activeStyle={active} style={styleSheet}>Contact</NavLink>
-                  <a href="https://www.dropbox.com/s/8l917l0gwqrcftw/Christian%20Bakhit%20Resume.pdf?dl=0" target="_blank" rel="noreferrer">
-                    <Button variant="outlined" style={buttonSet}>Resume</Button></a> 
-              </li>
-        </ul>
-      </div>
+      <div className="header" style = {color}>
+        <NavLink to='/'><img src={Logo} alt = "" style={logoSet} /></NavLink>
+        <div style = {{position: 'absolute', right:0, top: '3%'}}>
+          <NavLink to='/about' style={styleSheet} >About</NavLink>
+          <NavLink to='/projects' activeClassName='active' style={styleSheet}>Projects</NavLink>
+          <NavLink to='/contact' activeClassName='active' style={styleSheet}>Contact</NavLink>
+          <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
+          <Button  
+            onMouseOut = {handleColorChange('leave')}
+            style={buttonSet}>Resume</Button></a>
+        </div>
     </div>  
   );
 };
