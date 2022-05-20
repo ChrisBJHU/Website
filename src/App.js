@@ -1,5 +1,6 @@
-import Home from "./containers/Home";
-import Split from "./containers/Split";
+import Home from "./pages/Christian/Home";
+import Home2 from "./pages/Jonathan/HomeTest";
+import Split from "./pages/Split";
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ class App extends Component {
           <div>
               <Route exact path="/" component={Split} />
               <Route exact path="/home" component={Home} />
+              <Route exact path="/home2" component={Home2} />
           </div>
     );
   }

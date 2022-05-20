@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {Button} from '@mui/material';
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
 
 
 const Header = () => {

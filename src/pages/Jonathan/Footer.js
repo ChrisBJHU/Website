@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Github from "../assets/github.png";
-import Linkden from "../assets/linkden.png";
-import Insta from "../assets/instagram.png";
+import Github from "../../assets/github.png";
+import Linkden from "../../assets/linkden.png";
+import Insta from "../../assets/instagram.png";
 
 const Footer = () => {
   const imageSet = {

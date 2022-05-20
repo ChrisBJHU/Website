@@ -45,7 +45,7 @@ class Split extends Component {
           </div>
         <div class="split right">
           <h1>Jonathan Bakhit</h1>
-          <a href="Home" class="button">Learn About Me!</a>
+          <a href="Home2" class="button">Learn About Me!</a>
         </div>
       </div>
     );

@@ -2,11 +2,13 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Main from "../assets/ChristianBakhitMain.jpg";
-import Second from "../assets/ChristianBakhitSecond.jpg";
-import Third from "../assets/ChristianBakhitThird.jpg";
+import Main from "../../assets/ChristianBakhitMain.jpg";
+import Second from "../../assets/ChristianBakhitMain.jpg";
+import Third from "../../assets/ChristianBakhitMain.jpg";
 import FadeIn from 'react-fade-in';
-import arrow from '../assets/arrowClipart.png';
+import arrow from '../../assets/arrowClipart.png';
+import { useNav } from '../../customHooks/useNav';
+
 const About = () => {
 
     const picStyle = {
@@ -51,8 +53,11 @@ const About = () => {
         listStyleImage: {arrow} ,
     };
 
+    const aboutRef = useNav('About');
+
+
     return (
-        
+        <section ref={aboutRef} id='aboutContainer'>
         <div>
                 <div style = {picStyle}>
                     <div style={boxStyle}>
@@ -103,6 +108,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            </section>
     );
 };
 

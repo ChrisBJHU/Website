@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+import FadeIn from 'react-fade-in';
 import About from './About';
 import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
+import NavProvider from '../../context/NavContext';
+
 
 class Home extends Component {
 
@@ -22,11 +25,19 @@ class Home extends Component {
   render() {
     return (
       <div style = {this.state}>
+        <NavProvider>
         <Header/>
+        <FadeIn>
         <About/>
+        </FadeIn>
+        <FadeIn>
         <Projects/>
+        </FadeIn>
+        <FadeIn>
         <Contact/>
+        </FadeIn>
         <Footer/>
+        </NavProvider>
       </div>
     );
   }
