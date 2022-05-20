@@ -74,7 +74,7 @@ class Tile extends Component {
         <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
           <div style = {boxStyle}>
           <img src= {this.state.img} alt = "" style = {imageStyle}/>
-          <a href={this.state.link} class = {'mr-auto text-center'} target="_blank" rel="noreferrer">
+          <a href={this.state.link} className = {'mr-auto text-center'} target="_blank" rel="noreferrer">
             <img src= {redirect} alt = "" style = {iconStyle}/></a>
           <p style = {titleStyle}> {this.state.title}</p>
           <p style = {textStyle}> {this.state.text}</p>

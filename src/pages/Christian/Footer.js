@@ -29,7 +29,7 @@ const Footer = () => {
       <a href="https://brittanychiang.com/" target="_blank" rel="noreferrer"  style = {{ textDecoration: 'none',}}> Christian Bakhit & Jonathan Bakhit
         </a> 
       </p>
-      <text style = {{color: 'white'}}> Version 1.0.0</text>
+      <p style = {{color: 'white'}}> Version 1.0.0</p>
     </div>  
   );
 };
