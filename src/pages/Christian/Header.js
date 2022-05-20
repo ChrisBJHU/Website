@@ -83,7 +83,7 @@ class Header extends Component {
       return (
         <div className="header" style = {color}>
           <input type = "image" src={Logo} alt = "" style={logoSet} onClick = {this.navigateToMain} />
-          <div style = {{position: 'absolute', right:0, top: '3%'}}>
+          <div style = {{position: 'absolute', right:"1%", top: '1%'}}>
             <nav>
               {navLinks.map(({ navLinkId, scrollToId }, idx) => (
                 <NavLink key={idx} navLinkId={navLinkId} style={styleSheet} scrollToId={scrollToId} />

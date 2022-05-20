@@ -8,10 +8,12 @@ const Contact = () => {
 
     const background = {
       backgroundColor: '#222629',
+      height: '100%',
+      overflow: 'hidden',
   }
   
   return (
-    <section ref={contactRef} id='contactContainer'>
+    <section ref={contactRef} id='contactContainer' style = {{height: '100%', marginTop: 0}}>
       <div style = {background}>
         <div style={pageStyle}>
           <p>Hi, my name is</p>

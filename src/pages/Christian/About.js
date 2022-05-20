@@ -13,13 +13,15 @@ const About = () => {
 
     const picStyle = {
         position:'relative',
-        top:'200px',
-        width: "400px", 
+        width: "400px",
+        top: '200px',
+        display: 'inline-block',
     };
 
     const background = {
         backgroundColor: '#222629',
         height: '100%',
+        overflow: 'hidden',
     }
 
     const boxStyle = {
@@ -42,7 +44,10 @@ const About = () => {
         marginLeft: "500px",
         //backgroundColor: '#ffff',
         opacity: '1',
-        borderRadius: "10px",
+        borderRadius: "0",
+        overflow: 'auto',
+        display: 'inline-block',
+        top: '-250px',
     };
 
     const textStyle = {
@@ -59,7 +64,7 @@ const About = () => {
     const aboutRef = useNav('About');
 
     return (
-        <section ref={aboutRef} id='aboutContainer'>
+        <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
             <div style = {background}>
                     <div style = {picStyle}>
                         <div style={boxStyle}>

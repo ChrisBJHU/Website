@@ -27,11 +27,9 @@ class Tile extends Component {
         position: 'center',
         boxSizing: "border-box",
         marginLeft: 'auto',
-        marginTop: '10px',
+        marginBottom: '10px',
         paddingBottom: '100px',
-        
       };
-
       
       const titleStyle = {
         fontSize: '40px',
