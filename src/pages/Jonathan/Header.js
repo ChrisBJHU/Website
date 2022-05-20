@@ -33,7 +33,7 @@ class Header extends Component {
       color: '#66FCF1',
       fontSize: "125%",
       textDecoration: 'none',
-      marginRight: '5px',
+      marginRight: '20px',
     };
 
     const color = {
@@ -86,7 +86,7 @@ class Header extends Component {
               ))}
               <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
                 <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
-                style={this.state.hovered ? buttonSet: buttonSetHovered}> Resume
+                style={!this.state.hovered ? buttonSet: buttonSetHovered}> Resume
                 </Button>
               </a>
             </nav>
