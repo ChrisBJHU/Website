@@ -40,8 +40,6 @@ const About = () => {
     const textBoxStyle = {
         position:'relative',
         marginLeft: "500px",
-        marginTop: "-200px",
-        marginBottom: "10%",
         //backgroundColor: '#ffff',
         opacity: '1',
         borderRadius: "10px",

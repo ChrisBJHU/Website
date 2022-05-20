@@ -10,13 +10,12 @@ const Projects = () => {
   const gridStyle = {
     height: '100%', 
     width: '100%', 
-    marginBottom: '20px',
-    marginTop:'20px',
     display: 'flex',
     flexWrap: 'wrap',
     display: 'flex',  
     justifyContent:'center', 
     alignItems:'center',
+    backgroundColor: '#222629',
   };
 
 
