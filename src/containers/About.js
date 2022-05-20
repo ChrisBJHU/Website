@@ -7,8 +7,6 @@ import Second from "../assets/ChristianBakhitSecond.jpg";
 import Third from "../assets/ChristianBakhitThird.jpg";
 import FadeIn from 'react-fade-in';
 import arrow from '../assets/arrowClipart.png';
-import Header from "../containers/Header";
-import Footer from "../containers/Footer";
 const About = () => {
 
     const picStyle = {
@@ -56,7 +54,6 @@ const About = () => {
     return (
         
         <div>
-            <Header></Header>
                 <div style = {picStyle}>
                     <div style={boxStyle}>
                         <Carousel autoPlay = {true} showThumbs = {false}>
@@ -105,7 +102,6 @@ const About = () => {
                         <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
                     </div>
                 </div>
-                <Footer></Footer>
             </div>
     );
 };

@@ -1,75 +1,33 @@
-import React from 'react';
-import { Button } from '@mui/material';
-import { NavLink } from 'react-router-dom';
-import {Helmet} from 'react-helmet';
-import FadeIn from 'react-fade-in';
+import React, {Component} from 'react';
+import About from './About';
+import Projects from './Projects';
+import Header from './Header'
+import Footer from './Footer'
+import Contact from './Contact';
 
-const Home = () => {
-    const buttonSet = {
-        backgroundColor: '#222629',
-        color: "#66FCF1",
-        textTransform: "none",
-        backgroundImage: "linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%)",
-        borderRadius: "8px",
-        borderStyle: "none",
-        boxSizing: "border-box",
-        cursor: "pointer",
-        flexShrink: "0",
-        fontSize: "20px",
-        fontWeight: "500",
-        height: "30px",
-        padding: "0 1.6rem",
-        textAlign: "center",
-        textShadow: "rgba(0, 0, 0, 0.25) 0 3px 8px",
-        transition: "all .5s",
-        userSelect: "none",
-        touchAction: "manipulation",
-        left: '40%',
-      };
+class Home extends Component {
 
+  state = {
+    height: window.innerHeight,
+    width: window.innerWidth,
+  };
 
-      const container = {
-        position: 'absolute',
-        top: '50%',
-        left: '30%',
-      };
+  componentDidMount () {
+    window.addEventListener('resize', this.updateDimensions);
+  }
 
-      const pageStyle = {
-        backgroundColor: 'gray',
-        height: "1000px",
-      };
-
-      const titleStyle = {
-          fontSize: '100px',
-          fontStyle: 'oblique',
-          fontFamily: 'Lucida Handwriting'
-      };
-
-      const subTitleStyle = {
-        fontSize: '50px',
-        fontStyle: 'oblique',
-        fontFamily: 'Lucida Handwriting'
-      };
-
-      const textStyle = {
-        left: '20%',
-        position: 'relative',
-        fontSize: '20px',
-      };
-
-  return (
-    <div style = {pageStyle}>
-      <div style = {container}>
-        <FadeIn style = {{delay: '30000', transitionDuration: '3000'}}>
-        <p style = {titleStyle}>Hi, my name is</p>
-        <p style = {subTitleStyle}>Christian Bakhit</p>
-        <p style = {textStyle}> I am a student leader and aspring software developer.</p>
-        <p style = {textStyle}> I speciallize in data driven problem solving.</p>
-        <NavLink to='/about'><Button variant="outlined" style={buttonSet}>Explore</Button></NavLink>
-        </FadeIn>
+  updateDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+  render() {
+    return (
+      <div style = {this.state}>
+        <Header />
+        <Projects>  </Projects>
+        <Footer />
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Home;
