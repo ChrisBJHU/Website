@@ -7,14 +7,14 @@ import Second from "../assets/ChristianBakhitSecond.jpg";
 import Third from "../assets/ChristianBakhitThird.jpg";
 import FadeIn from 'react-fade-in';
 import arrow from '../assets/arrowClipart.png';
-
+import Header from "../containers/Header";
+import Footer from "../containers/Footer";
 const About = () => {
 
     const picStyle = {
         position:'relative',
         top:'200px',
         width: "400px", 
-        display: "inline-grid",
     };
 
     const boxStyle = {
@@ -24,9 +24,8 @@ const About = () => {
         backgroundColor: '#222629',
         padding: "1rem 1rem",
         borderRadius: "10px",
-        display: "inline-block",
+        position:'relative',
     };
-
 
 
     const legendStyle = {
@@ -34,18 +33,19 @@ const About = () => {
     };
 
     const textBoxStyle = {
+        position:'relative',
         marginLeft: "500px",
-        position:'absolute',
-        top:'350px',
+        marginTop: "-200px",
+        marginBottom: "10%",
         //backgroundColor: '#ffff',
         opacity: '1',
         borderRadius: "10px",
-        display: "inline-block",
     };
 
     const textStyle = {
         fontSize: "20px",
         color: 'lightblue',
+        position:'relative',
     };
 
 
@@ -56,7 +56,7 @@ const About = () => {
     return (
         
         <div>
-            <FadeIn>
+            <Header></Header>
                 <div style = {picStyle}>
                     <div style={boxStyle}>
                         <Carousel autoPlay = {true} showThumbs = {false}>
@@ -75,8 +75,7 @@ const About = () => {
                         </Carousel>
                     </div>
                 </div>
-                </FadeIn>
-                <div style = {{display: "inline-block",}}>
+                <div>
                     <div style={textBoxStyle}>
                         <p style = {textStyle}> Hello everyone! My name is Christian Bakhit. I am a student at Johns Hopkins University</p>
                         <p style = {textStyle}> I have been coding for a few years now, starting off as a tinkerer with Roblox Lua.</p>
@@ -106,6 +105,7 @@ const About = () => {
                         <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
                     </div>
                 </div>
+                <Footer></Footer>
             </div>
     );
 };

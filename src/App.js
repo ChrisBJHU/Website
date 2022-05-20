@@ -10,28 +10,18 @@ import Home from "./containers/Home";
 import About from "./containers/About";
 import Projects from "./containers/Projects";
 import Contact from "./containers/Contact";
+import Split from "./containers/Split";
 
-
-const pageStyle = {
-  height: "1000px",
-};
 
 class App extends Component {
+
   render() {
     return (
           <div>
-              <Router>
-                  <Header />
-                  <Switch>
-                    <div style = {pageStyle}> 
-                      <Route exact path="/" component={Home} />
-                      <Route exact path="/about" component={About} />
-                      <Route exact path="/projects" component={Projects} />
-                      <Route exact path="/contact" component={Contact} />
-                    </div>
-                  </Switch>
-                  <Footer />
-              </Router>
+              <Route exact path="/" component={Split} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/contact" component={Contact} />
           </div>
     );
   }
