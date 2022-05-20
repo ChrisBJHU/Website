@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import './split.css';
-
 
 class Split extends Component {
 
