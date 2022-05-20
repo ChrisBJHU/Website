@@ -55,7 +55,7 @@ const About = () => {
 
 
     const listStyle = {
-        listStyleImage: {arrow} ,
+        listStyleImage: {arrow},
     };
 
     const aboutRef = useNav('About');

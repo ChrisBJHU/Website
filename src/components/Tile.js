@@ -1,4 +1,4 @@
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 import redirect from'../assets/redirect.png';
 class Tile extends Component {
     constructor(props) {
@@ -8,19 +8,14 @@ class Tile extends Component {
           img: props.img,
           title: props.title,
           text: props.text,
-          isShown: false,
           hovered: false,
         };
       }
 
 
-    onMouseEnter = e => {
-      this.setState({ hovered: true });
-    };
+    onMouseEnter = e => { this.setState({ hovered: true }); };
   
-    onMouseLeave = e => {
-      this.setState({ hovered: false });
-    };
+    onMouseLeave = e => { this.setState({ hovered: false }); };
 
     render() {
       const boxStyle = {

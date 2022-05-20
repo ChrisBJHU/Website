@@ -1,6 +1,6 @@
 import { useRef, useContext, useEffect } from 'react';
 import { useOnScreen } from './useOnScreen';
-import { NavContext } from '../context/NavContext';
+import { NavContext } from '../nav/NavContext';
 
 export const useNav = navLinkId => {
 	const ref = useRef(null);

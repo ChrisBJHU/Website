@@ -5,7 +5,7 @@ import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
-import NavProvider from '../../context/NavContext';
+import NavProvider from '../../nav/NavContext';
 
 
 class Home extends Component {

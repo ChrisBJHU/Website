@@ -1,6 +1,5 @@
-import { Nav } from '../../nav';
 import { Home } from '.';
-import NavProvider from '../../context/NavContext';
+import NavProvider from '../../nav/NavContext';
 
 function HomeTest() {
 	return (
