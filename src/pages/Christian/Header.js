@@ -5,7 +5,6 @@ import { navLinks } from '../../nav/navLinks';
 import Logo from "../../assets/logo.png";
 
 
-
 class Header extends Component {
 
   constructor(props) {
@@ -22,12 +21,17 @@ class Header extends Component {
   onMouseLeave = e => {
     this.setState({ hovered: false });
   };
+
+  navigateToMain() {
+    window.location.href = "/";
+    console.log("test");
+  }
+
   render() {
 
     const logoSet = {
-      height: '50px',
-      width: '50px',
-        };
+      height: '100%',
+    };
     
     const styleSheet = {
       color: '#66FCF1',
@@ -41,7 +45,6 @@ class Header extends Component {
       borderBottom:"2px solid #66FCF1",    
       height: "10%",
       display: 'flex',
-      position: 'relative',
   };
 
   const buttonSet = {
@@ -79,7 +82,7 @@ class Header extends Component {
 
       return (
         <div className="header" style = {color}>
-          <NavLink to='/'><img src={Logo} alt = "" style={logoSet} /></NavLink>
+          <input type = "image" src={Logo} alt = "" style={logoSet} onClick = {this.navigateToMain} />
           <div style = {{position: 'absolute', right:0, top: '3%'}}>
             <nav>
               {navLinks.map(({ navLinkId, scrollToId }, idx) => (
