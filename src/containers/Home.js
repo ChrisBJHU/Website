@@ -22,9 +22,7 @@ class Home extends Component {
   render() {
     return (
       <div style = {this.state}>
-        <Header />
         <Projects>  </Projects>
-        <Footer />
       </div>
     );
   }
