@@ -3,6 +3,7 @@ import React from 'react';
 import logo from'../../assets/logo.png';
 import Tile from '../../components/Tile';
 import Grid from '@mui/material/Grid';
+import { useNav } from '../../customHooks/useNav';
 
 
 const Projects = () => {
@@ -19,10 +20,10 @@ const Projects = () => {
   };
 
 
+  const projectRef = useNav('Projects');
 
   return (
-    <div>
-      <div>
+    <section ref={projectRef} id='projectContainer'>
           <Grid container spacing={1} style = {gridStyle}>
               <Grid item >
                 <FadeIn>
@@ -46,8 +47,7 @@ const Projects = () => {
               </FadeIn>
               </Grid>
             </Grid>
-        </div>
-      </div>
+        </section>
   );
 };
 

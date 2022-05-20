@@ -90,7 +90,7 @@ class Header extends Component {
               ))}
               <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
                 <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
-                style={!this.state.hovered ? buttonSet: buttonSetHovered}> Resume
+                style = {this.state.hovered ? buttonSetHovered: buttonSet}> Resume
                 </Button>
               </a>
             </nav>

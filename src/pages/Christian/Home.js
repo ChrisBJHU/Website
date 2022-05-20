@@ -23,7 +23,6 @@ class Home extends Component {
   }
   render() {
     return (
-      <main>
         <div style = {this.state}>
           <Header/>
           <About/>
@@ -31,7 +30,6 @@ class Home extends Component {
           <Contact/>
           <Footer/>
         </div>
-      </main>
     );
   }
 }

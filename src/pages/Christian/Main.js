@@ -5,7 +5,7 @@ function HomeTest() {
 	return (
 		<div className='appContainer'>
 			<NavProvider>
-				<Home />
+				<Home/>
 			</NavProvider>
 		</div>
 	);
