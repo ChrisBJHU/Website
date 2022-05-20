@@ -25,9 +25,8 @@ class Header extends Component {
   render() {
 
     const logoSet = {
-      height: '50px',
-      width: '50px',
-        };
+      height: '100%',
+    };
     
     const styleSheet = {
       color: '#66FCF1',
@@ -78,7 +77,7 @@ class Header extends Component {
 
       return (
         <div className="header" style = {color}>
-          <NavLink to='/'><img src={Logo} alt = "" style={logoSet} /></NavLink>
+          <img src={Logo} alt = "" style={logoSet} />
           <div style = {{position: 'absolute', right:0, top: '3%'}}>
             <nav>
               {navLinks.map(({ navLinkId, scrollToId }, idx) => (
