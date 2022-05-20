@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import {Button} from '@mui/material';
+import NavLink from '../../nav/NavLink';
+import { navLinks } from '../../nav/navLinks';
 import Logo from "../../assets/logo.png";
 
 
@@ -81,14 +82,16 @@ let buttonSet = {
       <div className="header" style = {color}>
         <NavLink to='/'><img src={Logo} alt = "" style={logoSet} /></NavLink>
         <div style = {{position: 'absolute', right:0, top: '3%'}}>
-          <NavLink to='/about' style={styleSheet} >About</NavLink>
-          <NavLink to='/projects' activeClassName='active' style={styleSheet}>Projects</NavLink>
-          <NavLink to='/contact' activeClassName='active' style={styleSheet}>Contact</NavLink>
-          <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
-          <Button  
-            onMouseOut = {handleColorChange('leave')}
-            style={buttonSet}>Resume</Button></a>
-        </div>
+        <nav>
+          {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+            <NavLink key={idx} navLinkId={navLinkId} style={styleSheet} scrollToId={scrollToId} />
+          ))}
+              <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
+              <Button  
+                onMouseOut = {handleColorChange('leave')}
+                style={buttonSet}>Resume</Button></a>
+                       </nav>
+            </div>
     </div>  
   );
 };

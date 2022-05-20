@@ -1,5 +1,5 @@
 import Home from "./pages/Christian/Home";
-import Home2 from "./pages/Jonathan/HomeTest";
+import Home2 from "./pages/Jonathan/Main";
 import Split from "./pages/Split";
 import React, { Component } from "react";
 import {
