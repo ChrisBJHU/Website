@@ -41,6 +41,7 @@ class Header extends Component {
       borderBottom:"2px solid #66FCF1",    
       height: "10%",
       display: 'flex',
+      position: 'relative',
   };
 
   const buttonSet = {

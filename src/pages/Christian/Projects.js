@@ -3,6 +3,7 @@ import React from 'react';
 import logo from'../../assets/logo.png';
 import Tile from '../../components/Tile';
 import Grid from '@mui/material/Grid';
+import { useNav } from '../../customHooks/useNav';
 
 
 const Projects = () => {
@@ -19,10 +20,11 @@ const Projects = () => {
     alignItems:'center',
   };
 
+  const projectsRef = useNav('Projects');
 
 
   return (
-    <div>
+    <section ref={projectsRef} id='projectContainer'>
       <div>
           <Grid container spacing={1} style = {gridStyle}>
               <Grid item >
@@ -48,7 +50,7 @@ const Projects = () => {
               </Grid>
             </Grid>
         </div>
-      </div>
+      </section>
   );
 };
 

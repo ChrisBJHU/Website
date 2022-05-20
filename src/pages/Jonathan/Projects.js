@@ -19,15 +19,12 @@ const Projects = () => {
     justifyContent:'center', 
     alignItems:'center',
   };
-  const background = {
-    backgroundColor: '#222629',
-}
 
-  const projectRef = useNav('Projects');
-
+  const projectsRef = useNav('Projects');
+  
   return (
-    <section ref={projectRef} id='projectContainer'>
-      <div style = {background}>
+    <section ref={projectsRef} id='projectContainer'>
+      <div>
           <Grid container spacing={1} style = {gridStyle}>
               <Grid item >
                 <FadeIn>

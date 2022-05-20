@@ -25,11 +25,13 @@ class Home extends Component {
     return (
       <main>
         <div style = {this.state}>
+          <FadeIn>
           <Header/>
           <About/>
           <Projects/>
           <Contact/>
           <Footer/>
+          </FadeIn>
         </div>
       </main>
     );
