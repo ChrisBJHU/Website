@@ -1,5 +1,5 @@
 import Github from "../../assets/github.png";
-import Arrow from "../../assets/arrowClipart.png";
+import Arrow from "../../assets/line-symbol.png";
 import Links from "../../components/Links";
 import FadeIn from 'react-fade-in';
 
