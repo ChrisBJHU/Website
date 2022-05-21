@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import redirect from'../assets/redirect.png';
+
 class Tile extends Component {
     constructor(props) {
         super(props);
@@ -39,6 +40,7 @@ class Tile extends Component {
         color: "#66FCF1",
         marginTop: '1px',
         backgroundColor: 'transparent',
+        textDecoration: 'none',
 
       };
 
@@ -68,7 +70,7 @@ class Tile extends Component {
       };
 
     return (
-      <a href = {this.state.link} className = {'mr-auto text-center'} 
+      <a href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
         target = "_blank" rel = "noreferrer">
         <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
           <div style = {boxStyle}>

@@ -155,7 +155,7 @@
   }
   
   nav span {
-    font-size: 18px;
+    font-size: 100%;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.2s ease;
     transition-delay: 0.25s;
@@ -178,4 +178,17 @@
   
   nav span.activeClass {
     border-bottom-color: var(--lightAccent);
+  }
+
+  .text-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  
+  .space-between {
+    display: flex;
+    justify-content: space-between;
   }

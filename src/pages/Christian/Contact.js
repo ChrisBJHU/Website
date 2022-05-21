@@ -1,4 +1,6 @@
 import { useNav } from '../../customHooks/useNav';
+import ContactForm from '../../components/contactForm.js';
+ 
 const Contact = () => {
 	const contactRef = useNav('Contact');
 
@@ -13,13 +15,10 @@ const Contact = () => {
   }
   
   return (
-    <section ref={contactRef} id='contactContainer' style = {{height: '100%', marginTop: 0}}>
+    <section ref={contactRef} id='contactContainer' style = {{height: '100%', width: '100%'}}>
       <div style = {background}>
-        <div style={pageStyle}>
-          <p>Hi, my name is</p>
-          <p>Christian Bakhit</p>
-          <p> I am a student leader, and aspring software developer.</p>
-          <p> I am a software engineer who speciallizes in data driven problem solving.</p>
+        <div>
+          <ContactForm></ContactForm>
         </div>
     </div>
   </section>

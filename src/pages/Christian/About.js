@@ -8,13 +8,14 @@ import Third from "../../assets/ChristianBakhitMain.jpg";
 import FadeIn from 'react-fade-in';
 import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
+import Images from './Images';
 
 const About = () => {
 
     const picStyle = {
         position:'relative',
         width: "400px",
-        top: '200px',
+        top: '100px',
         display: 'inline-block',
     };
 
@@ -31,6 +32,7 @@ const About = () => {
         backgroundColor: '#222629',
         padding: "1rem 1rem",
         borderRadius: "10px",
+        float: 'left',
         position:'relative',
     };
 
@@ -41,13 +43,14 @@ const About = () => {
 
     const textBoxStyle = {
         position:'relative',
-        marginLeft: "500px",
+        marginRight: "300px",
         // backgroundColor: '#fffff',
         opacity: '1',
         borderRadius: "0",
         overflow: 'auto',
         display: 'inline-block',
-        top: '-250px',
+        top: '-365px',
+        float: 'right',
     };
 
     const textStyle = {
@@ -67,6 +70,7 @@ const About = () => {
     return (
         <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
             <div style = {background}>
+            <FadeIn delay= {500} transitionDuration={500}>
                     <div style = {picStyle}>
                         <div style={boxStyle}>
                             <Carousel autoPlay = {true} showThumbs = {false}>
@@ -115,6 +119,8 @@ const About = () => {
                             <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
                         </div>
                     </div>
+                    <Images/>
+                    </FadeIn>
                 </div>
             </section>
     );

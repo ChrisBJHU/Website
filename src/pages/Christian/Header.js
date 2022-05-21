@@ -24,13 +24,15 @@ class Header extends Component {
 
   navigateToMain() {
     window.location.href = "/";
-    console.log("test");
   }
 
   render() {
 
     const logoSet = {
       height: '100%',
+      textAlign: 'center',
+      justifyContent: 'center',
+      marginLeft: '50%'
     };
     
     const styleSheet = {

@@ -25,9 +25,11 @@ class Home extends Component {
     return (
         <div style = {this.state}>
           <Header/>
-          <About/>
-          <Projects/>
-          <Contact/>
+          <FadeIn delay={300} transitionDuration={700}>
+              <About/>
+              <Projects/>
+              <Contact/>
+          </FadeIn>
           <Footer/>
         </div>
     );
