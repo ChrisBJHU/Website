@@ -43,13 +43,12 @@ const About = () => {
 
     const textBoxStyle = {
         position:'relative',
-        marginRight: "300px",
-        // backgroundColor: '#fffff',
+        backgroundColor: 'darkblue',
         opacity: '1',
-        borderRadius: "0",
+        padding: '1rem',
         overflow: 'auto',
-        display: 'inline-block',
         top: '-365px',
+        left: '-50px',
         float: 'right',
     };
 

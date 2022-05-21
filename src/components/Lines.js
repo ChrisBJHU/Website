@@ -24,15 +24,14 @@ class Links extends Component {
         marginTop: this.state.height,
         marginLeft: '10px',
         opacity: this.state.hovered ? '0%' : '100%',
+        tintColor: 'white',
       };
 
     return (
-      <a href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
-        target = "_blank" rel = "noreferrer">
-        <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
-            <img src = {this.state.img} alt =  "" style = {imageStyle}/>
-        </div>
-      </a>
+    <svg style = {imageStyle} 
+      viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <line x1="50" y1="0" x2="50" y2="200" stroke="white" strokeWidth = "10" />
+    </svg>
     );
   }
 } export default Links;
