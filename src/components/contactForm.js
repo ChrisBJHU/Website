@@ -31,9 +31,9 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit} style = {{background: 'transparent', borderColor: 'white', borderWidth: '5px', width: '25%', height: '100%', display: 'table', allignItems: 'center', marginBottom: '0', marginTop: '0', marginLeft: 'auto', marginRight: 'auto'}}>
+    <form onSubmit={handleSubmit} style = {{width: '25%', allignItems: 'center', marginLeft: 'auto', marginRight: 'auto',}}>
       <div> 
-      <img src={Logo} alt = "" style={imageSet} />
+      <h1><span style = {{marginTop: "50px"}}>Contact Us!</span></h1>
       </div>
       <div class = "text-wrap"> 
         <label htmlFor="name">Name:</label>
@@ -45,7 +45,7 @@ const ContactForm = () => {
       </div>
       <div class = "text-wrap"> 
         <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
+        <textarea type="message" id="message" required style = {{height: '100%', resize: "none"}} rows = "5" />
       </div>
       <div style = {{display: 'table', allignItems: 'center', marginBottom: '0', marginTop: '0', marginLeft: 'auto', marginRight: 'auto'}}>
         <button type="submit"> {status}</button>
