@@ -33,7 +33,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} style = {{width: '25%', allignItems: 'center', marginLeft: 'auto', marginRight: 'auto',}}>
       <div> 
-      <h1><span style = {{marginTop: "50px"}}>Contact Us!</span></h1>
+      <h3><span style = {{marginTop: "50px"}}>Contact Us!</span></h3>
       </div>
       <div class = "text-wrap"> 
         <label htmlFor="name">Name:</label>

@@ -215,7 +215,7 @@
     background-size: 100% 10px;
   }
 
-  h1 {
+  h3 {
     display: inline-block;
     background-image: -webkit-linear-gradient(left, #FFF 50%, black 50%);
     background-image: -moz-linear-gradient(left, #FFF 50%, black 50%);
@@ -233,7 +233,7 @@
     z-index: 10;
   }
   
-  h1 span {
+  h3 span {
     background: -webkit-linear-gradient(left, black 50%, #FFF 50%);
     background: -moz-linear-gradient(left, black 50%, #FFF 50%);
     background: -o-linear-gradient(left, black 50%, #FFF 50%);
