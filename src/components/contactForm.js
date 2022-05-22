@@ -31,7 +31,7 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit} style = {{background: 'gray', width: '25%', height: '100%', display: 'table', allignItems: 'center', marginBottom: '0', marginTop: '0', marginLeft: 'auto', marginRight: 'auto'}}>
+    <form onSubmit={handleSubmit} style = {{background: 'transparent', borderColor: 'white', borderWidth: '5px', width: '25%', height: '100%', display: 'table', allignItems: 'center', marginBottom: '0', marginTop: '0', marginLeft: 'auto', marginRight: 'auto'}}>
       <div> 
       <img src={Logo} alt = "" style={imageSet} />
       </div>

@@ -4,6 +4,8 @@ import logo from'../../assets/logo.png';
 import Tile from '../../components/Tile';
 import Grid from '@mui/material/Grid';
 import { useNav } from '../../customHooks/useNav';
+import star2 from '../../assets/star2.jpg';
+
 
 
 const Projects = () => {
@@ -16,6 +18,7 @@ const Projects = () => {
     justifyContent:'center', 
     alignItems:'center',
     backgroundColor: '#222629',
+    backgroundImage: 'url(' + star2 + ')',
   };
 
 

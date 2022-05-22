@@ -9,6 +9,7 @@ import FadeIn from 'react-fade-in';
 import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
 import Images from './Images';
+import starBackground from '../../assets/starrybackground.png';
 
 const About = () => {
 
@@ -20,7 +21,7 @@ const About = () => {
     };
 
     const background = {
-        backgroundColor: '#222629',
+        backgroundImage: 'url(' + starBackground + ')',
         height: '100%',
         overflow: 'hidden',
     }
