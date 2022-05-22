@@ -44,13 +44,18 @@ const About = () => {
 
     const textBoxStyle = {
         position:'relative',
-        backgroundColor: 'darkblue',
+        backgroundColor: 'transparent',
         opacity: '1',
         padding: '1rem',
         overflow: 'auto',
         top: '-365px',
         left: '-50px',
         float: 'right',
+        borderTopLeftRadius: '30px',
+        borderBottomRightRadius: '30px',
+        borderStyle: 'dotted solid',
+        borderWidth: '5px',
+        borderColor: '#222629',
     };
 
     const textStyle = {
