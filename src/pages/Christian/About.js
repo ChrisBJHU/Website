@@ -15,13 +15,13 @@ const About = () => {
 
     const picStyle = {
         position:'relative',
-        width: "400px",
+        width: "25%",
         top: '100px',
         display: 'inline-block',
     };
 
     const background = {
-        backgroundImage: 'url(' + starBackground + ')',
+        backgroundColor: '#223882',
         height: '100%',
         overflow: 'hidden',
     }
@@ -31,7 +31,7 @@ const About = () => {
         borderStyle: "none",
         boxSizing: "border-box",
         backgroundColor: '#222629',
-        padding: "1rem 1rem",
+        padding: "8px 8px",
         borderRadius: "10px",
         float: 'left',
         position:'relative',
@@ -56,6 +56,8 @@ const About = () => {
         borderStyle: 'dotted solid',
         borderWidth: '5px',
         borderColor: '#222629',
+        width: '50%',
+        height: '100%',
     };
 
     const textStyle = {

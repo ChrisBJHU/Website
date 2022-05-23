@@ -6,8 +6,7 @@ const Contact = () => {
 	const contactRef = useNav('Contact');
 
     const background = {
-      backgroundImage: 'url(' + star1 + ')',
-      backgroundColor: '#222629',
+      backgroundColor: '#223882',
       height: '100%',
       overflow: 'hidden',
       paddingBottom: '25px',

@@ -22,9 +22,7 @@ class Icons extends Component {
       float: 'left',
       marginTop: this.state.height,
       marginLeft: '10px',
-      stroke: this.state.hovered ? 'black' : 'white',
-      fill: this.state.hovered ? 'black' : 'white',
-      opacity: this.state.hovered ? '0.6' : '1',
+      stroke: this.state.hovered ? 'blue' : 'white',
     };
 
     const Twitter = () => {
