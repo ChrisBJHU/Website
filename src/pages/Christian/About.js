@@ -72,10 +72,8 @@ const About = () => {
         color: 'lightblue',
     };
 
-    const aboutRef = useNav('About');
-
-    return (
-        <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
+    const renderObject = () => {
+        return (
             <div style = {background}>
             <FadeIn delay= {500} transitionDuration={500}>
                     <div style = {picStyle}>
@@ -129,7 +127,14 @@ const About = () => {
                     <Images/>
                     </FadeIn>
                 </div>
-            </section>
+        );
+    }
+
+    const aboutRef = useNav('About');
+
+    return (
+        <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
+        </section>
     );
 };
 
