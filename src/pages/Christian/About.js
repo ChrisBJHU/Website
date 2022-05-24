@@ -2,6 +2,8 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import OnVisible, { setDefaultProps } from 'react-on-visible';
+
 import Main from "../../assets/ChristianBakhitMain.jpg";
 import Second from "../../assets/ChristianBakhitMain.jpg";
 import Third from "../../assets/ChristianBakhitMain.jpg";
@@ -10,6 +12,7 @@ import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
 import Images from './Images';
 import starBackground from '../../assets/starrybackground.png';
+
 
 const About = () => {
 
@@ -72,8 +75,17 @@ const About = () => {
         color: 'lightblue',
     };
 
+    setDefaultProps({
+        bounce: true,
+        visibleClassName: 'visible',
+        percent: 10
+    });
+    
+
     const renderObject = () => {
+        console.log('About');
         return (
+            <div>
             <div style = {background}>
             <FadeIn delay= {500} transitionDuration={500}>
                     <div style = {picStyle}>
@@ -127,6 +139,7 @@ const About = () => {
                     <Images/>
                     </FadeIn>
                 </div>
+                </div>
         );
     }
 
@@ -134,7 +147,9 @@ const About = () => {
 
     return (
         <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
-            {renderObject()}
+            <OnVisible className="box" percent={50}>
+                {renderObject()}
+            </OnVisible>
         </section>
     );
 };

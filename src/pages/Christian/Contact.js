@@ -1,5 +1,6 @@
 import { useNav } from '../../customHooks/useNav';
 import ContactForm from '../../components/contactForm.js';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
 import star1 from '../../assets/star1.jpg';
  
 const Contact = () => {
@@ -20,9 +21,18 @@ const Contact = () => {
       textAlign: 'center',
   }
 
+  setDefaultProps({
+    bounce: true,
+    visibleClassName: 'visible',
+    percent: 50
+});
+
+
   const renderObject = () => { 
+    console.log('Contact');
     return (
-      <><div style={background}>
+      <div>
+        <div style={background}>
         <ContactForm></ContactForm>
       </div><div>
           <p style={textStyle}>
@@ -39,13 +49,16 @@ const Contact = () => {
           <p style={textStyle}>
             Computer Science & Applied Mathematics & Statistics Major
           </p>
-        </div></>
+        </div>
+      </div>
     );
   };
   
   return (
     <section ref={contactRef} id='contactContainer' style = {{height: '100%', width: '100%'}}>
-      {renderObject()}
+      <OnVisible className="box" percent={50}>
+        {renderObject()}
+      </OnVisible>
   </section>
 
 

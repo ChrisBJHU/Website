@@ -4,6 +4,8 @@ import logo from'../../assets/logo.png';
 import Tile from '../../components/Tile';
 import Grid from '@mui/material/Grid';
 import { useNav } from '../../customHooks/useNav';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
+
 import star2 from '../../assets/star2.jpg';
 
 
@@ -28,7 +30,15 @@ const Projects = () => {
 
   };
 
+  setDefaultProps({
+    bounce: true,
+    visibleClassName: 'visible',
+    percent: 50
+});
+
+
   const renderObject = () => {
+    console.log('Projects');
     return (
       <div>
       <Grid container spacing={1} style = {gridStyle}>
@@ -63,7 +73,9 @@ const Projects = () => {
 
   return (
     <section ref={projectRef} id='projectContainer'>
-      {renderObject()}
+      <OnVisible className="box" percent={0}>
+        {renderObject()}
+      </OnVisible>
     </section>
   );
 };
