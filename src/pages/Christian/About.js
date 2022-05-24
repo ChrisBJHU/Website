@@ -134,6 +134,7 @@ const About = () => {
 
     return (
         <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
+            {renderObject()}
         </section>
     );
 };

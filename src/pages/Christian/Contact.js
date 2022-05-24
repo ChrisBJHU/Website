@@ -19,33 +19,36 @@ const Contact = () => {
       position:'relative',
       textAlign: 'center',
   }
+
+  const renderObject = () => { 
+    return (
+      <><div style={background}>
+        <ContactForm></ContactForm>
+      </div><div>
+          <p style={textStyle}>
+            Want to talk to me directly?Send me a email!
+          </p>
+          <p style={textStyle}>
+            My email is: <a href="mailto: chrisbakhit@gmail.com" type="email" style={{ color: "lightblue" }}>
+              chrisbakhit@gmail.com
+            </a>
+          </p>
+          <p style={textStyle}>
+            Johns Hopkins Undergraduate
+          </p>
+          <p style={textStyle}>
+            Computer Science & Applied Mathematics & Statistics Major
+          </p>
+        </div></>
+    );
+  };
   
   return (
-    <div style = {background}>
-      <div>
-        <section ref={contactRef} id='contactContainer' style = {{height: '100%', width: '100%'}}>
-          <div>
-            <ContactForm></ContactForm>
-        </div>
-        <div>
-        <p style = {textStyle}>
-          Want to talk to me directly? Send me a email! 
-        </p>
-        <p style = {textStyle}>
-          My email is: <a href="mailto: chrisbakhit@gmail.com" type="email" style = {{color: "lightblue"}}>
-          chrisbakhit@gmail.com
-          </a>
-          </p>
-          <p style = {textStyle}>
-          Johns Hopkins Undergraduate
-          </p>
-          <p style = {textStyle}>
-          Computer Science & Applied Mathematics & Statistics Major
-        </p>
-      </div>
-      </section>
-    </div>
-  </div>
+    <section ref={contactRef} id='contactContainer' style = {{height: '100%', width: '100%'}}>
+      {renderObject()}
+  </section>
+
+
   );
 };
 
