@@ -154,29 +154,17 @@
     max-height: 4em;
   }
 
-  .box div {
-    opacity: 0;
-    height: 100%;
+  .pages div {
+    opacity: .75;
     transition: all 700ms ease-in-out;
-    transform: translate3d(0,50px,0) scale(0.5);
-    position: relative;
+    transform: translate3d(0,50px,0) scale(0.50);
 }
-.box.visible div {
+.pages.visible div {
     opacity: 1;
     transform: translate3d(0,0,0);
 }
 
-.box.visible div:after {
-  font-family: Monaco, consolas, monospace;
-  font-size: 2vw;
-  color: white;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-50%,0);
-}
-  
+
   nav span {
     font-size: 100%;
     border-bottom: 1px solid transparent;

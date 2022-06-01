@@ -75,15 +75,7 @@ const About = () => {
         color: 'lightblue',
     };
 
-    setDefaultProps({
-        bounce: true,
-        visibleClassName: 'visible',
-        percent: 10
-    });
-    
-
     const renderObject = () => {
-        console.log('About');
         return (
             <div>
             <div style = {background}>
@@ -147,7 +139,7 @@ const About = () => {
 
     return (
         <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
-            <OnVisible className="box" percent={50}>
+            <OnVisible className="pages" key = {'about'}>
                 {renderObject()}
             </OnVisible>
         </section>

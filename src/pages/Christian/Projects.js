@@ -1,5 +1,5 @@
 import FadeIn from 'react-fade-in';
-import React from 'react';
+import React, {useState} from 'react';
 import logo from'../../assets/logo.png';
 import Tile from '../../components/Tile';
 import Grid from '@mui/material/Grid';
@@ -7,7 +7,6 @@ import { useNav } from '../../customHooks/useNav';
 import OnVisible, { setDefaultProps } from 'react-on-visible';
 
 import star2 from '../../assets/star2.jpg';
-
 
 
 const Projects = () => {
@@ -31,14 +30,17 @@ const Projects = () => {
   };
 
   setDefaultProps({
-    bounce: true,
+    bounce: false,
     visibleClassName: 'visible',
-    percent: 50
+    percent: 100,
 });
 
 
+  const [pageType, setPage] = useState("pages");
+
+
   const renderObject = () => {
-    console.log('Projects');
+    console.log(pageType);
     return (
       <div>
       <Grid container spacing={1} style = {gridStyle}>
@@ -69,11 +71,12 @@ const Projects = () => {
   };
 
 
+
   const projectRef = useNav('Projects');
 
   return (
     <section ref={projectRef} id='projectContainer'>
-      <OnVisible className="box" percent={0}>
+      <OnVisible className={'pages'} key = {'project'} visibleClassName = {'pages visible'} >
         {renderObject()}
       </OnVisible>
     </section>

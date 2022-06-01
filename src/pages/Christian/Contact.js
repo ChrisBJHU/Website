@@ -29,7 +29,6 @@ const Contact = () => {
 
 
   const renderObject = () => { 
-    console.log('Contact');
     return (
       <div>
         <div style={background}>
