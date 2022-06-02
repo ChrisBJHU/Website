@@ -14,11 +14,11 @@ class Header extends Component {
     };
   }
 
-  onMouseEnter = e => {
+  onMouseEnter = () => {
     this.setState({ hovered: true });
   };
   
-  onMouseLeave = e => {
+  onMouseLeave = () => {
     this.setState({ hovered: false });
   };
 
