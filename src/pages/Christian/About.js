@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import OnVisible, { setDefaultProps } from 'react-on-visible';
 
 import Main from "../../assets/ChristianBakhitMain.jpg";
 import Second from "../../assets/ChristianBakhitMain.jpg";
@@ -11,7 +10,7 @@ import FadeIn from 'react-fade-in';
 import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
 import Images from './Images';
-import starBackground from '../../assets/starrybackground.png';
+import useIntersection from '../../customHooks/useIntersection';
 
 
 const About = () => {
@@ -75,10 +74,13 @@ const About = () => {
         color: 'lightblue',
     };
 
+    const viewRef = useRef();
+    const inViewport = useIntersection(viewRef, '0px');
+
     const renderObject = () => {
+        if(inViewport) {
         return (
-            <div>
-            <div style = {background}>
+            <div style = {background} ref = {viewRef}>
             <FadeIn delay= {500} transitionDuration={500}>
                     <div style = {picStyle}>
                         <div style={boxStyle}>
@@ -131,17 +133,21 @@ const About = () => {
                     <Images/>
                     </FadeIn>
                 </div>
-                </div>
         );
+        } else {
+            return (
+                <div ref = {viewRef}>
+                  <div style = {boxStyle}></div> 
+              </div> 
+              );
+            }
     }
 
     const aboutRef = useNav('About');
 
     return (
         <section ref={aboutRef} id='aboutContainer'  style = {{height: '100%', marginBottom: "0"}} >
-            <OnVisible className="pages" key = {'about'}>
                 {renderObject()}
-            </OnVisible>
         </section>
     );
 };

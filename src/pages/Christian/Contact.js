@@ -1,6 +1,5 @@
 import { useNav } from '../../customHooks/useNav';
 import ContactForm from '../../components/contactForm.js';
-import OnVisible, { setDefaultProps } from 'react-on-visible';
 import  useIntersection from '../../customHooks/useIntersection';
 import {useRef} from 'react';
 import FadeIn from 'react-fade-in';
@@ -32,15 +31,9 @@ const Contact = () => {
     marginLeft: 'auto',
   }
 
-  setDefaultProps({
-    bounce: true,
-    visibleClassName: 'visible',
-    percent: 50
-});
-
   const thisRef = useRef();
   const inViewport = useIntersection(thisRef, '0px');
-
+  
   const renderObject = () => {
     if(inViewport) {
       return (

@@ -4,7 +4,6 @@ import logo from'../../assets/logo.png';
 import Tile from '../../components/Tile';
 import Grid from '@mui/material/Grid';
 import { useNav } from '../../customHooks/useNav';
-import OnVisible, { setDefaultProps } from 'react-on-visible';
 import  useIntersection from '../../customHooks/useIntersection';
 
 
@@ -38,11 +37,7 @@ const Projects = () => {
     marginLeft: 'auto',
   };
 
-  setDefaultProps({
-    bounce: true,
-    visibleClassName: 'visible',
-    percent: 50
-});
+
 
   const Projref = useRef();
   const inViewport = useIntersection(Projref, '0px');
