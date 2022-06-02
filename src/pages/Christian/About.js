@@ -21,13 +21,13 @@ const About = () => {
         position:'relative',
         width: "25%",
         top: '100px',
-        display: 'inline-block',
     };
 
     const background = {
         backgroundColor: '#223882',
         height: '100%',
         overflow: 'hidden',
+        paddingBottom: '250px',
     }
 
     const boxStyle = {
@@ -39,6 +39,7 @@ const About = () => {
         borderRadius: "10px",
         float: 'left',
         position:'relative',
+        verticalAlign: 'top',
     };
 
 
@@ -71,6 +72,9 @@ const About = () => {
     const listStyle = {
         listStyleImage: {arrow},
         color: 'lightblue',
+        overflow: 'hidden',
+        whitespace: 'nowrap',
+
     };
 
 
@@ -80,7 +84,7 @@ const About = () => {
         <section ref={aboutRef} id='aboutContainer'>
             <div style = {background} ref = {viewRef}>
                 <FadeIn delay= {500} visible = {inViewport}>
-                    <div style = {{opacity: inViewport ? 1 : 0}}>                    
+                    <div style = {{opacity: inViewport ? 1 : 0}}>                 
                         <div style = {picStyle}>
                             <div style={boxStyle}>
                                 <Carousel autoPlay = {true} showThumbs = {false}>
@@ -104,8 +108,8 @@ const About = () => {
                                 <p style = {textStyle}> Hello everyone! My name is Christian Bakhit. I am a student at Johns Hopkins University</p>
                                 <p style = {textStyle}> I have been coding for a few years now, starting off as a tinkerer with Roblox Lua.</p>
                                 <p style = {textStyle}> This was the building block that launched my love of coding! </p>
-                                <Grid container spacing={12}>
-                                    <Grid item xs={8}>
+                                <Grid container spacing={1}>
+                                    <Grid item xs={5}>
                                         <p style = {{color: 'white'}}>Some technologies I have experience with are:</p>
                                         <li style = {listStyle}>Java</li>
                                         <li style = {listStyle}>Python</li>
@@ -130,6 +134,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+
                 </FadeIn>
             </div>
             <Images/>

@@ -14,8 +14,8 @@ const Contact = () => {
       backgroundColor: '#223882',
       height: '100%',
       overflow: 'hidden',
-      paddingBottom: '25px',
-      paddingTop: '25px',
+      paddingBottom: '50px',
+      paddingTop: '250px',
   }
 
   const textStyle = {
