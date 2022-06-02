@@ -1,11 +1,10 @@
-import React, {Component, useRef} from 'react';
-import FadeIn from 'react-fade-in';
+import React, {Component} from 'react';
 import About from './About';
 import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
-
+import Images from './Images';
 
 
 class Home extends Component {
@@ -28,12 +27,11 @@ class Home extends Component {
     return (
         <div style = {this.state}>
           <Header/>
-          <FadeIn delay={300} transitionDuration={700}>
-              <About/>
-              <Projects/>
-              <Contact/>
-          </FadeIn>
+          <About/>
+          <Projects/>
+          <Contact/>
           <Footer/>
+          <Images/>
         </div>
     );
   }
