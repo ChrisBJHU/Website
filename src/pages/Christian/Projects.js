@@ -44,14 +44,14 @@ const Projects = () => {
     percent: 50
 });
 
-  const ref = useRef();
-  const inViewport = useIntersection(ref, '-150px');
+  const Projref = useRef();
+  const inViewport = useIntersection(Projref, '0px');
 
 
   const renderObject = () => {
     if(inViewport) {
       return (
-        <div ref = {ref}>
+        <div ref = {Projref}>
         <Grid container spacing={1} style = {gridStyle}>
           <Grid item style = {tileStyle} >
           <FadeIn delay= {500} transitionDuration={500}>
@@ -79,7 +79,7 @@ const Projects = () => {
       );
     } else {
       return (
-        <div ref = {ref}>
+        <div ref = {Projref}>
           <div style = {boxStyle}></div> 
       </div>
       );
@@ -91,7 +91,7 @@ const Projects = () => {
 
   return (
     <section ref={projectRef} id='projectContainer'>
-        {renderObject()}
+      {renderObject()}
     </section>
   );
 };

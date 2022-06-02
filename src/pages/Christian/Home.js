@@ -5,7 +5,6 @@ import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
-import starBackground from '../../assets/starBackground.jpg';
 
 
 
@@ -14,7 +13,7 @@ class Home extends Component {
   state = {
     height: window.innerHeight,
     width: window.innerWidth,
-    backgroundImage: `url(${starBackground})`,
+    backgroundColor: '#223882',
   };
 
   componentDidMount () {
