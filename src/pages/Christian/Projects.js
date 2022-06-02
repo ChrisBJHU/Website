@@ -30,8 +30,8 @@ const Projects = () => {
 
   const boxStyle = {
     backgroundColor: '#223882',
-    height: '100%',
-    width: '100%',
+    height: '1000px',
+    width: '1000px',
     borderStyle: "none",
     boxSizing: "border-box",
     marginLeft: 'auto',
@@ -75,7 +75,7 @@ const Projects = () => {
     } else {
       return (
         <div ref = {Projref}>
-          <div style = {boxStyle}></div> 
+          <div style = {boxStyle}></div>
       </div>
       );
       }
