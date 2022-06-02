@@ -2,7 +2,8 @@ import { useNav } from '../../customHooks/useNav';
 import ContactForm from '../../components/contactForm.js';
 import OnVisible, { setDefaultProps } from 'react-on-visible';
 import star1 from '../../assets/star1.jpg';
- 
+import  useIntersection from '../../customHooks/useIntersection';
+import {useRef} from 'react';
 const Contact = () => {
 	const contactRef = useNav('Contact');
 
@@ -21,16 +22,27 @@ const Contact = () => {
       textAlign: 'center',
   }
 
+  const boxStyle = {
+    backgroundColor: '#223882',
+    height: '100%',
+    width: '100%',
+    borderStyle: "none",
+    boxSizing: "border-box",
+    marginLeft: 'auto',
+  }
+
   setDefaultProps({
     bounce: true,
     visibleClassName: 'visible',
     percent: 50
 });
+  const ref = useRef();
+  const inViewport = useIntersection(ref, '-150px');
 
-
-  const renderObject = () => { 
+  const renderObject = () => {
+    if(inViewport) {
     return (
-      <div>
+      <div ref = {ref}>
         <div style={background}>
         <ContactForm></ContactForm>
       </div><div>
@@ -51,7 +63,15 @@ const Contact = () => {
         </div>
       </div>
     );
-  };
+  } else {
+    return (
+      <div ref = {ref}>
+        <div style={boxStyle}>
+        </div>
+      </div>
+    );
+  }
+};
   
   return (
     <section ref={contactRef} id='contactContainer' style = {{height: '100%', width: '100%'}}>
