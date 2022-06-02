@@ -29,7 +29,6 @@ class Header extends Component {
   render() {
 
     const logoSet = {
-      height: '100%',
       textAlign: 'center',
       justifyContent: 'center',
       marginLeft: '50%'
@@ -37,9 +36,7 @@ class Header extends Component {
     
     const styleSheet = {
       color: '#66FCF1',
-      fontSize: "125%",
       textDecoration: 'none',
-      marginRight: '20px',
     };
 
     const color = {
@@ -49,18 +46,19 @@ class Header extends Component {
       display: 'flex',
   };
 
-  const buttonSet = {
+  const resumeButton = {
     backgroundColor: "#f4511e",
     border: "none",
     color: 'white',
     padding: '0px 1.6rem',
     textAlign: 'center',
-    fontSize: '16px',
+    fontSize: '75%',
     margin: '4px 2px',
     opacity: '0.6',
     transition: '0.3s',
     display: 'inline-block',
     textDecoration: 'none',
+    marginRight: '20px',
     cursor: 'pointer',
     '&:hover': {
       opacity: 1,
@@ -73,26 +71,33 @@ class Header extends Component {
     color: 'white',
     padding: '0px 1.6rem',
     textAlign: 'center',
-    fontSize: '16px',
+    fontSize: '100%',
     margin: '4px 2px',
     opacity: '1',
     transition: '0.3s',
     display: 'inline-block',
     textDecoration: 'none',
     cursor: 'pointer',
+    marginRight: '20px',
+  };
+
+  const nav = {
+    position: 'absolute', 
+    right:"1%", 
+    top: '1%'
   };
 
       return (
         <div className="header" style = {color}>
           <input type = "image" src={Logo} alt = "" style={logoSet} onClick = {this.navigateToMain} />
-          <div style = {{position: 'absolute', right:"1%", top: '1%'}}>
+          <div style = {nav}>
             <nav>
               {navLinks.map(({ navLinkId, scrollToId }, idx) => (
                 <NavLink key={idx} navLinkId={navLinkId} style={styleSheet} scrollToId={scrollToId} />
               ))}
               <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
                 <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
-                style = {this.state.hovered ? buttonSetHovered: buttonSet}> Resume
+                style = {this.state.hovered ? buttonSetHovered: resumeButton}> Resume
                 </Button>
               </a>
             </nav>
