@@ -2,9 +2,9 @@ import React, {useRef} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Main from "../../assets/ChristianBakhitMain.jpg";
-import Second from "../../assets/ChristianBakhitMain.jpg";
-import Third from "../../assets/ChristianBakhitMain.jpg";
+import Main from "../../assets/Christian/ChristianBakhitMain.jpg";
+import Second from "../../assets/Christian/ChristianBakhitMain.jpg";
+import Third from "../../assets/Christian/ChristianBakhitMain.jpg";
 import FadeIn from 'react-fade-in';
 import Images from '../../pages/Christian/Images';
 import arrow from '../../assets/arrowClipart.png';

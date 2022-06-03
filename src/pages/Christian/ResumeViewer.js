@@ -1,5 +1,5 @@
 import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
-import Resume from "../../assets/Christian Bakhit Resume 2022.pdf";
+import Resume from "../../assets/Christian/Christian Bakhit Resume 2022.pdf";
 import Header from "../../pages/Christian/ResumeHeader";
 import Footer from "../../pages/Christian/Footer";
 
