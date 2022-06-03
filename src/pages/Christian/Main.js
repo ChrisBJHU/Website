@@ -1,7 +1,6 @@
 import Home  from './Home';
 import NavProvider from '../../nav/NavContext';
-
-function HomeTest() {
+function Main() {
 	return (
 		<div className='appContainer'>
 			<NavProvider>
@@ -11,4 +10,4 @@ function HomeTest() {
 	);
 }
 
-export default HomeTest;
+export default Main;

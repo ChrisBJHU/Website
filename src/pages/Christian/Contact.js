@@ -7,7 +7,7 @@ import FadeIn from 'react-fade-in';
 const Contact = () => {
   
   const thisRef = useRef();
-  const inViewport = useIntersection(thisRef, '-200px');
+  const inViewport = useIntersection(thisRef, '-10px');
 	const contactRef = useNav('Contact');
 
     const background = {
@@ -19,7 +19,7 @@ const Contact = () => {
   }
 
   const textStyle = {
-      fontSize: "20px",
+      fontSize: "100%",
       color: 'lightblue',
       position:'relative',
       textAlign: 'center',

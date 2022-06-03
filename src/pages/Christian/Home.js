@@ -4,7 +4,6 @@ import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
-import Images from './Images';
 
 
 class Home extends Component {
@@ -31,7 +30,6 @@ class Home extends Component {
           <Projects/>
           <Contact/>
           <Footer/>
-          <Images/>
         </div>
     );
   }
