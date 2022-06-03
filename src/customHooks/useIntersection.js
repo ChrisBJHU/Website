@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 const useIntersection = (element, rootMargin) => {
     const [isVisible, setState] = useState(false);
-
+    let observerRefValue = null;
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -10,9 +10,15 @@ const useIntersection = (element, rootMargin) => {
             }, { rootMargin }
         );
 
-        element.current && observer.observe(element.current);
+        
+  if (element.current) {
+    observer.observe(element.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    observerRefValue = element.current; // <-- save ref value
+  }
 
-        return () => observer.unobserve(element.current); }, [element, rootMargin]);
+
+        return () => observer.unobserve(observerRefValue); }, [element, rootMargin]);
 
     return isVisible;
 };
