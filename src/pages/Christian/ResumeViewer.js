@@ -20,7 +20,7 @@ const ResumeViewer = () => {
         align:'center',
         borderRadius: '10px',
         marginBottom: '10px',
-        width: '50%',
+        width: '100%',
         border: '10px solid #222629',
       };
 
