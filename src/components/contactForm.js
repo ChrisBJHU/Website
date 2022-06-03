@@ -10,46 +10,27 @@ const ContactForm = () => {
       };
 
   const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
   return (
-    <form onSubmit={handleSubmit} style = {{width: '25%', allignItems: 'center', marginLeft: 'auto', marginRight: 'auto',}}>
+    <form action = "https://formsubmit.co/4a5c53d7c49b0edd1f37694a5d6bfa13" method = "POST" style = {{width: '25%', allignItems: 'center', marginLeft: 'auto', marginRight: 'auto'}}>
       <div> 
       <h3><span style = {{marginTop: "50px"}}>Contact Me!</span></h3>
       </div>
       <div class = "text-wrap"> 
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
+        <input type="text" name="name" required placeholder = "Name" id = "name"/>
       </div>
       <div class = "text-wrap"> 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
+        <input type="email" name="email" required placeholder = "Email Address" />
       </div>
       <div class = "text-wrap"> 
-        <label htmlFor="message">Message:</label>
-        <textarea type="message" id="message" required style = {{height: '100%', resize: "none"}} rows = "5" />
+        <textarea type="message" name="message" required style = {{height: '100%', resize: "none"}} rows = "5" placeholder = "Your Message" />
       </div>
       <div style = {{display: 'table', allignItems: 'center', marginBottom: '0', marginTop: '0', marginLeft: 'auto', marginRight: 'auto'}}>
-        <button type="submit"> {status}</button>
+        <button class = "btn btn-lg btn-dark btn-block" type="submit"> {status}</button>
       </div>
+      <input type="hidden" name="_subject" value="To Christian Bakhit"></input>
+      <input type="hidden" name="_next" value="home.html"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_honeypot" value=""/>
     </form>
   );
 };
