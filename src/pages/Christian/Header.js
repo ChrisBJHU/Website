@@ -29,9 +29,7 @@ class Header extends Component {
   render() {
 
     const logoSet = {
-      textAlign: 'center',
-      justifyContent: 'center',
-      marginLeft: '50%'
+      marginLeft: '5%'
     };
     
     const styleSheet = {
@@ -93,7 +91,7 @@ class Header extends Component {
           <div style = {nav}>
             <nav>
               {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-                <NavLink key={idx} navLinkId={navLinkId} style={styleSheet} scrollToId={scrollToId} />
+                <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
               ))}
               <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
                 <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}

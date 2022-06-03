@@ -77,14 +77,25 @@ const About = () => {
 
     };
 
+    const titleStyle = {
+        fontSize: "30px",
+        color: 'lightblue',
+        textAlign: 'center',
+        paddingTop: '2%',
+    };
+
 
     const aboutRef = useNav('About');
 
     return (
         <section ref={aboutRef} id='aboutContainer'>
+            <Images/>
             <div style = {background} ref = {viewRef}>
                 <FadeIn delay= {500} visible = {inViewport}>
-                    <div style = {{opacity: inViewport ? 1 : 0}}>                 
+                    <div style = {{opacity: inViewport ? 1 : 0}}>  
+                        <div class="twelve" style = {{paddingTop: '5%'}}>
+                            <h1>About Me</h1>
+                        </div>               
                         <div style = {picStyle}>
                             <div style={boxStyle}>
                                 <Carousel autoPlay = {true} showThumbs = {false}>
@@ -134,10 +145,8 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-
                 </FadeIn>
             </div>
-            <Images/>
         </section>
     );
 };

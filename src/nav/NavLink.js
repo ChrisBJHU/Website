@@ -10,7 +10,7 @@ const NavLink = ({ navLinkId, scrollToId }) => {
 	};
 
 	return (
-		<span
+		<span class = {"nav"}
 			id={navLinkId}
 			className={activeNavLinkId === navLinkId ? 'activeClass' : ''}
 			onClick={handleClick}

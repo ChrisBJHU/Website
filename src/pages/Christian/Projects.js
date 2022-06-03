@@ -37,6 +37,10 @@ const Projects = () => {
   return (
     <section ref={projectRef} id='projectContainer'>
         <div ref = {Projref} >
+        <FadeIn delay= {500} transitionDuration={1000}>
+        <div class="twelve" style = {{paddingBottom: '5%', backgroundColor: '#223882', paddingTop: '5%'}}>
+            <h1>Projects</h1>
+        </div>           
           <Grid container spacing={1} style = {gridStyle}>
             <Grid item style = {tileStyle} >
               <FadeIn delay= {500}  visible = {inViewport}>
@@ -60,6 +64,7 @@ const Projects = () => {
             </FadeIn>
           </Grid>
         </Grid>
+        </FadeIn>
       </div>
     </section>
   );

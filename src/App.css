@@ -164,6 +164,29 @@
     transform: translate3d(0,0,0);
 }
 
+@media screen and (min-width: 601px) {
+  nav {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .size {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.size {
+    font-size: 30px;
+  }
+}
 
   nav span {
     font-size: 100%;
@@ -255,3 +278,35 @@
     color: transparent;
   }
 
+
+  .twelve h1 {
+    font-size:26px; 
+    font-weight:700;  
+    letter-spacing:1px; 
+    text-transform:uppercase;
+    width:160px; 
+    text-align:center; 
+    margin:auto; 
+    white-space:nowrap; 
+    padding-bottom:13px;
+    position: sticky;
+
+  }
+  .twelve h1:before {
+      background-color: #c50000;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .twelve h1:after {
+      background-color: #c50000;
+      content: '';
+      display: block;
+    position:absolute; right:0; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 0.25em;
+  }
+  

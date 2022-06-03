@@ -8,12 +8,12 @@ const Images = () => {
     return(
         <div>
             <FadeIn delay= {50} transitionDuration={10}>
-                <Links link= '#' img= {Line} height = "-150px" />
-                <Icons link= '#' type = 'github' height = "-100px" />
-                <Icons link= '#' type = 'twitter' height = "-50px" />
-                <Icons link= '#' type = 'linkedin' height = "0px" />
-                <Icons link= '#' type = 'instagram' height = "50px" />
-                <Links link= '#' img= {Line} height = "100px" />
+                <Links link= '#' img= {Line} height = "350px" />
+                <Icons link= '#' type = 'github' height = "400px" />
+                <Icons link= '#' type = 'twitter' height = "450px" />
+                <Icons link= '#' type = 'linkedin' height = "500px" />
+                <Icons link= '#' type = 'instagram' height = "550px" />
+                <Links link= '#' img= {Line} height = "600px" />
             </FadeIn>
         </div>
     );
