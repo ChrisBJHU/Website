@@ -1,5 +1,6 @@
 import Home  from './Home';
 import NavProvider from '../../nav/NavContext';
+
 function Main() {
 	return (
 		<div className='appContainer'>

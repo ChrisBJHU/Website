@@ -4,16 +4,31 @@ import Icons from "../../components/Icons";
 import FadeIn from 'react-fade-in';
 
 const Images = () => {
-
+    const divSplit = {
+        display: "flex",
+        margin: '50px 0px',
+    };
     return(
         <div>
             <FadeIn delay= {50} transitionDuration={10}>
-                <Links link= '#' img= {Line} height = "35%" />
-                <Icons link= '#' type = 'github' height = "40%" />
-                <Icons link= '#' type = 'twitter' height = "45%" />
-                <Icons link= '#' type = 'linkedin' height = "50%" />
-                <Icons link= '#' type = 'instagram' height = "55%" />
-                <Links link= '#' img= {Line} height = "60%" />
+                <div style = {divSplit}>
+                    <Links link= '#' img= {Line} />
+                </div>
+                <div style = {divSplit}>
+                    <Icons link= '#' type = 'github' />
+                </div>
+                <div style = {divSplit}>
+                    <Icons link= '#' type = 'twitter' />
+                </div>
+                <div style = {divSplit}>
+                    <Icons link= '#' type = 'linkedin' />
+                </div>
+                <div style = {divSplit}>
+                    <Icons link= '#' type = 'instagram' />
+                </div>
+                <div style = {divSplit}>
+                    <Links link= '#' img= {Line}  />
+                </div>
             </FadeIn>
         </div>
     );

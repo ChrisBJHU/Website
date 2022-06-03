@@ -38,7 +38,7 @@ const Projects = () => {
     <section ref={projectRef} id='projectContainer'>
         <div ref = {Projref} >
         <FadeIn delay= {500} transitionDuration={1000}>
-        <div class="twelve" style = {{paddingBottom: '5%', backgroundColor: '#223882', paddingTop: '5%'}}>
+        <div className="twelve" style = {{paddingBottom: '5%', backgroundColor: '#223882', paddingTop: '5%'}}>
             <h1>Projects</h1>
         </div>           
           <Grid container spacing={1} style = {gridStyle}>

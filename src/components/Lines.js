@@ -6,7 +6,6 @@ class Links extends Component {
         this.state = {
             link: props.link,
             img: props.img,
-            height: props.height,
             hovered: false,
         };
     }
@@ -21,7 +20,6 @@ class Links extends Component {
         height: '3%',
         position: 'fixed',
         float: 'left',
-        marginTop: this.state.height,
         marginLeft: '10px',
         opacity: this.state.hovered ? '0%' : '100%',
         tintColor: 'white',

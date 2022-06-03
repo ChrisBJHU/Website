@@ -5,7 +5,6 @@ class Icons extends Component {
     super(props);
     this.state = {
       hovered: false,
-      height: props.height,
       type: props.type,
       link: props.link,
     };
@@ -20,7 +19,6 @@ class Icons extends Component {
       height: '3%',
       position: 'fixed',
       float: 'left',
-      marginTop: this.state.height,
       marginLeft: '10px',
       stroke: this.state.hovered ? 'blue' : 'white',
     };
@@ -96,7 +94,7 @@ class Icons extends Component {
     };
 
     const createObject = () => {
-      switch(this.state.type) {
+      switch (this.state.type) {
         case 'twitter':
           return <Twitter />;
         case 'linkedin':

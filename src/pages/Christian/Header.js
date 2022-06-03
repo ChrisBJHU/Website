@@ -97,7 +97,7 @@ class Header extends Component {
   };
 
     return (
-      <div className="header" style = {color}>
+      <div className= "header" style = {color}>
         {headerImage()}
         <div style = {isMobile ? null : nav}>
           <nav>
