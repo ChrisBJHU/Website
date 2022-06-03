@@ -4,7 +4,6 @@ import Projects from './Projects';
 import Header from './Header'
 import Footer from './Footer'
 import Contact from './Contact';
-import ResumeViewer from './ResumeViewer';
 import Images from './Images';
 
 
@@ -30,7 +29,6 @@ class Home extends Component {
           <Header/>
           <About/>
           <Projects/>
-          <ResumeViewer/>
           <Contact/>
           <Footer/>
           <Images/>

@@ -1,5 +1,5 @@
-import React, { Component}from 'react';
-import {Button} from '@mui/material';
+import React, { Component } from 'react';
+import { Button } from '@mui/material';
 import NavLink from '../../nav/NavLink';
 import { navLinks } from '../../nav/navLinks';
 import Logo from "../../assets/logo.png";
@@ -93,7 +93,7 @@ class Header extends Component {
               {navLinks.map(({ navLinkId, scrollToId }, idx) => (
                 <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
               ))}
-              <a href="#" target="_blank" rel="noreferrer" style = {styleSheet}>
+              <a href="/resumeChristian" target="_self" rel="noreferrer" style = {styleSheet}>
                 <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
                 style = {this.state.hovered ? buttonSetHovered: resumeButton}> Resume
                 </Button>

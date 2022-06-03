@@ -176,6 +176,31 @@
   }
 }
 
+resume {
+  margin: '0px auto';
+  justify-content: 'center';
+  align-self:'center';
+  border-radius: '10px';
+  margin-bottom: '10px';
+  width: '50%';
+  border: '10px solid #222629';
+}
+
+@media screen and (min-width: 601px) {
+  resume {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  resume {
+    width: 80%;
+  }
+}
+
+
+
+
 @media screen and (min-width: 601px) {
   .size {
     font-size: 16px;
