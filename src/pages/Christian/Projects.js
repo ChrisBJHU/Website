@@ -54,7 +54,6 @@ const Projects = () => {
     );
   }
 
-
   return (
     <section ref={projectRef} id='projectContainer'>
         <div ref = {Projref} >

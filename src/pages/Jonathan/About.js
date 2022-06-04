@@ -162,9 +162,9 @@ const About = () => {
                                             </Grid>
                                     </Grid>
                                     <div style = {{marginTop: '50px'}}>
-                                        <p style = {textStyle}> For the past year, at Delineo,</p>
-                                        <p style = {textStyle}>I have been solving the problem of how to simulate the spread of COVID-19 in an environment,</p>
-                                        <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
+                                        <p style = {textStyle}> My time at Hopkins has been very inspiring and very useful for my personal growth. But as my time here is nearing its close, I've prepared myself to enter into a brand new chapter of my life. Just like the beautiful sunset marks the end of the day, I just have to wait for the next sunrise to mark the start of the next. 
+                                        I'm excited to be able to continue to learn and grow as a developer. I hope to be able to help others in the future as well. 
+                                        </p>
                                     </div>
                                 </div>
                     </FadeIn>
