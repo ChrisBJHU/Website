@@ -1,7 +1,7 @@
 import FadeIn from 'react-fade-in';
 import React, {useRef} from 'react';
 import logo from'../../assets/logo.png';
-import Tile from '../../components/Tile';
+import Tile from '../../components/Christian/Tile';
 import Grid from '@mui/material/Grid';
 import { useNav } from '../../customHooks/useNav';
 import  useIntersection from '../../customHooks/useIntersection';

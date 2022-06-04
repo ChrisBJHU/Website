@@ -1,5 +1,5 @@
 import { useNav } from '../../customHooks/useNav';
-import ContactForm from '../../components/contactForm.js';
+import ContactForm from '../../components/Christian/contactForm.js';
 import  useIntersection from '../../customHooks/useIntersection';
 import {useRef} from 'react';
 import FadeIn from 'react-fade-in';

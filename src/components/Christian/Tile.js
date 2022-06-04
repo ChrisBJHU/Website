@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import redirect from'../assets/redirect.png';
+import redirect from'../../assets/redirect.png';
 
 class Tile extends Component {
     constructor(props) {

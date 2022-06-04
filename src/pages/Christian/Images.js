@@ -1,6 +1,6 @@
 import Line from "../../assets/line-symbol.png";
-import Links from "../../components/Lines";
-import Icons from "../../components/Icons";
+import Links from "../../components/Christian/Lines";
+import Icons from "../../components/Christian/Icons";
 import FadeIn from 'react-fade-in';
 
 const Images = () => {
