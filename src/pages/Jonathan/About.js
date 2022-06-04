@@ -2,9 +2,7 @@ import React, {useRef} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Main from "../../assets/Christian/ChristianBakhitMain.jpg";
-import Second from "../../assets/Christian/ChristianBakhitMain.jpg";
-import Third from "../../assets/Christian/ChristianBakhitMain.jpg";
+import Main from "../../assets/Jonathan/JonathanPicture.png";
 import FadeIn from 'react-fade-in';
 import Images from '../../pages/Jonathan/Images';
 import arrow from '../../assets/arrowClipart.png';
@@ -111,20 +109,12 @@ const About = () => {
                             </div>                                                      
                             </div>               
                             <div style = {isMobile ? picStyleMobile : picStyle}>
-                                <div style={boxStyle}>
-                                    <Carousel autoPlay = {true} showThumbs = {false}>
+                                <div style={boxStyle}> 
+                                    <Carousel autoPlay = {false} showThumbs = {false} showStatus = {false} showIndicators = {false} >
                                         <div>
                                             <img src={Main} alt= "" />
-                                            <p className="legend" style={legendStyle}>Legend 1</p>
                                         </div>
-                                        <div>
-                                            <img src={Second} alt= "" />
-                                            <p className="legend" style={legendStyle}>Legend 2</p>
-                                        </div>
-                                        <div>
-                                            <img src={Third} alt= "" />
-                                            <p className="legend" style={legendStyle}>Legend 3</p>
-                                        </div>
+    
                                     </Carousel>
                                 </div>
                             </div>
