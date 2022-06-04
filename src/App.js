@@ -6,9 +6,7 @@ import ResumeC from "./pages/Christian/ResumeViewer";
 import ResumeJ from "./pages/Jonathan/ResumeViewer";
 import './App.css';
 
-import {
-  Route,
-} from "react-router-dom";;
+import { Route, Switch, Link } from "react-router-dom";
 
 
 
@@ -16,13 +14,25 @@ class App extends Component {
 
   render() {
     return (
-          <div>
-              <Route exact path="/" component={Split} />
-              <Route exact path="/homeChristian" component={Home} />
-              <Route exact path="/homeJonathan" component={Home2} />
-              <Route exact path="/resumeChristian" component={ResumeC} />
-              <Route exact path="/resumeJonathan" component={ResumeJ} />
-          </div>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Split />
+          </Route>
+          <Route path="/homeChristian">
+            <Home />
+          </Route>
+          <Route path="/homeJonathan">
+            <Home2 />
+          </Route>
+          <Route path="/resumeChristian">
+            <ResumeC />
+          </Route>
+          <Route path="/resumeJonathan">
+            <ResumeJ />
+          </Route>
+        </Switch>
+      </div>
     );
   }
 
