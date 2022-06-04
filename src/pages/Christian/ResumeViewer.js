@@ -21,7 +21,7 @@ const ResumeViewer = () => {
         borderRadius: '10px',
         marginBottom: '10px',
         width: '80%',
-        border: '10px solid #222629',
+        border: '10px solid rgba(43, 43, 43, 0.8)',
       };
 
   return (
