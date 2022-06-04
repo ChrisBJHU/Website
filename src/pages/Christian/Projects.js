@@ -23,7 +23,6 @@ const Projects = () => {
     opacity: inViewport ? 1 : 0,
     justifyContent:'center', 
     alignItems:'center',
-    backgroundColor: '#223882',
   };
 
   const tileStyle = {
@@ -38,7 +37,7 @@ const Projects = () => {
     <section ref={projectRef} id='projectContainer'>
         <div ref = {Projref} >
         <FadeIn delay= {500} transitionDuration={1000}>
-        <div className="twelve" style = {{paddingBottom: '5%', backgroundColor: '#223882', paddingTop: '5%'}}>
+        <div className="twelveChris" style = {{paddingBottom: '5%', paddingTop: '5%'}}>
             <h1>Projects</h1>
         </div>           
           <Grid container spacing={1} style = {gridStyle}>

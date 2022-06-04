@@ -20,11 +20,10 @@ const About = () => {
     const picStyle = {
         position:'relative',
         width: "25%",
-        top: '100px',
     };
 
     const background = {
-        backgroundColor: '',
+        backgroundColor: 'white',
         height: '100%',
         overflow: 'hidden',
         paddingBottom: '250px',
@@ -34,7 +33,7 @@ const About = () => {
         marginLeft: "50px",
         borderStyle: "none",
         boxSizing: "border-box",
-        backgroundColor: '#222629',
+        backgroundColor: 'rgba(43, 43, 43, 0.8)',
         padding: "8px 8px",
         borderRadius: "10px",
         float: 'left',
@@ -58,14 +57,14 @@ const About = () => {
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',
         borderWidth: '5px',
-        borderColor: '#222629',
+        borderColor: 'rgba(43, 43, 43, 0.8)',
         width: '50%',
         height: '100%',
     };
 
     const textStyle = {
         fontSize: "20px",
-        color: 'lightblue',
+        color: 'rgba(43, 43, 43, 0.8)',
     };
 
     const listStyle = {
@@ -78,7 +77,7 @@ const About = () => {
 
     const textBoxStyleMobile = {
         position:'relative',
-        backgroundColor: 'transparent',
+        backgroundColor: 'white',
         padding: '1rem',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
@@ -87,13 +86,11 @@ const About = () => {
         borderColor: '#222629',
         height: '100%',
         display: 'grid',
-        top: '100px',
     };
 
     const picStyleMobile = {
         position:'relative',
         width: "95%",
-        top: '25px',
     };
 
 
@@ -104,7 +101,7 @@ const About = () => {
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  
-                            <div className="twelve">
+                    <div className="twelveChris">
                                 <h1>About Me</h1>
                             </div>                                                      
                             </div>               

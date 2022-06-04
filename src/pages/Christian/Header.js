@@ -35,10 +35,10 @@ class Header extends Component {
     const styleSheet = {
       color: '#66FCF1',
       textDecoration: 'none',
-    };
+      };
 
     const color = {
-      backgroundColor: '',
+      backgroundColor: 'white',
       borderBottom:"2px solid black",    
       height: "10%",
       display: 'flex',
@@ -97,7 +97,7 @@ class Header extends Component {
   };
 
     return (
-      <div className= "header" style = {color}>
+      <div style = {color}>
         {headerImage()}
         <div style = {isMobile ? null : nav}>
           <nav>

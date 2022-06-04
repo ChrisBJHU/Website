@@ -7,9 +7,10 @@ const Images = () => {
     const divSplit = {
         display: "flex",
         margin: '50px 0px',
+        backgroundColor: 'white',
     };
     return(
-        <div>
+        <div >
             <FadeIn delay= {50} transitionDuration={10}>
                 <div style = {divSplit}>
                     <Links link= '#' img= {Line} />
