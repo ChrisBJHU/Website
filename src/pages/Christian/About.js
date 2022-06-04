@@ -97,17 +97,14 @@ const About = () => {
     };
 
 
-
-
     const aboutRef = useNav('About');
-
         return (
             <section ref={aboutRef} id='aboutContainer'>
                 <Images/>
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  
-                            <div className="twelve" style = {{paddingTop: '5%'}}>
+                            <div className="twelve">
                                 <h1>About Me</h1>
                             </div>                                                      
                             </div>               
