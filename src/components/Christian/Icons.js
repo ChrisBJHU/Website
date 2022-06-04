@@ -7,7 +7,7 @@ class Icons extends Component {
       hovered: false,
       type: props.type,
       link: props.link,
-      stroke: props.strokeColor,
+      stroke: props.stroke,
     };
   }
 
@@ -21,7 +21,8 @@ class Icons extends Component {
       position: 'fixed',
       float: 'left',
       marginLeft: '10px',
-      stroke: this.state.hovered ? 'light blue' : 'white',
+      stroke: this.state.hovered ? 'black' : 'black',
+      opacity: this.state.hovered ? '50%' : '100%',
     };
 
     const Twitter = () => {
@@ -30,7 +31,7 @@ class Icons extends Component {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={this.stroke}
+            stroke={this.state.stroke}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -46,7 +47,7 @@ class Icons extends Component {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={this.stroke}
+            stroke={this.state.stroke}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -65,7 +66,7 @@ class Icons extends Component {
       role="img"
       viewBox="0 0 24 24"
       fill="none"
-      stroke={this.stroke}
+      stroke={this.state.stroke}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -84,7 +85,7 @@ class Icons extends Component {
       role="img"
       viewBox="0 0 24 24"
       fill="none"
-      stroke={this.stroke}
+      stroke={this.state.stroke}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -112,11 +113,9 @@ class Icons extends Component {
 
 
     return ( 
-      <a href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
+      <a href = {this.state.link} className = {'mr-auto text-center'}
         target = "_blank" rel = "noreferrer">
-          <div>
           {createObject()}
-        </div>
         </a>
     );
   }

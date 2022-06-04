@@ -3,8 +3,8 @@ import { Carousel } from 'react-responsive-carousel';
 import Grid from '@mui/material/Grid';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Main from "../../assets/Christian/ChristianBakhitMain.jpg";
-import Second from "../../assets/Christian/ChristianBakhitMain.jpg";
-import Third from "../../assets/Christian/ChristianBakhitMain.jpg";
+import Second from "../../assets/Christian/ChristianBakhitSecond.png";
+import Third from "../../assets/Christian/ChristianBakhitThirdPres.jpg";
 import FadeIn from 'react-fade-in';
 import Images from '../../pages/Christian/Images';
 import arrow from '../../assets/arrowClipart.png';
@@ -43,7 +43,6 @@ const About = () => {
 
 
     const legendStyle = {
-        
     };
 
     const textBoxStyle = {
@@ -101,35 +100,37 @@ const About = () => {
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  
-                    <div className="twelveChris">
+                    <div className="twelveChris" style = {{paddingTop: '2%'}}>
                                 <h1>About Me</h1>
                             </div>                                                      
                             </div>               
                             <div style = {isMobile ? picStyleMobile : picStyle}>
                                 <div style={boxStyle}>
-                                    <Carousel autoPlay = {true} showThumbs = {false}>
+                                    <Carousel autoPlay = {true} showThumbs = {false} emulateTouch = {true} infiniteLoop = {true} interval = {6000}>
                                         <div>
                                             <img src={Main} alt= "" />
-                                            <p className="legend" style={legendStyle}>Legend 1</p>
-                                        </div>
-                                        <div>
-                                            <img src={Second} alt= "" />
-                                            <p className="legend" style={legendStyle}>Legend 2</p>
+                                            <p className="legend" style={legendStyle}>Me in front of Gilman Hall at Hopkins!</p>
                                         </div>
                                         <div>
                                             <img src={Third} alt= "" />
-                                            <p className="legend" style={legendStyle}>Legend 3</p>
+                                            <p className="legend" style={legendStyle}>One of the opportunities I've had to present Delineo! Design Day 2022</p>
+                                        </div>
+
+                                        <div>
+                                            <img src={Second} alt= "" />
+                                            <p className="legend" style={legendStyle}>Me at Washington Square Park in New York!</p>
                                         </div>
                                     </Carousel>
                                 </div>
                             </div>
                                 <div style={isMobile ? textBoxStyleMobile : textBoxStyle}>
-                                    <p style = {textStyle}> Hello everyone! My name is Christian Bakhit. I am a student at Johns Hopkins University</p>
-                                    <p style = {textStyle}> I have been coding for a few years now, starting off as a tinkerer with Roblox Lua.</p>
-                                    <p style = {textStyle}> This was the building block that launched my love of coding! </p>
+                                    <p style = {textStyle}> Hello everyone! My name is Christian Bakhit. I am a Junior at Johns Hopkins University. My current aspirations have led me to the field of AI and robotics research. I hope that one day I can work on the first AGI!</p>
+                                    <p style = {textStyle}> I have been coding for a few years now, starting off as a tinkerer with Roblox Lua to help build games for me and my friends!</p>
+                                    <p style = {textStyle}> For the past year I have worked in the Delineo Lab. Here, I have led the team in solving the problem of simulating disease spread.</p>
+                                    <p style = {textStyle}>We wish to revolutionize the epidemology field, and help lead policy for the next pandemic!</p>
                                     <Grid container spacing={10}>
                                         <Grid item xs={!isMobile ? 5 : 7 }>
-                                            <p style = {{color: 'white'}}>Some technologies I have experience with are:</p>
+                                            <p style = {{color: '#66FCF1'}}>Some technologies I have experience with are:</p>
                                             <li style = {listStyle}>Java</li>
                                             <li style = {listStyle}>Python</li>
                                             <li style = {listStyle}>JavaScript</li>
@@ -138,18 +139,17 @@ const About = () => {
                                             <li style = {listStyle}>x86 - 64 Assembly</li>
                                         </Grid>
                                         <Grid item xs={!isMobile ? 4 : 6 }>
-                                            <p style = {{color: 'white'}}>My hobbies include:</p>
-                                            <li style = {listStyle}>Building Computers</li>
+                                            <p style = {{color: '#66FCF1'}}>My hobbies include:</p>
+                                            <li style = {listStyle}>Archery</li>
                                             <li style = {listStyle}>Tennis</li>
-                                            <li style = {listStyle}>Cooking/Baking</li>
+                                            <li style = {listStyle}>Baking</li>
                                             <li style = {listStyle}>Hiking</li>
+                                            <li style = {listStyle}>Guitar</li>
                                             <li style = {listStyle}>Coding Competitions</li>
                                         </Grid>
                                     </Grid>
                                     <div style = {{height: '100px'}}></div>
-                                    <p style = {textStyle}> For the past year, at Delineo,</p>
-                                    <p style = {textStyle}>I have been solving the problem of how to simulate the spread of COVID-19 in an environment,</p>
-                                    <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
+                                    <p style = {textStyle}>In my time at Hopkins, I have worked with industry leaders, served as a student teacher with the PILOT program, and worked on a variety of projects!</p>
                                 </div>
                     </FadeIn>
                 </div>

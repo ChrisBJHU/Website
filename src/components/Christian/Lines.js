@@ -22,13 +22,13 @@ class Links extends Component {
         float: 'left',
         marginLeft: '10px',
         opacity: this.state.hovered ? '0%' : '100%',
-        tintColor: 'white',
+        tintColor: 'black',
       };
 
     return (
     <svg style = {imageStyle} 
       viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <line x1="50" y1="0" x2="50" y2="200" stroke="white" strokeWidth = "10" />
+      <line x1="50" y1="0" x2="50" y2="200" stroke="black" strokeWidth = "10" />
     </svg>
     );
   }

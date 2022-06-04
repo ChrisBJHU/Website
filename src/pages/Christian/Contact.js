@@ -20,7 +20,7 @@ const Contact = () => {
 
   const textStyle = {
       fontSize: "100%",
-      color: 'lightblue',
+      color: 'light blue',
       position:'relative',
       textAlign: 'center',
   }
@@ -30,15 +30,12 @@ const Contact = () => {
       <div ref = {thisRef} style = {background}>
           <div style = {{opacity: inViewport ? 1 : 0}}>
           <FadeIn delay= {500} transitionDuration = {300} visible = {inViewport}>
-            <div style = {{      border: '10px inset green',
-      borderWidth: '5px',}}>
             <ContactForm></ContactForm>
-            </div>
             <p style={textStyle}>
               Want to talk to me directly? Send me a email!
             </p>
             <p style={textStyle}>
-              My email is: <a href="mailto: cbakhit1@jh.edu" type="email" style={{ color: "lightblue" }}>
+              My email is: <a href="mailto: cbakhit1@jh.edu" type="email" style={{ color: "#66FCF1" }}>
                 cbakhit1@jh.edu
               </a>
             </p>

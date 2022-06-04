@@ -1,14 +1,14 @@
 import * as React from 'react';
 const Footer = () => {
   const background = {
-    backgroundColor: '#222629',
-    borderTop:"2px solid #66FCF1",    
+    backgroundColor: '',
+    borderTop:"2px solid black",    
     height: "20%",
     textAlign: 'center',
 };
 
 const textStyle = {
-  color: 'white',
+  color: 'black',
   marginTop: '50px',
 };
 
