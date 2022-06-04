@@ -78,16 +78,18 @@ const About = () => {
 
     const textBoxStyleMobile = {
         position:'relative',
-        backgroundColor: '',
+        backgroundColor: '#344a94',
         padding: '1rem',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',
         borderWidth: '5px',
-        borderColor: '#222629',
+        borderColor: 'lightblue',
         height: '100%',
         display: 'grid',
         top: '100px',
+        blur: '20px',
+
     };
 
     const picStyleMobile = {
@@ -130,7 +132,7 @@ const About = () => {
                                     <Grid container style = {{display: 'grid'}} >
                                         <p style = {{color: 'white', textAlign: 'center'}}>Some technologies and languages I have experience with are:</p>
                                         <Grid container columns = {16} spacing = {1} style = {{display: 'grid', gridTemplateColumns: '1fr 1fr'}}>
-                                            <Grid item xs={12} style = {{marginLeft: '150px'}}>
+                                            <Grid item xs={12} style = {{marginLeft: '10%'}}>
                                                     <li style = {listStyle}>Java</li>
                                                     <li style = {listStyle}>Python</li>
                                                     <li style = {listStyle}>JavaScript</li>
@@ -147,7 +149,7 @@ const About = () => {
                                         </Grid>
                                             <p style = {{color: 'white', textAlign: 'center'}}>Some of my favorite Hobbies/Objects are:</p>
                                             <Grid container columns = {16} spacing = {1} style = {{display: 'grid', gridTemplateColumns: '1fr 1fr'}}>
-                                                <Grid item xs={12} style = {{marginLeft: '150px'}}>
+                                                <Grid item xs={12} style = {{marginLeft: '10%'}}>
                                                         <li style = {listStyle}>Hiking</li>
                                                         <li style = {listStyle}>Tennis</li>
                                                         <li style = {listStyle}>Editing Artwork and Videos</li>

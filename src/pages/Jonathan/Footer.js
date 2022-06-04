@@ -17,7 +17,7 @@ const textStyle = {
   return (
     <div className="footer" style={background}>
       <p style={textStyle}> Designed & Built by 
-      <a href="https://brittanychiang.com/" target="_blank" rel="noreferrer"  style = {{ textDecoration: 'none',}}> Christian Bakhit & Jonathan Bakhit
+      <a href="\" target="_blank" rel="noreferrer"  style = {{ textDecoration: 'none', color: 'lightblue'}}> Christian Bakhit & Jonathan Bakhit
         </a> 
       </p>
       <p style = {{color: 'white'}}> Version 1.0.0</p>
