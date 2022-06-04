@@ -21,7 +21,7 @@ class Icons extends Component {
       position: 'fixed',
       float: 'left',
       marginLeft: '10px',
-      stroke: this.state.hovered ? 'light blue' : 'white',
+      stroke: this.state.hovered ? 'lightblue' : 'white',
     };
 
     const Twitter = () => {
@@ -108,8 +108,6 @@ class Icons extends Component {
           return <Twitter />;
       }
     };
-
-
 
     return ( 
       <a href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 

@@ -3,6 +3,7 @@ import Home from "./pages/Christian/Main";
 import Home2 from "./pages/Jonathan/Main";
 import Split from "./pages/Split";
 import ResumeC from "./pages/Christian/ResumeViewer";
+import ResumeJ from "./pages/Jonathan/ResumeViewer";
 import './App.css';
 
 import {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact path="/homeChristian" component={Home} />
               <Route exact path="/homeJonathan" component={Home2} />
               <Route exact path="/resumeChristian" component={ResumeC} />
+              <Route exact path="/resumeJonathan" component={ResumeJ} />
           </div>
     );
   }

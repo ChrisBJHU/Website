@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button } from '@mui/material';
-import NavLink from '../../nav/NavLink';
+import NavLink from '../../nav/NavLinksJ';
 import { navLinks } from '../../nav/navLinks';
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Jonathan/Icons.png";
 import {isMobile} from 'react-device-detect';
 
 class Header extends Component {
@@ -104,7 +104,7 @@ class Header extends Component {
             {navLinks.map(({ navLinkId, scrollToId }, idx) => (
               <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
             ))}
-            <a href="/resumeChristian" target="_self" rel="noreferrer" style = {styleSheet}>
+            <a href="/resumeJonathan" target="_self" rel="noreferrer" style = {styleSheet}>
               <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
               style = {this.state.hovered ? buttonSetHovered: resumeButton}> Resume
               </Button>

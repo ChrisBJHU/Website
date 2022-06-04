@@ -1,7 +1,7 @@
 import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
-import Resume from "../../assets/Christian/Christian Bakhit Resume 2022.pdf";
-import Header from "../Christian/ResumeHeader";
-import Footer from "../Christian/Footer";
+import Resume from "../../assets/Jonathan/Bakhit_Jonathan_Resume.pdf";
+import Header from "../../pages/Jonathan/ResumeHeader";
+import Footer from "../../pages/Jonathan/Footer";
 
 const ResumeViewer = () => {
     const docs = [
@@ -9,7 +9,7 @@ const ResumeViewer = () => {
       ];
   
       const resumeBackground = {
-        backgroundColor: '#223882',
+        backgroundColor: '',
         padding: '10px',
         paddingBottom: '10px',
       };
@@ -20,7 +20,7 @@ const ResumeViewer = () => {
         align:'center',
         borderRadius: '10px',
         marginBottom: '10px',
-        width: '100%',
+        width: '80%',
         border: '10px solid #222629',
       };
 

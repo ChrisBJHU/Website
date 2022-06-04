@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from '@mui/material';
-import NavLink from '../../nav/NavLink';
+import NavLink from '../../nav/NavLinksC';
 import { navLinks } from '../../nav/navLinks';
 import Logo from "../../assets/logo.png";
 import {isMobile} from 'react-device-detect';

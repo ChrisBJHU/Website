@@ -6,9 +6,6 @@ import Grid from '@mui/material/Grid';
 import { useNav } from '../../customHooks/useNav';
 import  useIntersection from '../../customHooks/useIntersection';
 
-
-
-
 const Projects = () => {
 
   const Projref = useRef();

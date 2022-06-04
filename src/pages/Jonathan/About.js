@@ -6,7 +6,7 @@ import Main from "../../assets/Christian/ChristianBakhitMain.jpg";
 import Second from "../../assets/Christian/ChristianBakhitMain.jpg";
 import Third from "../../assets/Christian/ChristianBakhitMain.jpg";
 import FadeIn from 'react-fade-in';
-import Images from '../../pages/Christian/Images';
+import Images from '../../pages/Jonathan/Images';
 import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
 import useIntersection from '../../customHooks/useIntersection';
@@ -49,7 +49,7 @@ const About = () => {
 
     const textBoxStyle = {
         position:'relative',
-        backgroundColor: 'transparent',
+        backgroundColor: '#344a94',
         opacity: '1',
         padding: '1rem',
         margin: '70px 100px',
@@ -58,14 +58,17 @@ const About = () => {
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',
         borderWidth: '5px',
-        borderColor: '#222629',
+        borderColor: 'lightblue',
         width: '50%',
         height: '100%',
+        blur: '20px',
     };
 
     const textStyle = {
         fontSize: "20px",
-        color: 'lightblue',
+        color: 'lightgray',
+        fontFamily: 'Arial',
+        fontWeight: 'normal',
     };
 
     const listStyle = {
@@ -73,12 +76,11 @@ const About = () => {
         color: 'lightblue',
         overflow: 'hidden',
         whitespace: 'nowrap',
-
     };
 
     const textBoxStyleMobile = {
         position:'relative',
-        backgroundColor: 'transparent',
+        backgroundColor: '',
         padding: '1rem',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
@@ -127,32 +129,51 @@ const About = () => {
                                 </div>
                             </div>
                                 <div style={isMobile ? textBoxStyleMobile : textBoxStyle}>
-                                    <p style = {textStyle}> Hello everyone! My name is Christian Bakhit. I am a student at Johns Hopkins University</p>
-                                    <p style = {textStyle}> I have been coding for a few years now, starting off as a tinkerer with Roblox Lua.</p>
-                                    <p style = {textStyle}> This was the building block that launched my love of coding! </p>
-                                    <Grid container spacing={10}>
-                                        <Grid item xs={!isMobile ? 5 : 7 }>
-                                            <p style = {{color: 'white'}}>Some technologies I have experience with are:</p>
-                                            <li style = {listStyle}>Java</li>
-                                            <li style = {listStyle}>Python</li>
-                                            <li style = {listStyle}>JavaScript</li>
-                                            <li style = {listStyle}>C/C++</li>
-                                            <li style = {listStyle}>C#</li>
-                                            <li style = {listStyle}>x86 - 64 Assembly</li>
+                                    <p style = {textStyle}> Hello! My name is Jonathan Bakhit and I'm currently an Undergraduate at Johns Hopkins University.
+                                   I've been programming for over 6 years now, which all started with my fascination with computer games such as Minecraft and Roblox.
+                                    </p>
+
+                                    <p style = {textStyle}> I've always been interested in how technology can be used to solve problems. Nowadays, I work in a research lab called Delineo which is focused on the spread of diseases. My goals right now are to expand my knowledge of the field and to learn more about the technology behind it. 
+                                    I'm generally focused on Machine Learning and it's applications in our modern world.
+                                    </p>
+
+                                    <Grid container style = {{display: 'grid'}} >
+                                        <p style = {{color: 'white', textAlign: 'center'}}>Some technologies and languages I have experience with are:</p>
+                                        <Grid container columns = {16} spacing = {1} style = {{display: 'grid', gridTemplateColumns: '1fr 1fr'}}>
+                                            <Grid item xs={12} style = {{marginLeft: '150px'}}>
+                                                    <li style = {listStyle}>Java</li>
+                                                    <li style = {listStyle}>Python</li>
+                                                    <li style = {listStyle}>JavaScript</li>
+                                                    <li style = {listStyle}>C/C++</li>
+                                                    <li style = {listStyle}>C#</li>
+                                                </Grid>
+                                                <Grid item xs={12} style = {{margin: 'auto'}}>
+                                                    <li style = {listStyle}>React</li>
+                                                    <li style = {listStyle}>x86 - 64 Assembly</li>
+                                                    <li style = {listStyle}>Android Studio/Flutter</li>
+                                                    <li style = {listStyle}>HTML/CSS</li>
+                                                    <li style = {listStyle}>Unity</li>
+                                                </Grid>
                                         </Grid>
-                                        <Grid item xs={!isMobile ? 4 : 6 }>
-                                            <p style = {{color: 'white'}}>My hobbies include:</p>
-                                            <li style = {listStyle}>Building Computers</li>
-                                            <li style = {listStyle}>Tennis</li>
-                                            <li style = {listStyle}>Cooking/Baking</li>
-                                            <li style = {listStyle}>Hiking</li>
-                                            <li style = {listStyle}>Coding Competitions</li>
-                                        </Grid>
+                                            <p style = {{color: 'white', textAlign: 'center'}}>Some of my favorite Hobbies/Objects are:</p>
+                                            <Grid container columns = {16} spacing = {1} style = {{display: 'grid', gridTemplateColumns: '1fr 1fr'}}>
+                                                <Grid item xs={12} style = {{marginLeft: '150px'}}>
+                                                        <li style = {listStyle}>Hiking</li>
+                                                        <li style = {listStyle}>Tennis</li>
+                                                        <li style = {listStyle}>Editing Artwork and Videos</li>
+                                                        <li style = {listStyle}>Computers</li>
+                                                        <li style = {listStyle}>Archery</li>
+                                                    </Grid>
+                                                    <Grid item xs={12} style = {{margin: 'auto'}}>
+        
+                                                    </Grid>
+                                            </Grid>
                                     </Grid>
-                                    <div style = {{height: '100px'}}></div>
-                                    <p style = {textStyle}> For the past year, at Delineo,</p>
-                                    <p style = {textStyle}>I have been solving the problem of how to simulate the spread of COVID-19 in an environment,</p>
-                                    <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
+                                    <div style = {{marginTop: '50px'}}>
+                                        <p style = {textStyle}> For the past year, at Delineo,</p>
+                                        <p style = {textStyle}>I have been solving the problem of how to simulate the spread of COVID-19 in an environment,</p>
+                                        <p style = {textStyle}> in order to help future lawmakers to learn from this pandemic, and plan accordingly for the next!</p>
+                                    </div>
                                 </div>
                     </FadeIn>
                 </div>

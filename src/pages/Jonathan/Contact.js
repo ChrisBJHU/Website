@@ -35,8 +35,8 @@ const Contact = () => {
               Want to talk to me directly? Send me a email!
             </p>
             <p style={textStyle}>
-              My email is: <a href="mailto: cbakhit1@jh.edu" type="email" style={{ color: "lightblue" }}>
-                cbakhit1@jh.edu
+              My email is: <a href="mailto: jbakhit1@jh.edu" type="email" style={{ color: "lightblue" }}>
+                jbakhit1@jh.edu
               </a>
             </p>
             <p style={textStyle}>
@@ -44,6 +44,9 @@ const Contact = () => {
             </p>
             <p style={textStyle}>
               Computer Science & Applied Mathematics & Statistics Major
+            </p>
+            <p style={textStyle}>
+              Robotics & Computer Integrated Surgery Minor
             </p>
             </FadeIn>
           </div>      
