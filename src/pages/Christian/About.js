@@ -68,7 +68,7 @@ const About = () => {
 
     const listStyle = {
         listStyleImage: {arrow},
-        color: 'lightblue',
+        color: 'rgba(43, 43, 43, 0.8)',
         overflow: 'hidden',
         whitespace: 'nowrap',
 
@@ -82,7 +82,7 @@ const About = () => {
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',
         borderWidth: '5px',
-        borderColor: '#222629',
+        borderColor: 'rgba(43, 43, 43, 0.8)',
         height: '100%',
         display: 'grid',
     };

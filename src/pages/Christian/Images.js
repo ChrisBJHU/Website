@@ -22,16 +22,16 @@ const Images = () => {
                 <div style = {divSplit}>
                     <Links link= '#' img= {Line} />
                     <div style = {iconSplit}>
-                        <Icons link= '#' type = 'github' stroke = 'black'/> 
+                        <Icons link= 'https://github.com/ChrisBJHU' type = 'github' stroke = 'black'/> 
                     </div>
                     <div style = {iconSplit}>
-                        <Icons link= '#' type = 'twitter' stroke = 'black'/> 
+                        <Icons link= 'https://twitter.com/ChristianBakhit' type = 'twitter' stroke = 'black'/> 
                     </div>
                     <div style = {iconSplit}>
-                        <Icons link= '#' type = 'linkedin' stroke = 'black'/> 
+                        <Icons link= 'https://www.linkedin.com/in/christianbakhit/' type = 'linkedin' stroke = 'black'/> 
                     </div>
                     <div style = {iconSplit}>
-                        <Icons link= '#' type = 'instagram' stroke = 'black'/> 
+                        <Icons link= 'https://www.instagram.com/chrisbakhit/' type = 'instagram' stroke = 'black'/> 
                     </div>
                     <div style = {iconSplit}>
                         <Links link= '#' img= {Line} />

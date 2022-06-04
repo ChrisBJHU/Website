@@ -32,8 +32,8 @@ class Header extends Component {
     };
     
     const color = {
-      backgroundColor: '#222629',
-      borderBottom:"2px solid #66FCF1",    
+      backgroundColor: 'white',
+      borderBottom:"2px solid black",    
       display: 'flex',
   };
 

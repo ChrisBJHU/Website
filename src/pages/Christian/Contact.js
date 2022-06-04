@@ -3,11 +3,12 @@ import ContactForm from '../../components/Christian/contactForm.js';
 import  useIntersection from '../../customHooks/useIntersection';
 import {useRef} from 'react';
 import FadeIn from 'react-fade-in';
+import {isMobile} from 'react-device-detect';
 
 const Contact = () => {
   
   const thisRef = useRef();
-  const inViewport = useIntersection(thisRef, '-10px');
+  const inViewport = useIntersection(thisRef, !isMobile ? '-300px' : '0px');
 	const contactRef = useNav('Contact');
 
     const background = {

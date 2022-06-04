@@ -104,7 +104,7 @@ class Header extends Component {
             {navLinks.map(({ navLinkId, scrollToId }, idx) => (
               <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
             ))}
-            <a href="/resumeChristian" target="_self" rel="noreferrer" style = {styleSheet}>
+            <a href="/resumeChristian" target="_blank" rel="noreferrer" style = {styleSheet}>
               <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
               style = {this.state.hovered ? buttonSetHovered: resumeButton}> Resume
               </Button>

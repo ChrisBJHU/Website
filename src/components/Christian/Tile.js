@@ -10,7 +10,9 @@ class Tile extends Component {
           title: props.title,
           text: props.text,
           hovered: false,
+          clickable: props.clickable ? false : true,
         };
+        console.log(this.state.clickable);
       }
 
 
@@ -20,7 +22,7 @@ class Tile extends Component {
 
     render() {
       const boxStyle = {
-        backgroundColor: this.state.hovered ? 'rgba(52, 52, 52, 0.6)': 'rgba(52, 52, 52, 0.4)',
+        backgroundColor: this.state.hovered ? 'rgba(52, 52, 52, 0.4)': 'rgba(52, 52, 52, 0.6)',
         height: '300px',
         width: '300px',
         borderRadius: "10px",
@@ -30,15 +32,15 @@ class Tile extends Component {
         marginLeft: 'auto',
         marginBottom: '10px',
         paddingBottom: '100px',
-        cursor: "pointer",
+        cursor: this.state.clickable ? "pointer" : "default",
       };
       
       const titleStyle = {
-        fontSize: '40px',
+        fontSize: '35px',
         fontFamily: 'Helvetica',
         textAlign: "center",
         color: "#66FCF1",
-        marginTop: '1px',
+        marginTop: '-30px',
         backgroundColor: 'transparent',
         textDecoration: 'none',
 
@@ -70,7 +72,8 @@ class Tile extends Component {
       };
 
     return (
-      <a href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
+      (this.state.clickable ? 
+      <a  href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
         target = "_blank" rel = "noreferrer">
         <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
           <div style = {boxStyle}>
@@ -80,7 +83,12 @@ class Tile extends Component {
           <p style = {textStyle}> {this.state.text}</p>
           </div>
         </div>
-      </a>
+      </a> : 
+       <div style = {boxStyle}>
+          <img src= {this.state.img} alt = "" style = {imageStyle}/>
+          <p style = {titleStyle}> {this.state.title}</p>
+          <p style = {textStyle}> {this.state.text}</p>
+          </div>)
     );
 
   }
