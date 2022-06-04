@@ -20,7 +20,7 @@ class Header extends Component {
   };
 
   navigateToMain() {
-    window.location.href = "/";
+    window.location.href = "/homeChristian";
   }
 
   render() {
