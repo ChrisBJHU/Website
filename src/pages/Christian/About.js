@@ -24,7 +24,7 @@ const About = () => {
     };
 
     const background = {
-        backgroundColor: '#223882',
+        backgroundColor: '',
         height: '100%',
         overflow: 'hidden',
         paddingBottom: '250px',

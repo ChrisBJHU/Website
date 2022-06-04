@@ -1,7 +1,7 @@
 :root {
     --container-bg-color: #333;
-    --left-bg-color: rgba(223, 39, 39, 0.7);
-    --left-button-hover-color: rgba(161, 11, 11, 0.3);
+    --left-bg-color: rgba(207, 194, 194, 0.3);
+    --left-button-hover-color: rgba(207, 194, 194, 0.3);
     --right-bg-color: rgba(43, 43, 43, 0.8);
     --right-button-hover-color: rgba(92, 92, 92, 0.3);
     --hover-width: 75%;
@@ -72,7 +72,7 @@
   
   .split.left {
     left:0;
-    background: url('../src/assets/Jonathan/Background.jpg') center center no-repeat;
+    background: url('../src/assets/Christian/ChristianSplit.jpg') center center no-repeat;
     background-size: cover;
   }
   

@@ -9,7 +9,7 @@ const ResumeViewer = () => {
       ];
   
       const resumeBackground = {
-        backgroundColor: '#223882',
+        backgroundColor: '',
         padding: '10px',
         paddingBottom: '10px',
       };
@@ -20,7 +20,7 @@ const ResumeViewer = () => {
         align:'center',
         borderRadius: '10px',
         marginBottom: '10px',
-        width: '100%',
+        width: '80%',
         border: '10px solid #222629',
       };
 

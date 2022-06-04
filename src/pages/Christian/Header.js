@@ -38,14 +38,14 @@ class Header extends Component {
     };
 
     const color = {
-      backgroundColor: '#222629',
-      borderBottom:"2px solid #66FCF1",    
+      backgroundColor: '',
+      borderBottom:"2px solid black",    
       height: "10%",
       display: 'flex',
   };
 
   const resumeButton = {
-    backgroundColor: "#f4511e",
+    backgroundColor: "#66FCF1",
     border: "none",
     color: 'white',
     padding: '0px 1.6rem',
@@ -64,7 +64,7 @@ class Header extends Component {
   };
 
   const buttonSetHovered = {
-    backgroundColor: "#f4511e",
+    backgroundColor: "#66FCF1",
     border: "none",
     color: 'white',
     padding: '0px 1.6rem',

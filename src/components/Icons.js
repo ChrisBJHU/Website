@@ -7,6 +7,7 @@ class Icons extends Component {
       hovered: false,
       type: props.type,
       link: props.link,
+      stroke: props.strokeColor,
     };
   }
 
@@ -20,7 +21,7 @@ class Icons extends Component {
       position: 'fixed',
       float: 'left',
       marginLeft: '10px',
-      stroke: this.state.hovered ? 'blue' : 'white',
+      stroke: this.state.hovered ? 'light blue' : 'white',
     };
 
     const Twitter = () => {
@@ -29,7 +30,7 @@ class Icons extends Component {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            stroke={this.stroke}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -45,7 +46,7 @@ class Icons extends Component {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            stroke={this.stroke}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -64,7 +65,7 @@ class Icons extends Component {
       role="img"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="white"
+      stroke={this.stroke}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -83,7 +84,7 @@ class Icons extends Component {
       role="img"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="white"
+      stroke={this.stroke}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
