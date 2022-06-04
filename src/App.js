@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Home from "./pages/Christian/Main";
+import Home2 from "./pages/Jonathan/Main";
 import Split from "./pages/Split";
 import ResumeC from "./pages/Christian/ResumeViewer";
 import './App.css';
@@ -17,7 +18,7 @@ class App extends Component {
           <div>
               <Route exact path="/" component={Split} />
               <Route exact path="/homeChristian" component={Home} />
-              <Route exact path="/homeJonathan" component={Home} />
+              <Route exact path="/homeJonathan" component={Home2} />
               <Route exact path="/resumeChristian" component={ResumeC} />
           </div>
     );
