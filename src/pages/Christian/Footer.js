@@ -9,7 +9,7 @@ const Footer = () => {
 
 const textStyle = {
   color: 'black',
-  marginTop: '50px',
+  marginTop: '',
 };
 
   
@@ -20,7 +20,7 @@ const textStyle = {
       <a href="https://github.com/ChrisBJHU/Website" target="_blank" rel="noreferrer"  style = {{ textDecoration: 'none',}}> Christian Bakhit & Jonathan Bakhit
         </a> 
       </p>
-      <p style = {{color: 'white'}}> Version 1.0.0</p>
+      <p style = {{color: 'black'}}> Version 1.0.0</p>
     </div>  
   );
 };

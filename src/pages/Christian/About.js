@@ -137,18 +137,23 @@ const About = () => {
                                             <li style = {listStyle}>C/C++</li>
                                             <li style = {listStyle}>C#</li>
                                             <li style = {listStyle}>x86 - 64 Assembly</li>
+                                            <li style = {listStyle}>React</li>
+                                            <li style = {listStyle}>Flutter</li>
+                                            <li style = {listStyle}>Unity</li>
+                                            <li style = {listStyle}>Android Studio</li>
                                         </Grid>
                                         <Grid item xs={!isMobile ? 4 : 6 }>
                                             <p style = {{color: '#66FCF1'}}>My hobbies include:</p>
+                                            <li style = {listStyle}>Coding Competitions</li>
                                             <li style = {listStyle}>Archery</li>
                                             <li style = {listStyle}>Tennis</li>
                                             <li style = {listStyle}>Baking</li>
                                             <li style = {listStyle}>Hiking</li>
                                             <li style = {listStyle}>Guitar</li>
-                                            <li style = {listStyle}>Coding Competitions</li>
+                                            <li style = {listStyle}>Astronomy</li>
                                         </Grid>
                                     </Grid>
-                                    <div style = {{height: '100px'}}></div>
+                                    <div style = {{height: '25px'}}/>
                                     <p style = {textStyle}>In my time at Hopkins, I have worked with industry leaders, served as a student teacher with the PILOT program, and worked on a variety of projects!</p>
                                 </div>
                     </FadeIn>

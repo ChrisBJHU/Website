@@ -23,7 +23,7 @@ const Projects = () => {
 
   const tileStyle = {
     opacity: inViewport ? 1 : 0,
-    padding: '8px',
+    padding: '0px 8px',
     borderRadius: '5px',
     border: '1px solid none #222629',
   };
