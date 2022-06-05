@@ -41,9 +41,6 @@ const About = () => {
     };
 
 
-    const legendStyle = {
-        
-    };
 
     const textBoxStyle = {
         position:'relative',
