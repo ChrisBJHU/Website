@@ -393,11 +393,57 @@ resume {
   }
 
 
+  .twelveJon h1 {
+    font-size:26px; 
+    font-weight:700;  
+    letter-spacing:1px; 
+    text-transform:uppercase;
+    width:160px; 
+    text-align:center; 
+    color: white;
+    margin:auto; 
+    white-space:nowrap; 
+    padding-bottom:13px;
+    position: sticky;
+    background-color: #223882;
+
+  }
+
+  .twelveJon h1:before {
+      background-color: darkred;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+
+  .twelveJon h1:after {
+      background-color: white;
+      content: '';
+      display: block;
+      position:absolute; 
+      right:0; 
+      bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 0.25em;
+  }
+
+
   .tileC {
     transition: transform 500ms;
   }
 
   .tileC:hover {
+    transform: translateY(-10px);
+  }
+
+  .tileJ {
+    transition: transform 500ms;
+  }
+
+  .tileJ:hover {
     transform: translateY(-10px);
   }
 

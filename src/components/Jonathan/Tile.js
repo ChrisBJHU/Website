@@ -29,7 +29,7 @@ class Tile extends Component {
         position: 'center',
         boxSizing: "border-box",
         marginLeft: 'auto',
-        marginBottom: '10px',
+        marginBottom: '15px',
         paddingBottom: '100px',
         cursor: this.state.clickable ? "pointer" : "default",
         borderColor: 'white',
@@ -72,25 +72,27 @@ class Tile extends Component {
         backgroundColor: 'transparent',
       };
 
-    return (
-      (this.state.clickable ? 
-      <a  href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
-        target = "_blank" rel = "noreferrer">
-        <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
-          <div style = {boxStyle}>
-          <img src= {this.state.img} alt = "" style = {imageStyle}/>
-            <img src= {redirect} alt = "" style = {iconStyle}/>
-          <p style = {titleStyle}> {this.state.title}</p>
-          <p style = {textStyle}> {this.state.text}</p>
+      return (
+        (this.state.clickable ? 
+        <a  href = {this.state.link} className = {'mr-auto text-center'} style = {{textDecoration: 'none'}} 
+          target = "_blank" rel = "noreferrer">
+          <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
+            <div className="tileJ" style = {boxStyle}>
+            <img src= {this.state.img} alt = "" style = {imageStyle}/>
+              <img src= {redirect} alt = "" style = {iconStyle}/>
+            <p style = {titleStyle}> {this.state.title}</p>
+            <p style = {textStyle}> {this.state.text}</p>
+            </div>
           </div>
-        </div>
-      </a> : 
-       <div style = {boxStyle}>
-          <img src= {this.state.img} alt = "" style = {imageStyle}/>
-          <p style = {titleStyle}> {this.state.title}</p>
-          <p style = {textStyle}> {this.state.text}</p>
-          </div>)
-    );
+        </a> : 
+        <div onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}>
+         <div style = {boxStyle} className = "tileJ">
+            <img src= {this.state.img} alt = "" style = {imageStyle}/>
+            <p style = {titleStyle}> {this.state.title}</p>
+            <p style = {textStyle}> {this.state.text}</p>
+            </div>
+            </div>)
+      );
 
   }
 } export default Tile;

@@ -106,8 +106,8 @@ const About = () => {
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  
-                            <div className="twelve">
-                                <h1>About Me</h1>
+                            <div className="twelveJon" style = {{paddingTop: '2%'}}>
+                                <h1>About Me</h1> 
                             </div>                                                      
                             </div>               
                             <div style = {isMobile ? picStyleMobile : picStyle}>

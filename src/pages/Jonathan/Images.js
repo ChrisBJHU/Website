@@ -5,31 +5,38 @@ import FadeIn from 'react-fade-in';
 
 const Images = () => {
     const divSplit = {
-        display: "flex",
-        margin: '50px 0px',
+        zIndex: '10',
+        top: '45%',
+        padding: '1.2em 0',
+        color: 'black',
+        backgroundColor: 'white',
+        position: 'absolute',
     };
+
+    const iconSplit = {
+        padding: '50px 0px 0px 0px',
+    };
+
     return(
-        <div>
             <FadeIn delay= {50} transitionDuration={10}>
                 <div style = {divSplit}>
                     <Links link= '#' img= {Line} />
+                    <div style = {iconSplit}>
+                        <Icons link= 'https://github.com/ChrisBJHU' type = 'github' stroke = 'black'/> 
+                    </div>
+                    <div style = {iconSplit}>
+                        <Icons link= 'https://twitter.com/ChristianBakhit' type = 'twitter' stroke = 'black'/> 
+                    </div>
+                    <div style = {iconSplit}>
+                        <Icons link= 'https://www.linkedin.com/in/christianbakhit/' type = 'linkedin' stroke = 'black'/> 
+                    </div>
+                    <div style = {iconSplit}>
+                        <Icons link= 'https://www.instagram.com/chrisbakhit/' type = 'instagram' stroke = 'black'/> 
+                    </div>
+                    <div style = {iconSplit}>
+                        <Links link= '#' img= {Line} />
+                    </div>
                 </div>
-                <div style = {divSplit}>
-                    <Icons link= '#' type = 'github' />
-                </div>
-                <div style = {divSplit}>
-                    <Icons link= '#' type = 'twitter' />
-                </div>
-                <div style = {divSplit}>
-                    <Icons link= '#' type = 'linkedin' />
-                </div>
-                <div style = {divSplit}>
-                    <Icons link= '#' type = 'instagram' />
-                </div>
-                <div style = {divSplit}>
-                    <Links link= '#' img= {Line}  />
-                </div>
-            </FadeIn>
-        </div>
+                </FadeIn>
     );
 };  export default Images;
