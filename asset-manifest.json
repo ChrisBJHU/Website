@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Website/static/css/main.cec30345.css",
-    "main.js": "/Website/static/js/main.cf8175d4.js",
-    "static/media/ChristianBakhitSecond.png": "/Website/static/media/ChristianBakhitSecond.5c981a1d61477b978bf8.png",
-    "static/media/ChristianBakhitMain.jpg": "/Website/static/media/ChristianBakhitMain.1541efac99342950ff78.jpg",
-    "static/media/ChristianBakhitThirdPres.jpg": "/Website/static/media/ChristianBakhitThirdPres.8cd30193f7e3bc54fcb9.jpg",
-    "static/media/JonathanPicture.png": "/Website/static/media/JonathanPicture.5e62a57ab70351608e29.png",
-    "static/media/Trees.jpg": "/Website/static/media/Trees.717be6c6c03360a79f97.jpg",
-    "static/media/ChristianSplit.jpg": "/Website/static/media/ChristianSplit.337c73c2a3c97e002435.jpg",
-    "static/media/Bakhit_Jonathan_Resume.pdf": "/Website/static/media/Bakhit_Jonathan_Resume.c09124e1d1d074b7a2fb.pdf",
-    "static/media/Christian Bakhit Resume 2022.pdf": "/Website/static/media/Christian Bakhit Resume 2022.aa6a5564c2fceaa2044c.pdf",
-    "static/media/Icons.png": "/Website/static/media/Icons.29d95cf3cf517cba86da.png",
-    "static/media/arrowClipart.png": "/Website/static/media/arrowClipart.8979fb474a8c3994a514.png",
-    "static/media/logo.png": "/Website/static/media/logo.d1415b153bddf6ec76e5.png",
-    "index.html": "/Website/index.html",
-    "main.cec30345.css.map": "/Website/static/css/main.cec30345.css.map",
-    "main.cf8175d4.js.map": "/Website/static/js/main.cf8175d4.js.map"
+    "main.css": "/static/css/main.a743d0df.css",
+    "main.js": "/static/js/main.8579da82.js",
+    "static/media/ChristianBakhitSecond.png": "/static/media/ChristianBakhitSecond.5c981a1d61477b978bf8.png",
+    "static/media/ChristianBakhitMain.jpg": "/static/media/ChristianBakhitMain.1541efac99342950ff78.jpg",
+    "static/media/ChristianBakhitThirdPres.jpg": "/static/media/ChristianBakhitThirdPres.8cd30193f7e3bc54fcb9.jpg",
+    "static/media/JonathanPicture.png": "/static/media/JonathanPicture.5e62a57ab70351608e29.png",
+    "static/media/Trees.jpg": "/static/media/Trees.717be6c6c03360a79f97.jpg",
+    "static/media/ChristianSplit.jpg": "/static/media/ChristianSplit.337c73c2a3c97e002435.jpg",
+    "static/media/Bakhit_Jonathan_Resume.pdf": "/static/media/Bakhit_Jonathan_Resume.c09124e1d1d074b7a2fb.pdf",
+    "static/media/Christian Bakhit Resume 2022.pdf": "/static/media/Christian Bakhit Resume 2022.aa6a5564c2fceaa2044c.pdf",
+    "static/media/Icons.png": "/static/media/Icons.29d95cf3cf517cba86da.png",
+    "static/media/arrowClipart.png": "/static/media/arrowClipart.8979fb474a8c3994a514.png",
+    "static/media/logo.png": "/static/media/logo.d1415b153bddf6ec76e5.png",
+    "index.html": "/index.html",
+    "main.a743d0df.css.map": "/static/css/main.a743d0df.css.map",
+    "main.8579da82.js.map": "/static/js/main.8579da82.js.map"
   },
   "entrypoints": [
-    "static/css/main.cec30345.css",
-    "static/js/main.cf8175d4.js"
+    "static/css/main.a743d0df.css",
+    "static/js/main.8579da82.js"
   ]
 }
