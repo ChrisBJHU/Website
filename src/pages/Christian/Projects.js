@@ -18,7 +18,7 @@ const Projects = () => {
     justifyContent:'center', 
     alignItems:'center',
     transition: 'opacity 1s ease-in-out',
-
+    backgroundColor: 'white',
   };
 
   const tileStyle = {
@@ -58,7 +58,7 @@ const Projects = () => {
     <section ref={projectRef} id='projectContainer'>
         <div ref = {Projref} >
         <FadeIn delay= {1000} transitionDuration={1000} visible = {inViewport}>
-          <div className="twelveChris" style = {{paddingBottom: '5%', paddingTop: '5%'}}>
+          <div className="twelveChris" style = {{paddingBottom: '5%', paddingTop: '5%', backgroundColor: 'white'}}>
               <h1>Projects</h1>
           </div>           
           {projects()}
