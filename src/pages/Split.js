@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Split extends Component {
 
@@ -39,11 +40,11 @@ class Split extends Component {
         <div class="container" style = {this.state} >
           <div class="split left">
             <h1>Christian Bakhit</h1>
-              <a href="homeChristian"class="button">Learn About Me!</a>
+              <Link to="/homeChristian"class="button">Learn About Me!</Link>
           </div>
         <div class="split right">
           <h1>Jonathan Bakhit</h1>
-            <a href="homeJonathan" class="button">Learn About Me!</a>
+          <Link to="/homeJonathan"class="button">Learn About Me!</Link>
         </div>
       </div>
     );

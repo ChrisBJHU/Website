@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import Logo from "../../assets/logo.png";
-
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
 
@@ -19,9 +19,6 @@ class Header extends Component {
     this.setState({ hovered: false });
   };
 
-  navigateToMain() {
-    window.location.href = "/homeChristian";
-  }
 
   render() {
 
@@ -40,9 +37,9 @@ class Header extends Component {
 
 
       return (
-        <div className="header" style = {color}>
-          <input type = "image" src={Logo} alt = "" style={logoSet} onClick = {this.navigateToMain} />
-      </div>  
+        <Link to={'/homeChristian'} className= "header" style = {color}>
+          <input type = "image" src={Logo} alt = "" style={logoSet} />
+        </Link>
     );
   };
 } export default Header;

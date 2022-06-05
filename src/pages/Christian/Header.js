@@ -4,6 +4,7 @@ import NavLink from '../../nav/NavLinksC';
 import { navLinks } from '../../nav/navLinks';
 import Logo from "../../assets/logo.png";
 import {isMobile} from 'react-device-detect';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
 
@@ -22,14 +23,12 @@ class Header extends Component {
     this.setState({ hovered: false });
   };
 
-  navigateToMain() {
-    window.location.href = "/";
-  }
-
   render() {
 
     const logoSet = {
-      marginLeft: '5%'
+      marginLeft: '5%',
+      height: '100%',
+
     };
     
     const styleSheet = {
@@ -91,7 +90,9 @@ class Header extends Component {
       return (null);
     } else {
       return (
-        <input  type = "image" src={Logo} alt = "" style={logoSet} onClick = {this.navigateToMain} />
+        <Link to = "/">
+          <input  type = "image" src={Logo} style = {logoSet} alt = "" />
+        </Link>
       );
     }
   };
@@ -104,11 +105,11 @@ class Header extends Component {
             {navLinks.map(({ navLinkId, scrollToId }, idx) => (
               <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
             ))}
-            <a href="/resumeChristian" target="_blank" rel="noreferrer" style = {styleSheet}>
+            <Link to="/resumeChristian" target="_blank" rel="noreferrer" style = {styleSheet}>
               <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
               style = {this.state.hovered ? buttonSetHovered: resumeButton}> Resume
               </Button>
-            </a>
+            </Link>
           </nav>
         </div>
     </div>  

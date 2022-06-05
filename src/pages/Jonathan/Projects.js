@@ -1,6 +1,5 @@
 import FadeIn from 'react-fade-in';
 import React, {useRef} from 'react';
-import logo from'../../assets/Jonathan/IconsBlack.png';
 import Tile from '../../components/Jonathan/Tile';
 import Grid from '@mui/material/Grid';
 import { useNav } from '../../customHooks/useNav';
