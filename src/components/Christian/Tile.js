@@ -39,7 +39,7 @@ class Tile extends Component {
         fontSize: '35px',
         fontFamily: 'Helvetica',
         textAlign: "center",
-        color: "#66FCF1",
+        color: "#6BD0FF",
         marginTop: '-30px',
         backgroundColor: 'transparent',
         textDecoration: 'none',
@@ -49,7 +49,7 @@ class Tile extends Component {
       const textStyle = { 
         fontSize: '15px',
         fontFamily: 'Helvetica',
-        color: "#66FCF1",
+        color: "#6BD0FF",
         marginLeft: '5px',
         marginRight: '5px',
         textAlign: "center",

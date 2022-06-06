@@ -21,7 +21,7 @@ const Contact = () => {
 
   const textStyle = {
       fontSize: "100%",
-      color: 'light blue',
+      color: 'black',
       position:'relative',
       textAlign: 'center',
   }
@@ -36,7 +36,7 @@ const Contact = () => {
               Want to talk to me directly? Send me a email!
             </p>
             <p style={textStyle}>
-              My email is: <a href="mailto: cbakhit1@jh.edu" type="email" style={{ color: "#66FCF1" }}>
+              My email is: <a href="mailto: cbakhit1@jh.edu" type="email" style={{ color: "#6BD0FF" }}>
                 cbakhit1@jh.edu
               </a>
             </p>

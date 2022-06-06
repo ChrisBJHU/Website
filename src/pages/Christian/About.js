@@ -172,7 +172,7 @@ const About = () => {
                                     <p style = {textStyle}>We wish to revolutionize the epidemology field, and help lead policy for the next pandemic!</p>
                                     <Grid container spacing={10}>
                                         <Grid item xs={!isMobile ? 5 : 7 }>
-                                            <p style = {{color: '#66FCF1'}}>Some technologies I have experience with are:</p>
+                                            <p style = {{color: '#6BD0FF'}}>Some technologies I have experience with are:</p>
                                             <li style = {listStyle}>Java</li>
                                             <li style = {listStyle}>Python</li>
                                             <li style = {listStyle}>JavaScript</li>
@@ -185,7 +185,7 @@ const About = () => {
                                             <li style = {listStyle}>Android Studio</li>
                                         </Grid>
                                         <Grid item xs={!isMobile ? 4 : 6 }>
-                                            <p style = {{color: '#66FCF1'}}>My hobbies include:</p>
+                                            <p style = {{color: '#6BD0FF'}}>My hobbies include:</p>
                                             <li style = {listStyle}>Coding Competitions</li>
                                             <li style = {listStyle}>Archery</li>
                                             <li style = {listStyle}>Tennis</li>

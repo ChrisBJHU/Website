@@ -7,6 +7,7 @@ class Split extends Component {
   state = {
     height: window.innerHeight,
     width: window.innerWidth,
+    backgroundColor: 'transparent',
   };
 
   componentDidMount () {

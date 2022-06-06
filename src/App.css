@@ -420,7 +420,7 @@ resume {
 
   }
   .twelveChris h1:before {
-      background-color: #66FCF1;
+      background-color: #6BD0FF;
       content: '';
       display: block;
       height: 3px;
@@ -429,7 +429,7 @@ resume {
   }
 
   .twelveChris h1:after {
-      background-color: #66FCF1;
+      background-color: #6BD0FF;
       content: '';
       display: block;
     position:absolute; right:0; bottom:0;
