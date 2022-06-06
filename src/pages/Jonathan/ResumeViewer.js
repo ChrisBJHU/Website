@@ -2,6 +2,8 @@ import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import Resume from "../../assets/Jonathan/Bakhit_Jonathan_Resume.pdf";
 import Header from "../../pages/Jonathan/ResumeHeader";
 import Footer from "../../pages/Jonathan/Footer";
+import {isMobile} from "react-device-detect";
+
 
 const ResumeViewer = () => {
     const docs = [
@@ -20,7 +22,7 @@ const ResumeViewer = () => {
         align:'center',
         borderRadius: '10px',
         marginBottom: '10px',
-        width: '80%',
+        width: isMobile ? '100%' : '80%',
         border: '10px solid #222629',
       };
 

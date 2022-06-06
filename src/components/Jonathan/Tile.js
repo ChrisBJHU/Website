@@ -12,6 +12,7 @@ class Tile extends Component {
           hovered: false,
           clickable: props.clickable ? false : true,
           titleSize: props.titleSize !== undefined ? props.titleSize : '35px',
+          fontSize: props.fontSize !== undefined ? props.fontSize : '15px',
         };
       }
 
@@ -40,16 +41,16 @@ class Tile extends Component {
         fontSize: this.state.titleSize,
         fontFamily: 'Helvetica',
         textAlign: "center",
-        color: "#66FCF1",
+        color: "lightblue",
         marginTop: '-30px',
         backgroundColor: 'transparent',
         textDecoration: 'none',
       };
 
       const textStyle = { 
-        fontSize: '15px',
+        fontSize: this.state.fontSize,
         fontFamily: 'Helvetica',
-        color: "#66FCF1",
+        color: "lightblue",
         marginLeft: '5px',
         marginRight: '5px',
         textAlign: "center",

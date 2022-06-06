@@ -24,6 +24,7 @@ const ContactForm = () => {
     resize: "none"
   };
 
+  const redirect = "https://bakhit.me/#/homeJonathan"
   const [status] = useState("Submit");
 
     return (
@@ -45,8 +46,8 @@ const ContactForm = () => {
         <div style = {buttonStyle}>
           <button type="submit"> {status}</button>
         </div>
-        <input type="hidden" name="_subject" value="To Christian Bakhit"></input>
-        <input type="hidden" name="_next" value="home.html"/>
+        <input type="hidden" name="_subject" value="To Jonathan Bakhit"></input>
+        <input type="hidden" name="_next" value= {redirect}/>
         <input type="hidden" name="_captcha" value="false"/>
         <input type="hidden" name="_honeypot" value=""/>
       </form>
