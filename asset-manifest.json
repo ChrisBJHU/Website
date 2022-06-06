@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7283015f.css",
-    "main.js": "/static/js/main.c41b1893.js",
+    "main.js": "/static/js/main.fc035844.js",
     "static/media/ChristianBakhitSecond.png": "/static/media/ChristianBakhitSecond.5c981a1d61477b978bf8.png",
     "static/media/ChristianBakhitMain.jpg": "/static/media/ChristianBakhitMain.1541efac99342950ff78.jpg",
     "static/media/ChristianBakhitThirdPres.jpg": "/static/media/ChristianBakhitThirdPres.8cd30193f7e3bc54fcb9.jpg",
@@ -15,10 +15,10 @@
     "static/media/logo.png": "/static/media/logo.d1415b153bddf6ec76e5.png",
     "index.html": "/index.html",
     "main.7283015f.css.map": "/static/css/main.7283015f.css.map",
-    "main.c41b1893.js.map": "/static/js/main.c41b1893.js.map"
+    "main.fc035844.js.map": "/static/js/main.fc035844.js.map"
   },
   "entrypoints": [
     "static/css/main.7283015f.css",
-    "static/js/main.c41b1893.js"
+    "static/js/main.fc035844.js"
   ]
 }
