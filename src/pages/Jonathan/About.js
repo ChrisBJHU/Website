@@ -18,8 +18,8 @@ const About = () => {
 
     const picStyle = {
         position:'relative',
-        width: "25%",
-        top: '100px',
+        width: isMobile ? "25%" : "500px",
+        top: '175px',
     };
 
     const background = {
@@ -53,7 +53,7 @@ const About = () => {
         backgroundColor: '#344a94',
         opacity: '1',
         padding: '1rem',
-        margin: '70px 100px',
+        margin: '200px',
         float: 'left',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
