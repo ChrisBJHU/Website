@@ -15,7 +15,6 @@ const About = () => {
 
     const viewRef = useRef();
     const inViewport = useIntersection(viewRef, '0px');
-    let hovered = false;
 
     const picStyle = {
         position:'relative',
@@ -118,7 +117,6 @@ const About = () => {
         textTransform: 'uppercase',
         backgroundColor: 'transparent',
         color: '#fff',
-        display: 'block',
         cursor: 'pointer',
         marginTop: '3%',
         display: 'inline-block',

@@ -2,6 +2,7 @@ import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import Resume from "../../assets/Christian/Christian Bakhit Resume 2022.pdf";
 import Header from "../../pages/Christian/ResumeHeader";
 import Footer from "../../pages/Christian/Footer";
+import {isMobile} from "react-device-detect";
 
 const ResumeViewer = () => {
     const docs = [
@@ -20,7 +21,7 @@ const ResumeViewer = () => {
         align:'center',
         borderRadius: '10px',
         marginBottom: '10px',
-        width: '80%',
+        width: isMobile ? '100%' : '80%',
         border: '10px solid rgba(43, 43, 43, 0.8)',
       };
 

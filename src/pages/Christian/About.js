@@ -21,6 +21,7 @@ const About = () => {
     const picStyle = {
         position:'relative',
         width: "25%",
+        top: '100px',
     };
 
     const background = {
@@ -60,6 +61,7 @@ const About = () => {
         borderColor: 'rgba(43, 43, 43, 0.8)',
         width: '50%',
         height: '100%',
+        blur: '20px',
     };
 
     const textStyle = {
@@ -85,6 +87,8 @@ const About = () => {
         borderWidth: '5px',
         borderColor: 'rgba(43, 43, 43, 0.8)',
         height: '100%',
+        top: '100px',
+        blur: '20px',
         display: 'grid',
     };
 
@@ -108,7 +112,6 @@ const About = () => {
         textTransform: 'uppercase',
         backgroundColor: 'transparent',
         color: 'black',
-        display: 'block',
         cursor: 'pointer',
         marginTop: '3%',
         display: 'inline-block',
@@ -118,15 +121,24 @@ const About = () => {
     };
 
 
-    const aboutRef = useNav('About');
-        return (
-            <section ref={aboutRef} id='aboutContainer'>
-                <Images/>
+    const returnHomeButton = () => {
+        if(isMobile){
+            return (
                 <div style = {background}>
                     <Link to="/">
                         <button style = {buttonHomeStyle}> Return to Home </button>
                     </Link>
                 </div> 
+            );
+        }
+    };
+
+
+    const aboutRef = useNav('About');
+        return (
+            <section ref={aboutRef} id='aboutContainer'>
+                <Images/>
+                {returnHomeButton()}
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  
