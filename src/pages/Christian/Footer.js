@@ -3,8 +3,9 @@ const Footer = () => {
   const background = {
     backgroundColor: 'white',
     borderTop:"2px solid black",    
-    height: "10%",
     textAlign: 'center',
+    paddingBottom: '10px',
+
 };
 
 const textStyle = {

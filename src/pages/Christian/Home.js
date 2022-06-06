@@ -11,6 +11,7 @@ class Home extends Component {
   state = {
     height: window.innerHeight,
     width: window.innerWidth,
+    backgroundColor: 'white',
   };
 
   componentDidMount () {
