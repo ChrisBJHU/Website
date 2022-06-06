@@ -54,7 +54,7 @@ const projects = () => {
       <Grid item style = {tileStyle} >
       <FadeIn delay= {1500} transitionDuration={500} visible = {inViewport}>
       <Tile title = "Traffic Light Simulator" text = "A traffic light simulator that was built with Python (pyGame and Keras Modeling) to simulate traffic light behavior and improve Traffic Simulations." clickable = 'false'/>
-      <Tile title = "Speech Recognition and Encryption" text = "Using Python and Google Cloud Services, I developed a Speech Recognition program that took input through a microphone or audio file and then which encrypted the message to read back to the user. It has both Encryption and Decryption Capabilties." />
+      <Tile title = "Speech Recognition and Encryption" titleSize = '30px' text = "Using Python and Google Cloud Services, I developed a Speech Recognition program that took input through a microphone or audio file and then which encrypted the message to read back to the user. It has both Encryption and Decryption Capabilties." clickable = 'false' />
       </FadeIn>
     </Grid>
   </Grid>

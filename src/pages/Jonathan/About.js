@@ -9,11 +9,13 @@ import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
 import useIntersection from '../../customHooks/useIntersection';
 import {isMobile} from 'react-device-detect';
+import {Link} from 'react-router-dom';
 
 const About = () => {
 
     const viewRef = useRef();
     const inViewport = useIntersection(viewRef, '0px');
+    let hovered = false;
 
     const picStyle = {
         position:'relative',
@@ -28,6 +30,12 @@ const About = () => {
         paddingBottom: '250px',
     }
 
+    const buttonBackground = {
+        backgroundColor: '#223882',
+        height: '100%',
+        overflow: 'hidden',
+    }
+
     const boxStyle = {
         marginLeft: "50px",
         borderStyle: "none",
@@ -39,7 +47,6 @@ const About = () => {
         position:'relative',
         verticalAlign: 'top',
     };
-
 
 
     const textBoxStyle = {
@@ -96,17 +103,47 @@ const About = () => {
     };
 
 
+    const buttonHomeStyle = {
+        marginBottom: '2%',
+        position: 'relative',
+        left: '50%',
+        height: '3rem',
+        width: '12rem',
+        textAlign: 'center',
+        border: '#fff solid 0.2rem',
+        fontSize: '1rem',
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        transform: 'translateX(-50%)',
+        textTransform: 'uppercase',
+        backgroundColor: 'transparent',
+        color: '#fff',
+        display: 'block',
+        cursor: 'pointer',
+        marginTop: '3%',
+        display: 'inline-block',
+        '&:hover': {
+            opacity: 0.5,
+          }
+    };
+
+
     const aboutRef = useNav('About');
         return (
             <section ref={aboutRef} id='aboutContainer'>
                 <Images/>
+                <div style = {buttonBackground}>
+                    <Link to="/">
+                        <button style = {buttonHomeStyle}> Return to Home </button>
+                    </Link>
+                </div> 
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  
-                            <div className="twelveJon" style = {{paddingTop: '2%'}}>
-                                <h1>About Me</h1> 
-                            </div>                                                      
-                            </div>               
+                        <div className="twelveJon" style = {{paddingTop: '2%'}}>
+                            <h1>About Me</h1> 
+                        </div>                                                      
+                    </div>               
                             <div style = {isMobile ? picStyleMobile : picStyle}>
                                 <div style={boxStyle}> 
                                     <Carousel autoPlay = {false} showThumbs = {false} showStatus = {false} showIndicators = {false} >

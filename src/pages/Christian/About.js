@@ -11,6 +11,7 @@ import arrow from '../../assets/arrowClipart.png';
 import { useNav } from '../../customHooks/useNav';
 import useIntersection from '../../customHooks/useIntersection';
 import {isMobile} from 'react-device-detect';
+import {Link} from 'react-router-dom';
 
 const About = () => {
 
@@ -92,11 +93,40 @@ const About = () => {
         width: "95%",
     };
 
+    const buttonHomeStyle = {
+        marginBottom: '2%',
+        position: 'relative',
+        left: '50%',
+        height: '3rem',
+        width: '12rem',
+        textAlign: 'center',
+        border: 'black solid 0.2rem',
+        fontSize: '1rem',
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        transform: 'translateX(-50%)',
+        textTransform: 'uppercase',
+        backgroundColor: 'transparent',
+        color: 'black',
+        display: 'block',
+        cursor: 'pointer',
+        marginTop: '3%',
+        display: 'inline-block',
+        '&:hover': {
+            opacity: 0.5,
+          }
+    };
+
 
     const aboutRef = useNav('About');
         return (
             <section ref={aboutRef} id='aboutContainer'>
                 <Images/>
+                <div style = {background}>
+                    <Link to="/">
+                        <button style = {buttonHomeStyle}> Return to Home </button>
+                    </Link>
+                </div> 
                 <div style = {background} ref = {viewRef}>
                     <FadeIn delay= {500} visible = {inViewport}>
                     <div style = {{opacity: inViewport ? 1 : 0}}>  

@@ -1,7 +1,7 @@
 import * as React from 'react';
 const Footer = () => {
   const background = {
-    backgroundColor: '',
+    backgroundColor: 'white',
     borderTop:"2px solid black",    
     height: "10%",
     textAlign: 'center',

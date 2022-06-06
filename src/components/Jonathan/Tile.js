@@ -11,6 +11,7 @@ class Tile extends Component {
           text: props.text,
           hovered: false,
           clickable: props.clickable ? false : true,
+          titleSize: props.titleSize !== undefined ? props.titleSize : '35px',
         };
       }
 
@@ -36,14 +37,13 @@ class Tile extends Component {
       };
       
       const titleStyle = {
-        fontSize: '35px',
+        fontSize: this.state.titleSize,
         fontFamily: 'Helvetica',
         textAlign: "center",
         color: "#66FCF1",
         marginTop: '-30px',
         backgroundColor: 'transparent',
         textDecoration: 'none',
-
       };
 
       const textStyle = { 

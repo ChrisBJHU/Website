@@ -27,6 +27,15 @@
     transform: translateX(-50%);
     white-space: nowrap;
   }
+
+  h5 {
+    font-size: 3rem;
+    color: #fff;
+    position: realtive;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
   
   .button {
     display: block;
@@ -95,10 +104,47 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: var(--right-bg-color);
   }
   
   .split.left, .split.right, .split.right:before, .split.left:before {
+    transition: var(--speed) all ease-in-out;
+  }
+
+  .splitMobile {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  
+  .splitMobile.left {
+    left:0;
+    background: url('../src/assets/Christian/ChristianSplit.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  
+  .splitMobile.left:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--left-bg-color);
+  }
+  
+  .splitMobile.right {
+    bottom: 0;
+    background: url('../src/assets/Jonathan/Trees.jpg') center center no-repeat;    
+    background-size: cover;
+  }
+  
+  .splitMobile.right:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .splitMobile.left, .splitMobile.right, .splitMobile.right:before, .splitMobile.left:before {
     transition: var(--speed) all ease-in-out;
   }
   
