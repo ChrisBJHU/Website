@@ -57,7 +57,7 @@ const Projects = () => {
   return (
     <section ref={projectRef} id='projectContainer' style = {{backgroundColor:'white'}}>
         <div ref = {Projref} >
-        <FadeIn delay= {1000} transitionDuration={1000} visible = {inViewport}>
+        <FadeIn delay= {500} transitionDuration={1000} visible = {inViewport}>
           <div className="twelveChris" style = {{paddingBottom: '5%', paddingTop: '5%', backgroundColor: 'white'}}>
               <h1>Projects</h1>
           </div>           
