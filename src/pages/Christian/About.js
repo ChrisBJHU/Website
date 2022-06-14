@@ -22,6 +22,7 @@ const About = () => {
         position:'relative',
         width: isMobile ? "25%" : "500px",
         top: '175px',
+        float: 'left',
     };
 
     const background = {
@@ -38,7 +39,6 @@ const About = () => {
         backgroundColor: 'rgba(43, 43, 43, 0.8)',
         padding: "8px 8px",
         borderRadius: "10px",
-        float: 'left',
         position:'relative',
         verticalAlign: 'top',
     };
@@ -50,10 +50,9 @@ const About = () => {
     const textBoxStyle = {
         position:'relative',
         backgroundColor: 'transparent',
-        opacity: '1',
         padding: '1rem',
-        margin: '200px',
-        float: 'left',
+        marginRight: '5%',
+        float: 'right',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',
@@ -62,6 +61,7 @@ const About = () => {
         width: '50%',
         height: '100%',
         blur: '20px',
+        top: '175px',
     };
 
     const textStyle = {
@@ -81,6 +81,7 @@ const About = () => {
         position:'relative',
         backgroundColor: 'white',
         padding: '1rem',
+        marginRight: '5%',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',

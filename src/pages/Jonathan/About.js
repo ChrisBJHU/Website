@@ -18,8 +18,9 @@ const About = () => {
 
     const picStyle = {
         position:'relative',
-        width: isMobile ? "25%" : "500px",
+        width: isMobile ? "25%" : "25%",
         top: '175px',
+        float: 'left',
     };
 
     const background = {
@@ -42,7 +43,6 @@ const About = () => {
         backgroundColor: '#222629',
         padding: "8px 8px",
         borderRadius: "10px",
-        float: 'left',
         position:'relative',
         verticalAlign: 'top',
     };
@@ -51,18 +51,18 @@ const About = () => {
     const textBoxStyle = {
         position:'relative',
         backgroundColor: '#344a94',
-        opacity: '1',
         padding: '1rem',
-        margin: '200px',
-        float: 'left',
+        marginRight: '5%',
+        float: 'right',
         borderTopLeftRadius: '30px',
         borderBottomRightRadius: '30px',
         borderStyle: 'dotted solid',
         borderWidth: '5px',
         borderColor: 'lightblue',
-        width: '50%',
+        width: '60%',
         height: '100%',
         blur: '20px',
+        top: '175px',
     };
 
     const textStyle = {
