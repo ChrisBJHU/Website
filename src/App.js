@@ -4,14 +4,11 @@ import Home2 from "./pages/Jonathan/Main";
 import Split from "./pages/Split";
 import ResumeC from "./pages/Christian/ResumeViewer";
 import ResumeJ from "./pages/Jonathan/ResumeViewer";
-import './App.css';
+import "./App.css";
 
 import { Route, HashRouter } from "react-router-dom";
 
-
-
 class App extends Component {
-
   render() {
     return (
       <HashRouter>
@@ -23,5 +20,5 @@ class App extends Component {
       </HashRouter>
     );
   }
-
-} export default App;
+}
+export default App;
