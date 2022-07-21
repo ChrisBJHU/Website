@@ -2,41 +2,46 @@ import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import Resume from "../../assets/Jonathan/Bakhit_Jonathan_Resume.pdf";
 import Header from "../../pages/Jonathan/ResumeHeader";
 import Footer from "../../pages/Jonathan/Footer";
-import {isMobile} from "react-device-detect";
-
+import { isMobile } from "react-device-detect";
 
 const ResumeViewer = () => {
-    const docs = [
-        { uri: Resume }
-      ];
-  
-      const resumeBackground = {
-        backgroundColor: '',
-        padding: '10px',
-        paddingBottom: '10px',
-      };
+  const docs = [{ uri: Resume }];
 
-      const resumeStyle = {
-        margin: '0px auto',
-        justifyContent:'center', 
-        align:'center',
-        borderRadius: '10px',
-        marginBottom: '10px',
-        width: isMobile ? '100%' : '80%',
-        border: '10px solid #222629',
-      };
+  const resumeBackground = {
+    backgroundColor: "",
+    padding: "10px",
+    paddingBottom: "10px",
+  };
+
+  const resumeStyle = {
+    margin: "0px auto",
+    justifyContent: "center",
+    align: "center",
+    borderRadius: "10px",
+    marginBottom: "10px",
+    width: isMobile ? "100%" : "80%",
+    border: "10px solid #222629",
+  };
 
   return (
     <div>
-      <Header/>
-      <div style = {resumeBackground}>
-        <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} config={{ header: { 
-          disableHeader: true, 
-          disableFileName: true, 
-          retainURLParams: true }}} 
-          style = {resumeStyle}  />
+      <Header />
+      <div style={resumeBackground}>
+        <DocViewer
+          pluginRenderers={DocViewerRenderers}
+          documents={docs}
+          config={{
+            header: {
+              disableHeader: true,
+              disableFileName: true,
+              retainURLParams: true,
+            },
+          }}
+          style={resumeStyle}
+        />
       </div>
       <Footer />
-  </div>
+    </div>
   );
-}; export default ResumeViewer;
+};
+export default ResumeViewer;

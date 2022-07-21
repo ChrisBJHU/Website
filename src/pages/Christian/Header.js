@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import { Button } from '@mui/material';
-import NavLink from '../../nav/NavLinksC';
-import { navLinks } from '../../nav/navLinks';
+import React, { Component } from "react";
+import { Button } from "@mui/material";
+import NavLink from "../../nav/NavLinksC";
+import { navLinks } from "../../nav/navLinks";
 import Logo from "../../assets/logo.png";
-import {isMobile} from 'react-device-detect';
-import {Link} from 'react-router-dom';
+import { isMobile } from "react-device-detect";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -18,101 +17,113 @@ class Header extends Component {
   onMouseEnter = () => {
     this.setState({ hovered: true });
   };
-  
+
   onMouseLeave = () => {
     this.setState({ hovered: false });
   };
 
   render() {
-
     const logoSet = {
-      marginLeft: '5%',
-      height: '100%',
-
+      marginLeft: "5%",
+      height: "100%",
     };
-    
+
     const styleSheet = {
-      color: '#66FCF1',
-      textDecoration: 'none',
-      };
+      color: "#66FCF1",
+      textDecoration: "none",
+    };
 
     const color = {
-      backgroundColor: 'white',
-      borderBottom:"2px solid black",    
+      backgroundColor: "white",
+      borderBottom: "2px solid black",
       height: "10%",
-      display: 'flex',
-  };
+      display: "flex",
+    };
 
-  const resumeButton = {
-    backgroundColor: "#6BD0FF",
-    border: "none",
-    color: 'white',
-    padding: '0px 1.6rem',
-    textAlign: 'center',
-    fontSize: '75%',
-    margin: '4px 2px',
-    opacity: '0.6',
-    transition: '0.3s',
-    display: 'inline-block',
-    textDecoration: 'none',
-    marginRight: '20px',
-    cursor: 'pointer',
-    '&:hover': {
-      opacity: 1,
-    }
-  };
+    const resumeButton = {
+      backgroundColor: "#6BD0FF",
+      border: "none",
+      color: "white",
+      padding: "0px 1.6rem",
+      textAlign: "center",
+      fontSize: "75%",
+      margin: "4px 2px",
+      opacity: "0.6",
+      transition: "0.3s",
+      display: "inline-block",
+      textDecoration: "none",
+      marginRight: "20px",
+      cursor: "pointer",
+      "&:hover": {
+        opacity: 1,
+      },
+    };
 
-  const buttonSetHovered = {
-    backgroundColor: "#6BD0FF",
-    border: "none",
-    color: 'white',
-    padding: '0px 1.6rem',
-    textAlign: 'center',
-    fontSize: '100%',
-    margin: '4px 2px',
-    opacity: '1',
-    transition: '0.3s',
-    display: 'inline-block',
-    textDecoration: 'none',
-    cursor: 'pointer',
-    marginRight: '20px',
-  };
+    const buttonSetHovered = {
+      backgroundColor: "#6BD0FF",
+      border: "none",
+      color: "white",
+      padding: "0px 1.6rem",
+      textAlign: "center",
+      fontSize: "100%",
+      margin: "4px 2px",
+      opacity: "1",
+      transition: "0.3s",
+      display: "inline-block",
+      textDecoration: "none",
+      cursor: "pointer",
+      marginRight: "20px",
+    };
 
-  const nav = {
-    position: 'absolute', 
-    right:"1%", 
-    top: '1%'
-  };
+    const nav = {
+      position: "absolute",
+      right: "1%",
+      top: "1%",
+    };
 
-
-  const headerImage = () => {
-    if (isMobile) {
-      return (null);
-    } else {
-      return (
-        <Link to = "/">
-          <input  type = "image" src={Logo} style = {logoSet} alt = "" />
-        </Link>
-      );
-    }
-  };
+    const headerImage = () => {
+      if (isMobile) {
+        return null;
+      } else {
+        return (
+          <Link to="/">
+            <input type="image" src={Logo} style={logoSet} alt="" />
+          </Link>
+        );
+      }
+    };
 
     return (
-      <div style = {color}>
+      <div style={color}>
         {headerImage()}
-        <div style = {isMobile ? null : nav}>
+        <div style={isMobile ? null : nav}>
           <nav>
             {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-              <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
+              <NavLink
+                key={idx}
+                navLinkId={navLinkId}
+                scrollToId={scrollToId}
+              />
             ))}
-            <Link to="/resumeChristian" target="_blank" rel="noreferrer" style = {styleSheet}>
-              <Button  onMouseOver = {this.onMouseEnter} onMouseOut = {this.onMouseLeave}
-              style = {this.state.hovered ? buttonSetHovered: resumeButton}> Resume
+            <Link
+              to="/resumeChristian"
+              target="_blank"
+              rel="noreferrer"
+              style={styleSheet}
+            >
+              <Button
+                onMouseOver={this.onMouseEnter}
+                onMouseOut={this.onMouseLeave}
+                style={this.state.hovered ? buttonSetHovered : resumeButton}
+              >
+                {" "}
+                Resume
               </Button>
             </Link>
           </nav>
         </div>
-    </div>  
-  );
-  };
-} export default Header;
+      </div>
+    );
+  }
+}
+export default Header;
