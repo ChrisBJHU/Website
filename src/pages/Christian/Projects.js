@@ -81,8 +81,9 @@ const Projects = () => {
               clickable="false"
             />
             <Tile
-              title="Quiz Game Project"
-              text="A project to allow students to play a quiz game, developed on Unity."
+              title="HopMC President and Head Developer"
+              text="Created and maintain a Minecraft Server deployment deploying a Virtual Machine using Microsoft Azure, 
+              and delivered constant updates to respond to data breaches such as the Log4j vulnerability"
               clickable="false"
             />
           </FadeIn>
