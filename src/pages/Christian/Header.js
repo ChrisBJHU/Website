@@ -32,6 +32,7 @@ class Header extends Component {
     const styleSheet = {
       color: "#66FCF1",
       textDecoration: "none",
+      marginLeft: "1rem",
     };
 
     const color = {

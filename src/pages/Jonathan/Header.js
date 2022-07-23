@@ -43,7 +43,7 @@ class Header extends Component {
                   window.open(Resume, "_blank");
                 }}
                 variant="contained"
-                style ={{marginRight: "1rem"}}
+                style ={{marginRight: "1rem", marginLeft: "1rem", width: "4rem"}}
               >
                 Resume
               </Button>

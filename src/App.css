@@ -263,7 +263,7 @@ nav span {
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s ease;
   transition-delay: 0.25s;
-  margin-right: 1em;
+  margin-left: 1em;
   padding-bottom: 0.3em;
 }
 
