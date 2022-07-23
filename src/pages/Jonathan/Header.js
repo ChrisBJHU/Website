@@ -6,73 +6,15 @@ import Logo from "../../assets/Jonathan/Icons.png";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 import Resume from "../../assets/Jonathan/Bakhit_Jonathan_Resume.pdf";
+
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hovered: false,
-    };
-  }
-
-  onMouseEnter = () => {
-    this.setState({ hovered: true });
-  };
-
-  onMouseLeave = () => {
-    this.setState({ hovered: false });
-  };
 
   render() {
-    const logoSet = {
-      marginLeft: "5%",
-      height: "100%",
-    };
-
-    const styleSheet = {
-      color: "#66FCF1",
-      textDecoration: "none",
-    };
-
     const color = {
       backgroundColor: "#222629",
       borderBottom: "2px solid darkblue",
       height: "10%",
       display: "flex",
-    };
-
-    const resumeButton = {
-      backgroundColor: "#f4511e",
-      border: "none",
-      color: "white",
-      padding: "0px 1.6rem",
-      textAlign: "center",
-      fontSize: "75%",
-      margin: "4px 2px",
-      opacity: "0.6",
-      transition: "0.3s",
-      display: "inline-block",
-      textDecoration: "none",
-      marginRight: "20px",
-      cursor: "pointer",
-      "&:hover": {
-        opacity: 1,
-      },
-    };
-
-    const buttonSetHovered = {
-      backgroundColor: "#f4511e",
-      border: "none",
-      color: "white",
-      padding: "0px 1.6rem",
-      textAlign: "center",
-      fontSize: "100%",
-      margin: "4px 2px",
-      opacity: "1",
-      transition: "0.3s",
-      display: "inline-block",
-      textDecoration: "none",
-      cursor: "pointer",
-      marginRight: "20px",
     };
 
     const nav = {
@@ -81,22 +23,13 @@ class Header extends Component {
       top: "1%",
     };
 
-    const headerImage = () => {
-      if (isMobile) {
-        return null;
-      } else {
-        return (
-          <Link to="/">
-            <input type="image" src={Logo} alt="" style={logoSet} />
-          </Link>
-        );
-      }
-    };
-
     return (
       <div className="header" style={color}>
-        {headerImage()}
+        <Link to="/">
+            <input type="image" src={Logo} alt="" className = "headerIcon" style = {{height: '100%'}} />
+          </Link>
         <div style={isMobile ? null : nav}>
+          
           <nav>
             {navLinks.map(({ navLinkId, scrollToId }, idx) => (
               <NavLink
@@ -105,21 +38,15 @@ class Header extends Component {
                 scrollToId={scrollToId}
               />
             ))}
-            <a
-              href={Resume}
-              style={styleSheet}
-              target="_blank"
-              rel="noreferrer"
-            >
               <Button
-                onMouseOver={this.onMouseEnter}
-                onMouseOut={this.onMouseLeave}
-                style={this.state.hovered ? buttonSetHovered : resumeButton}
+                onClick = {() => {
+                  window.open(Resume, "_blank");
+                }}
+                variant="contained"
+                style ={{marginLeft: "1rem"}}
               >
-                {" "}
                 Resume
               </Button>
-            </a>
           </nav>
         </div>
       </div>

@@ -1,18 +1,15 @@
 import React, { Component } from "react";
-import redirect from "../../assets/redirect.png";
 
 class Tile extends Component {
   constructor(props) {
     super(props);
     this.state = {
       link: props.link,
-      img: props.img,
       title: props.title,
-      text: props.text,
+      desc: props.text,
       hovered: false,
-      clickable: props.clickable ? false : true,
-      titleSize: props.titleSize !== undefined ? props.titleSize : "35px",
-      fontSize: props.fontSize !== undefined ? props.fontSize : "15px",
+      clickable: props.clickable,
+      isMobile: props.isMobile,
     };
   }
 
@@ -27,45 +24,34 @@ class Tile extends Component {
   render() {
     const boxStyle = {
       backgroundColor: this.state.hovered
-        ? "rgba(44, 44, 44, 0.4)"
-        : "rgba(44, 44, 44, 0.6)",
-      height: "300px",
-      width: "300px",
+        ? "rgba(32, 51, 84, 0.6)"
+        : "rgba(32, 51, 84, 0.8)",
       borderRadius: "10px",
-      borderStyle: "none",
-      position: "center",
-      boxSizing: "border-box",
-      marginLeft: "auto",
-      marginBottom: "15px",
-      paddingBottom: "100px",
       cursor: this.state.clickable ? "pointer" : "default",
-      borderColor: "white",
     };
 
+
     const titleStyle = {
-      fontSize: this.state.titleSize,
+      fontSize: "25px",
       fontFamily: "Helvetica",
       textAlign: "center",
-      color: "lightblue",
-      marginTop: "-30px",
-      backgroundColor: "transparent",
-      textDecoration: "none",
+      margin: "10px",
+      paddingTop: "10px",
+      color: "white",
     };
 
     const textStyle = {
-      fontSize: this.state.fontSize,
+      fontSize: "15px",
       fontFamily: "Helvetica",
-      color: "lightblue",
       marginLeft: "5px",
       marginRight: "5px",
       textAlign: "center",
-      backgroundColor: "transparent",
-    };
-
-    const imageStyle = {
-      height: "30%",
-      backgroundColor: "transparent",
-      disabled: true,
+      color: "white",
+      justifyContent: "center",
+      display: "flex",
+      flexFlow: "row",
+      alignItems: "center",
+      marginTop: "20%",
     };
 
     const iconStyle = {
@@ -73,34 +59,50 @@ class Tile extends Component {
       marginRight: "15px",
       height: "10%",
       float: "right",
-      marginTop: "10px",
-      backgroundColor: "transparent",
+      marginTop: "5px",
+      borderRadius: "25%",
     };
 
     return this.state.clickable ? (
       <a
         href={this.state.link}
-        className={"mr-auto text-center"}
         style={{ textDecoration: "none" }}
         target="_blank"
         rel="noreferrer"
       >
-        <div onMouseOver={this.onMouseEnter} onMouseOut={this.onMouseLeave}>
-          <div className="tileJ" style={boxStyle}>
-            <img src={this.state.img} alt="" style={imageStyle} />
-            <img src={redirect} alt="" style={iconStyle} />
-            <p style={titleStyle}> {this.state.title}</p>
-            <p style={textStyle}> {this.state.text}</p>
-          </div>
+        <div
+          onMouseOver={this.onMouseEnter}
+          onMouseOut={this.onMouseLeave}
+          className="tileJ"
+          style={boxStyle}
+        >
+          <svg
+            style={iconStyle}
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            className="feather feather-external-link"
+          >
+            <title>External Link</title>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>{" "}
+          <div style={titleStyle}> {this.state.title}</div>
+          <div style={textStyle}> {this.state.desc}</div>
         </div>
       </a>
     ) : (
-      <div onMouseOver={this.onMouseEnter} onMouseOut={this.onMouseLeave}>
-        <div style={boxStyle} className="tileJ">
-          <img src={this.state.img} alt="" style={imageStyle} />
-          <p style={titleStyle}> {this.state.title}</p>
-          <p style={textStyle}> {this.state.text}</p>
-        </div>
+      <div
+        onMouseOver={this.onMouseEnter}
+        onMouseOut={this.onMouseLeave}
+        style={boxStyle}
+        className="tileJ"
+      >
+        <div style={titleStyle}> {this.state.title}</div>
+        <div style={textStyle}> {this.state.desc}</div>
       </div>
     );
   }

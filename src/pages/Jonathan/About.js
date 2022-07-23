@@ -64,8 +64,8 @@ const About = () => {
   };
 
   const textStyle = {
-    fontSize: "20px",
-    color: "lightgray",
+    fontSize: "large",
+    color: "white",
     fontFamily: "Arial",
     fontWeight: "normal",
   };
@@ -74,7 +74,8 @@ const About = () => {
     listStyleImage: { arrow },
     color: "lightblue",
     overflow: "hidden",
-    whitespace: "nowrap",
+    whitespace: "hidden",
+    fontSize: "auto",
   };
 
   const textBoxStyleMobile = {
@@ -90,6 +91,7 @@ const About = () => {
     display: "grid",
     top: "100px",
     blur: "20px",
+    marginLeft: "40px",
   };
 
   const picStyleMobile = {
@@ -122,14 +124,22 @@ const About = () => {
   };
 
   const aboutRef = useNav("About");
-  return (
-    <section ref={aboutRef} id="aboutContainer">
-      <Images />
-      <div style={buttonBackground}>
+  const returnHomeButton = () => {
+    if (isMobile) {
+      return (
+        <div style={buttonBackground}>
         <Link to="/">
           <button style={buttonHomeStyle}> Return to Home </button>
         </Link>
       </div>
+      );
+    }
+  };
+
+  return (
+    <section ref={aboutRef} id="aboutContainer">
+      <Images />
+      {returnHomeButton()}
       <div style={background} ref={viewRef}>
         <FadeIn delay={500} visible={inViewport}>
           <div style={{ opacity: inViewport ? 1 : 0 }}>
@@ -208,10 +218,14 @@ const About = () => {
                   <li style={listStyle}>Hiking</li>
                   <li style={listStyle}>Tennis</li>
                   <li style={listStyle}>Editing Artwork and Videos</li>
+
+                </Grid>
+                <Grid item xs={12} style={{ margin: "auto" }}>
+                  <li style={listStyle}>Reading</li>
+                  <li style={listStyle}>Working Out</li>
                   <li style={listStyle}>Computers</li>
                   <li style={listStyle}>Archery</li>
                 </Grid>
-                <Grid item xs={12} style={{ margin: "auto" }}></Grid>
               </Grid>
             </Grid>
             <div style={{ marginTop: "50px" }}>

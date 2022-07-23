@@ -263,7 +263,7 @@ nav span {
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s ease;
   transition-delay: 0.25s;
-  margin: 1em;
+  margin-right: 1em;
   padding-bottom: 0.3em;
 }
 
@@ -500,6 +500,16 @@ h3 span {
 
 .tileJ {
   transition: transform 500ms;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .tileJ {
+    width: 275px;
+    height: 275px;
+    margin-left: px;
+  }
 }
 
 .tileJ:hover {
@@ -514,3 +524,30 @@ h3 span {
 }
 
 
+.headerIcon {
+  margin-left: 5%;
+  margin-right: auto;
+  height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .headerIcon {
+    display: none;
+  }
+}
+
+.resumeButtonJon {
+    background-color: #6BD0FF;
+    border: none;
+    color: white;
+    padding: 0px 1.6rem;
+    text-align: center;
+    font-size: 75%;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
