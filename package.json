@@ -19,6 +19,7 @@
     "express": "^4.18.1",
     "material-ui": "^0.20.0",
     "nodemailer": "^6.7.7",
+    "nth-check": "^2.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
@@ -69,7 +70,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "prettier": "2.7.1",
-    "node-fetch": ">=2.6.7"
+    "node-fetch": "^3.2.9",
+    "prettier": "2.7.1"
   }
 }
