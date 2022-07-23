@@ -38,27 +38,21 @@ const Projects = () => {
   const listProjects = [
     {
       title: "Delineo Modeling Project",
-      desc: "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research.",
+      desc: "Delineo is where I currently work as a Researcher and Developer. At Delineo, I help create revolutionary new COVID simulations for law makers to use. Currently, I serve as Team Leader for the Fullstack team and Product Owner of the Unity Project.",
       link: "https://covidweb.isi.jhu.edu/",
       clickable: true,
     },
     {
       title: "AnyTown, USA",
-      desc: "This Unity Project was a team project to implement a 'sims' like simulation of COVID to support Delineo.",
+      desc:"The Unity Project that was created with Christian Bakhit and I for the purposes of Delineo. With this simulation, we hope to better gardner interest into the workings of Delineo and give policymakers an interactive 'game' for which to gain critical information.",
       link: "https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/",
       clickable: true,
     },
     {
       title: "Saint Mary & Archangel Micheal of Houston Website",
-      desc: "A website for the St. Mary & Archangel Micheal Church, designed and developed on React using Firebase as the backend.",
+      desc: "A website for the St. Mary & Archangel Micheal Church, designed and developed on React using Firebase as the backend. This project was made from the ground-up with a two man team and uses several custom functionalites to maintain security and appearance.",
       link: "https://www.saintmaryhouston.org/",
       clickable: true,
-    },
-    {
-      title: "Southern Coptic Project",
-      desc: "A Flutter project to allow students to be able to see pdfs of lesson plans on their phones.",
-      link: "/",
-      clickable: false,
     },
     {
       title: "Gemini Discord Bot",
@@ -79,23 +73,23 @@ const Projects = () => {
       clickable: true,
     },
     {
-      title: "Jarvis Project",
-      desc: "A Raspberry Pi project to allow me to be able to control all of the smart home features in my house. I am to use this for automated security and recreation in the future.",
+      title: "Traffic Light Simulator",
+      desc: "A traffic light simulator that was built with Python (pyGame and Keras Modeling) to simulate traffic light behavior and improve Traffic Simulations.",
       link: "/",
       clickable: false,
     },
     {
-      title: "HopMC President and Head Developer",
-      desc: "Created and maintain a Minecraft Server deployment deploying a Virtual Machine using Microsoft Azure, and delivered constant updates to respond to data breaches such as the Log4j vulnerability.",
+      title: "HopMC Head Developer",
+      desc: "Developed a Minecraft Server deployment deploying a Virtual Machine using Microsoft Azure, and delivered constant updates to respond to data breaches such as the Log4j vulnerability. Served to help organize events for player interaction and enjoyment of the server.",
       link: "/",
       clickable: false,
     },
     {
-      title: "HopMC President and Head Developer",
-      desc: "Created and maintain a Minecraft Server deployment deploying a Virtual Machine using Microsoft Azure, and delivered constant updates to respond to data breaches such as the Log4j vulnerability.",
+      title: "Speech Recognition and Encryption",
+      desc: "Using Python and Google Cloud Services, I developed a Speech Recognition program that took input through a microphone or audio file and then which encrypted the message to read back to the user. It has both Encryption and Decryption Capabilties.",
       link: "/",
       clickable: false,
-    },
+    }
   ];
 
   useEffect(() => {
