@@ -492,6 +492,8 @@ h3 span {
 
 .tileC {
   transition: transform 500ms;
+  width: 300px;
+  height: 300px;
 }
 
 .tileC:hover {
@@ -508,7 +510,12 @@ h3 span {
   .tileJ {
     width: 275px;
     height: 275px;
-    margin-left: px;
+    margin-left: 40px;
+  }
+  .tileC {
+    width: 275px;
+    height: 275px;
+    margin-left: 40px;
   }
 }
 
