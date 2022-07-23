@@ -22,52 +22,12 @@ class Header extends Component {
       height: "100%",
     };
 
-    const styleSheet = {
-      color: "#66FCF1",
-      textDecoration: "none",
-      marginLeft: "1rem",
-    };
 
     const color = {
       backgroundColor: "white",
       borderBottom: "2px solid black",
       height: "10%",
       display: "flex",
-    };
-
-    const resumeButton = {
-      backgroundColor: "#6BD0FF",
-      border: "none",
-      color: "white",
-      padding: "0px 1.6rem",
-      textAlign: "center",
-      fontSize: "75%",
-      margin: "4px 2px",
-      opacity: "0.6",
-      transition: "0.3s",
-      display: "inline-block",
-      textDecoration: "none",
-      marginRight: "20px",
-      cursor: "pointer",
-      "&:hover": {
-        opacity: 1,
-      },
-    };
-
-    const buttonSetHovered = {
-      backgroundColor: "#6BD0FF",
-      border: "none",
-      color: "white",
-      padding: "0px 1.6rem",
-      textAlign: "center",
-      fontSize: "100%",
-      margin: "4px 2px",
-      opacity: "1",
-      transition: "0.3s",
-      display: "inline-block",
-      textDecoration: "none",
-      cursor: "pointer",
-      marginRight: "20px",
     };
 
     const nav = {

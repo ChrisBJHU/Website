@@ -1,8 +1,11 @@
 import FadeIn from "react-fade-in";
 import React, { useRef } from "react";
 import Tile from "../../components/Christian/Tile";
+import Grid from "@mui/material/Grid";
 import { useNav } from "../../customHooks/useNav";
 import useIntersection from "../../customHooks/useIntersection";
+import { useEffect } from "react";
+import {isMobile} from 'react-device-detect';
 
 const Projects = () => {
   const Projref = useRef();
@@ -64,43 +67,91 @@ const Projects = () => {
       link: "/",
       clickable: false,
     },
+    
   ];
 
+  const gridStyle = {
+    height: "100%",
+    width: "100%",
+    opacity: inViewport ? 1 : 0,
+    justifyContent: "center",
+    alignItems: "center",
+    transition: "opacity 1s ease-in-out",
+    backgroundColor: "white",
+  };
+
+  const generalTileStyle = {
+    justifyContent: "center",
+    alignItems: "center",
+  }
+  
+
+  const tileStyle = {
+    opacity: inViewport ? 1 : 0,
+    padding: "8px",
+    borderRadius: "5px",
+    border: "1px solid none #222629",
+  };
+
+  
+  useEffect(() => {
+    const color = "white";
+    document.body.style.backgroundColor = color;
+  }, [inViewport]);
+
+  const FormRow = (props) => {
+    let rowVal = props.row * 3;
+    let row = listProjects.slice(rowVal, rowVal + 3 );
+
+    return ( 
+      <React.Fragment>
+        {row.map((project, index) => {
+          return (
+          <Grid item key={index} style={tileStyle}>
+            <Tile
+              title={project.title}
+              desc={project.desc}
+              link={project.link}
+              clickable={project.clickable}
+            />
+          </Grid>
+          );  
+        }
+        )}
+      </React.Fragment>
+    )
+  }
+
+
+  const projects = () => {
+    let grid = [];
+    for(let i = 0; i < Math.ceil(listProjects.length / 3); i++) {
+      grid.push(
+        <Grid container key={i} style = {isMobile ? {marginLeft: '0px'}: generalTileStyle}>
+          <FormRow row={i} />
+      </Grid>
+      );
+    }
+    return (
+      <Grid container spacing={1} style = {gridStyle}>
+        <FadeIn delay={1500} transitionDuration={500} visible={inViewport}>
+          {grid}
+        </FadeIn>
+    </Grid>
+    );
+  };
+
   return (
-    <section
-      ref={projectRef}
-      id="projectContainer"
-      style={{ backgroundColor: "white" }}
-    >
+    <section ref={projectRef} id="projectContainer">
       <div ref={Projref}>
-        <FadeIn delay={500} transitionDuration={1000} visible={inViewport}>
-          <div className="twelveChris">
+        <FadeIn delay={1000} transitionDuration={1000} visible={inViewport}>
+          <div
+            className="twelveChris"
+            style={{ paddingBottom: "5%", paddingTop: "5%" }}
+          >
             <h1>Projects</h1>
           </div>
-          <div className="tileContainer">
-            <div
-              style={{
-                gridTemplateColumns: "repeat(3, 1fr)",
-                display: "grid",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "800px",
-                left: "50%",
-              }}
-            >
-              {listProjects.map((project, index) => {
-                return (
-                  <Tile
-                    key={index}
-                    link={project.link}
-                    title={project.title}
-                    desc={project.desc}
-                    clickable={project.clickable}
-                  />
-                );
-              })}
-            </div>
-          </div>
+          <div style={{ backgroundColor: "#223882" }}>{projects()}</div>
         </FadeIn>
       </div>
     </section>

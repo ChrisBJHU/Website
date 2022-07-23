@@ -490,30 +490,24 @@ h3 span {
   margin-bottom: 0.25em;
 }
 
-.tileC {
-  transition: transform 500ms;
-}
-
-.tileC:hover {
-  transform: translateY(-10px);
-}
-
-.tileJ {
+.tile {
   transition: transform 500ms;
   width: 300px;
   height: 300px;
 }
 
+.tile:hover {
+  transform: translateY(-10px);
+}
+
 @media screen and (max-width: 600px) {
-  .tileJ {
+  .tile {
     width: 275px;
     height: 275px;
     margin-left: 40px;
   }
 }
-.tileJ:hover {
-  transform: translateY(-10px);
-}
+
 
 .tileContainer {
   display: flex;

@@ -31,6 +31,12 @@ const About = () => {
     paddingBottom: "250px",
   };
 
+  const buttonBackground = {
+    backgroundColor: "white",
+    height: "100%",
+    overflow: "hidden",
+  };
+
   const boxStyle = {
     marginLeft: "50px",
     borderStyle: "none",
@@ -121,7 +127,7 @@ const About = () => {
   const returnHomeButton = () => {
     if (isMobile) {
       return (
-        <div style={background}>
+        <div style = {buttonBackground}>
           <Link to="/">
             <button style={buttonHomeStyle}> Return to Home </button>
           </Link>

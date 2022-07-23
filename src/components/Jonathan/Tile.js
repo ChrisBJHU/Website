@@ -73,7 +73,7 @@ class Tile extends Component {
         <div
           onMouseOver={this.onMouseEnter}
           onMouseOut={this.onMouseLeave}
-          className="tileJ"
+          className="tile"
           style={boxStyle}
         >
           <svg
@@ -99,7 +99,7 @@ class Tile extends Component {
         onMouseOver={this.onMouseEnter}
         onMouseOut={this.onMouseLeave}
         style={boxStyle}
-        className="tileJ"
+        className="tile"
       >
         <div style={titleStyle}> {this.state.title}</div>
         <div style={textStyle}> {this.state.desc}</div>

@@ -9,6 +9,7 @@ class Tile extends Component {
       desc: props.desc,
       hovered: false,
       clickable: props.clickable,
+      isMobile: props.isMobile,
     };
   }
 
@@ -23,14 +24,12 @@ class Tile extends Component {
   render() {
     const boxStyle = {
       backgroundColor: this.state.hovered
-        ? "rgba(25, 25, 25, 0.6)"
-        : "rgba(25, 25, 25, 0.8)",
-      width: "300px",
-      height: "300px",
+      ? "rgba(25, 25, 25, 0.6)"
+      : "rgba(25, 25, 25, 0.8)",
       borderRadius: "10px",
       cursor: this.state.clickable ? "pointer" : "default",
-      margin: "10px",
     };
+
 
     const titleStyle = {
       fontSize: "25px",
@@ -74,7 +73,7 @@ class Tile extends Component {
         <div
           onMouseOver={this.onMouseEnter}
           onMouseOut={this.onMouseLeave}
-          className="tileC"
+          className="tile"
           style={boxStyle}
         >
           <svg
@@ -83,7 +82,8 @@ class Tile extends Component {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            class="feather feather-external-link"
+            stroke="white"
+            className="feather feather-external-link"
           >
             <title>External Link</title>
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -99,7 +99,7 @@ class Tile extends Component {
         onMouseOver={this.onMouseEnter}
         onMouseOut={this.onMouseLeave}
         style={boxStyle}
-        className="tileC"
+        className="tile"
       >
         <div style={titleStyle}> {this.state.title}</div>
         <div style={textStyle}> {this.state.desc}</div>
