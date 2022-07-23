@@ -1,7 +1,6 @@
 import FadeIn from "react-fade-in";
 import React, { useRef } from "react";
 import Tile from "../../components/Christian/Tile";
-import Grid from "@mui/material/Grid";
 import { useNav } from "../../customHooks/useNav";
 import useIntersection from "../../customHooks/useIntersection";
 
@@ -10,87 +9,62 @@ const Projects = () => {
   const inViewport = useIntersection(Projref, "0px");
   const projectRef = useNav("Projects");
 
-  const gridStyle = {
-    height: "100%",
-    width: "100%",
-    opacity: inViewport ? 1 : 0,
-    justifyContent: "center",
-    alignItems: "center",
-    transition: "opacity 1s ease-in-out",
-    backgroundColor: "white",
-  };
-
-  const tileStyle = {
-    opacity: inViewport ? 1 : 0,
-    padding: "0px 8px",
-    borderRadius: "5px",
-    border: "1px solid none #222629",
-  };
-
-  const projects = () => {
-    return (
-      <Grid container spacing={1} style={gridStyle}>
-        <Grid item style={tileStyle}>
-          <FadeIn delay={1500} transitionDuration={500} visible={inViewport}>
-            <Tile
-              link="https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/"
-              title="AnyTown, USA"
-              text="This Unity Project was a team project between me and Jonathan to implement a 'sims' like simulation of COVID."
-            />
-            <Tile
-              link="https://covidweb.isi.jhu.edu/"
-              title="Delineo Modeling Project"
-              text="The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research."
-            />
-            <Tile
-              clickable="false"
-              title="Gemini Discord Bot 2.0"
-              text="A discord bot that provides useful information to the user about watched stocks, website downtimes, and more."
-            />
-          </FadeIn>
-        </Grid>
-        <Grid item style={tileStyle}>
-          <FadeIn delay={1500} transitionDuration={500} visible={inViewport}>
-            <Tile
-              link="https://github.com/ChrisBJHU/DiscordBot"
-              title="Gemini Discord Bot"
-              text="A discord bot implemented in Python that serves as a private service to provide contest problems for students interested in Science Bowl."
-            />
-            <Tile
-              title="Southern Coptic Project"
-              text="A Flutter project to allow students to be able to see pdfs of lesson plans on their phones."
-              clickable="false"
-            />
-            <Tile
-              link="https://www.saintmaryhouston.org/"
-              title="Saint Mary Houston Website"
-              text="A website for the St. Mary Houston church, designed and developed on React using Firebase as the backend."
-            />
-          </FadeIn>
-        </Grid>
-        <Grid item style={tileStyle}>
-          <FadeIn delay={1500} transitionDuration={500} visible={inViewport}>
-            <Tile
-              link="https://github.com/ChrisBJHU/CovidTracker2020"
-              title="Covid Tracker (HopHacks 2020)"
-              text="A 48 hour hackathon project that aimed to give users information from the JHU dashboard using an API and providing a private tracing list. (Wordpress, Python)"
-            />
-            <Tile
-              title="Jarvis Project"
-              text="A Raspberry Pi project to allow me to be able to control all of the smart home features in my house. I am to use this for automated security and recreation in the future."
-              clickable="false"
-            />
-            <Tile
-              title="HopMC President and Head Developer"
-              text="Created and maintain a Minecraft Server deployment deploying a Virtual Machine using Microsoft Azure, 
-              and delivered constant updates to respond to data breaches such as the Log4j vulnerability"
-              clickable="false"
-            />
-          </FadeIn>
-        </Grid>
-      </Grid>
-    );
-  };
+  const listProjects = [
+    {
+      title: "AnyTown, USA",
+      desc: "This Unity Project was a team project between me and Jonathan to implement a 'sims' like simulation of COVID.",
+      link: "https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/",
+      clickable: true,
+    },
+    {
+      title: "Delineo Modeling Project",
+      desc: "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research.",
+      link: "https://covidweb.isi.jhu.edu/",
+      clickable: true,
+    },
+    {
+      title: "Gemini Discord Bot 2.0",
+      desc: "A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.",
+      link: "/",
+      clickable: false,
+    },
+    {
+      title: "Gemini Discord Bot",
+      desc: "A discord bot implemented in Python that serves as a private service to provide contest problems for students interested in Science Bowl.",
+      link: "https://github.com/ChrisBJHU/DiscordBot",
+      clickable: true,
+    },
+    {
+      title: "Saint Mary & Archangel Micheal of Houston Website",
+      desc: "A website for the St. Mary Houston church, designed and developed on React using Firebase as the backend.",
+      link: "https://www.saintmaryhouston.org/",
+      clickable: true,
+    },
+    {
+      title: "Southern Coptic Project",
+      desc: "A Flutter project to allow students to be able to see pdfs of lesson plans on their phones.",
+      link: "/",
+      clickable: false,
+    },
+    {
+      title: "Covid Tracker (HopHacks 2020)",
+      desc: "A 48 hour hackathon project that aimed to give users information from the JHU dashboard using an API and providing a private tracing list. (Wordpress, Python)",
+      link: "https://github.com/ChrisBJHU/CovidTracker2020",
+      clickable: true,
+    },
+    {
+      title: "Jarvis Project",
+      desc: "A Raspberry Pi project to allow me to be able to control all of the smart home features in my house. I am to use this for automated security and recreation in the future.",
+      link: "/",
+      clickable: false,
+    },
+    {
+      title: "HopMC President and Head Developer",
+      desc: "Created and maintain a Minecraft Server deployment deploying a Virtual Machine using Microsoft Azure, and delivered constant updates to respond to data breaches such as the Log4j vulnerability.",
+      link: "/",
+      clickable: false,
+    },
+  ];
 
   return (
     <section
@@ -100,17 +74,35 @@ const Projects = () => {
     >
       <div ref={Projref}>
         <FadeIn delay={500} transitionDuration={1000} visible={inViewport}>
-          <div
-            className="twelveChris"
-            style={{
-              paddingBottom: "5%",
-              paddingTop: "5%",
-              backgroundColor: "white",
-            }}
-          >
+          <div className="twelveChris">
             <h1>Projects</h1>
           </div>
-          {projects()}
+          <div className="tileContainer">
+            <div
+              style={{
+                gridTemplateColumns: "repeat(3, 1fr)",
+                display: "grid",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "1000px",
+                left: "50%",
+              }}
+            >
+              {listProjects.map((project, index) => {
+                return (
+                  <div>
+                    <Tile
+                      key={index}
+                      link={project.link}
+                      title={project.title}
+                      desc={project.desc}
+                      clickable={project.clickable}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </FadeIn>
       </div>
     </section>
