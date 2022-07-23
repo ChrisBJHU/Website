@@ -11,5 +11,5 @@ root.render(
     <HashRouter>
       <App />
     </HashRouter>
-  </StrictMode>,
+  </StrictMode>
 );

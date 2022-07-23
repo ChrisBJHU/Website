@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import redirect from "../../assets/redirect.png";
 
 class Tile extends Component {
   constructor(props) {
@@ -24,19 +23,22 @@ class Tile extends Component {
   render() {
     const boxStyle = {
       backgroundColor: this.state.hovered
-        ? "rgba(52, 52, 52, 0.6)"
-        : "rgba(52, 52, 52, 0.8)",
+        ? "rgba(25, 25, 25, 0.6)"
+        : "rgba(25, 25, 25, 0.8)",
       width: "300px",
       height: "300px",
       borderRadius: "10px",
       cursor: this.state.clickable ? "pointer" : "default",
+      margin: "10px",
     };
 
     const titleStyle = {
-      fontSize: "35px",
+      fontSize: "25px",
       fontFamily: "Helvetica",
       textAlign: "center",
-      color: "#6BD0FF",
+      margin: "10px",
+      paddingTop: "10px",
+      color: "white",
     };
 
     const textStyle = {
@@ -45,7 +47,12 @@ class Tile extends Component {
       marginLeft: "5px",
       marginRight: "5px",
       textAlign: "center",
-      color: "#6BD0FF",
+      color: "white",
+      justifyContent: "center",
+      display: "flex",
+      flexFlow: "row",
+      alignItems: "center",
+      marginTop: "20%",
     };
 
     const iconStyle = {
@@ -53,8 +60,8 @@ class Tile extends Component {
       marginRight: "15px",
       height: "10%",
       float: "right",
-      marginTop: "10px",
-      backgroundColor: "transparent",
+      marginTop: "5px",
+      borderRadius: "25%",
     };
 
     return this.state.clickable ? (
@@ -70,9 +77,25 @@ class Tile extends Component {
           className="tileC"
           style={boxStyle}
         >
-          <img src={redirect} alt="" style={iconStyle} />
-          <p style={titleStyle}> {this.state.title}</p>
-          <p style={textStyle}> {this.state.desc}</p>
+          <svg
+            style={iconStyle}
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-external-link"
+          >
+            <title>External Link</title>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>{" "}
+          <div style={titleStyle}> {this.state.title}</div>
+          <div style={textStyle}> {this.state.desc}</div>
         </div>
       </a>
     ) : (
@@ -82,8 +105,8 @@ class Tile extends Component {
         style={boxStyle}
         className="tileC"
       >
-        <p style={titleStyle}> {this.state.title}</p>
-        <p style={textStyle}> {this.state.desc}</p>
+        <div style={titleStyle}> {this.state.title}</div>
+        <div style={textStyle}> {this.state.desc}</div>
       </div>
     );
   }

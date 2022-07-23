@@ -27,7 +27,7 @@ const Footer = () => {
           Christian Bakhit & Jonathan Bakhit
         </a>
       </p>
-      <p style={{ color: "black" }}> Version 1.0.0</p>
+      <p style={{ color: "black" }}> Version 1.1.0</p>
     </div>
   );
 };

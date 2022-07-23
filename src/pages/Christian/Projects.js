@@ -11,20 +11,26 @@ const Projects = () => {
 
   const listProjects = [
     {
-      title: "AnyTown, USA",
-      desc: "This Unity Project was a team project between me and Jonathan to implement a 'sims' like simulation of COVID.",
-      link: "https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/",
-      clickable: true,
-    },
-    {
       title: "Delineo Modeling Project",
       desc: "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research.",
       link: "https://covidweb.isi.jhu.edu/",
       clickable: true,
     },
     {
-      title: "Gemini Discord Bot 2.0",
-      desc: "A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.",
+      title: "AnyTown, USA",
+      desc: "This Unity Project was a team project to implement a 'sims' like simulation of COVID to support Delineo.",
+      link: "https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/",
+      clickable: true,
+    },
+    {
+      title: "Saint Mary & Archangel Micheal of Houston Website",
+      desc: "A website for the St. Mary & Archangel Micheal Church, designed and developed on React using Firebase as the backend.",
+      link: "https://www.saintmaryhouston.org/",
+      clickable: true,
+    },
+    {
+      title: "Southern Coptic Project",
+      desc: "A Flutter project to allow students to be able to see pdfs of lesson plans on their phones.",
       link: "/",
       clickable: false,
     },
@@ -35,14 +41,8 @@ const Projects = () => {
       clickable: true,
     },
     {
-      title: "Saint Mary & Archangel Micheal of Houston Website",
-      desc: "A website for the St. Mary Houston church, designed and developed on React using Firebase as the backend.",
-      link: "https://www.saintmaryhouston.org/",
-      clickable: true,
-    },
-    {
-      title: "Southern Coptic Project",
-      desc: "A Flutter project to allow students to be able to see pdfs of lesson plans on their phones.",
+      title: "Gemini Discord Bot 2.0",
+      desc: "A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.",
       link: "/",
       clickable: false,
     },
@@ -84,7 +84,7 @@ const Projects = () => {
                 display: "grid",
                 alignItems: "center",
                 justifyContent: "center",
-                width: "1000px",
+                width: "800px",
                 left: "50%",
               }}
             >
