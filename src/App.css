@@ -448,11 +448,10 @@ h3 span {
 
 .containerChris {
   grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
+  grid-template-rows: 80px auto 80px;
   column-gap: 10px;
   row-gap: 15px;
   justify-items: center;
-
 }
 
 .twelveJon h1 {
@@ -507,10 +506,11 @@ h3 span {
   transform: translateY(-10px);
 }
 
-
 .tileContainer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
+
+

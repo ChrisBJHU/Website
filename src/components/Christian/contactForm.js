@@ -37,13 +37,13 @@ const ContactForm = () => {
           <span style={{ marginTop: "50px" }}>Contact Me!</span>
         </h3>
       </div>
-      <div class="text-wrap">
+      <div className="text-wrap">
         <input type="text" name="name" required placeholder="Name" id="name" />
       </div>
-      <div class="text-wrap">
+      <div className="text-wrap">
         <input type="email" name="email" required placeholder="Email Address" />
       </div>
-      <div class="text-wrap">
+      <div className="text-wrap">
         <textarea
           type="message"
           name="message"
