@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import Tile from "../../components/Christian/Tile";
 import { useNav } from "../../customHooks/useNav";
 import useIntersection from "../../customHooks/useIntersection";
-import { isMobile } from 'react-device-detect';
 
 const Projects = () => {
   const Projref = useRef();
