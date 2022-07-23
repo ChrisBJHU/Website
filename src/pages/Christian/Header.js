@@ -5,6 +5,7 @@ import { navLinks } from "../../nav/navLinks";
 import Logo from "../../assets/logo.png";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
+import Resume from "../../assets/Christian/Christian Bakhit Resume 2022.pdf";
 
 class Header extends Component {
   constructor(props) {
@@ -105,11 +106,11 @@ class Header extends Component {
                 scrollToId={scrollToId}
               />
             ))}
-            <Link
-              to="/resumeChristian"
+            <a
+              href={Resume}
+              style={styleSheet}
               target="_blank"
               rel="noreferrer"
-              style={styleSheet}
             >
               <Button
                 onMouseOver={this.onMouseEnter}
@@ -119,7 +120,7 @@ class Header extends Component {
                 {" "}
                 Resume
               </Button>
-            </Link>
+            </a>
           </nav>
         </div>
       </div>

@@ -1,23 +1,20 @@
 import React, { Component } from "react";
 import Home from "./pages/Christian/Main";
 import Home2 from "./pages/Jonathan/Main";
-import Split from "./pages/Split";
-import ResumeC from "./pages/Christian/ResumeViewer";
-import ResumeJ from "./pages/Jonathan/ResumeViewer";
+import HomePage from "./pages/Split";
+
 import "./App.css";
 
-import { Route, HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
-        <Route exact path="/" component={Split} />
-        <Route exact path="/homeChristian" component={Home} />
-        <Route exact path="/homeJonathan" component={Home2} />
-        <Route exact path="/resumeChristian" component={ResumeC} />
-        <Route exact path="/resumeJonathan" component={ResumeJ} />
-      </HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} exact />
+        <Route path="/homeChristian" element={<Home />} exact />
+        <Route path="/homeJonathan" element={<Home2 />} exact />
+      </Routes>
     );
   }
 }

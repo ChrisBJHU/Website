@@ -40,31 +40,31 @@ class Split extends Component {
 
   render() {
     return !isMobile ? (
-      <div class="container" style={this.state}>
-        <div class="split left">
+      <div className="container" style={this.state}>
+        <div className="split left">
           <h1>Christian Bakhit</h1>
-          <Link to="/homeChristian" class="button">
+          <Link to="/homeChristian" className="button">
             Learn About Me!
           </Link>
         </div>
-        <div class="split right">
+        <div className="split right">
           <h1>Jonathan Bakhit</h1>
-          <Link to="/homeJonathan" class="button">
+          <Link to="/homeJonathan" className="button">
             Learn About Me!
           </Link>
         </div>
       </div>
     ) : (
-      <div class="container" style={this.state}>
-        <div class="splitMobile left">
+      <div className="container" style={this.state}>
+        <div className="splitMobile left">
           <h1>Christian Bakhit</h1>
-          <Link to="/homeChristian" class="button">
+          <Link to="/homeChristian" className="button">
             Learn About Me!
           </Link>
         </div>
-        <div class="splitMobile right">
+        <div className="splitMobile right">
           <h1>Jonathan Bakhit</h1>
-          <Link to="/homeJonathan" class="button">
+          <Link to="/homeJonathan" className="button">
             Learn About Me!
           </Link>
         </div>

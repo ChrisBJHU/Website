@@ -90,15 +90,13 @@ const Projects = () => {
             >
               {listProjects.map((project, index) => {
                 return (
-                  <div>
-                    <Tile
-                      key={index}
-                      link={project.link}
-                      title={project.title}
-                      desc={project.desc}
-                      clickable={project.clickable}
-                    />
-                  </div>
+                  <Tile
+                    key={index}
+                    link={project.link}
+                    title={project.title}
+                    desc={project.desc}
+                    clickable={project.clickable}
+                  />
                 );
               })}
             </div>
