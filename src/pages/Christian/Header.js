@@ -15,13 +15,6 @@ class Header extends Component {
     };
   }
 
-  onMouseEnter = () => {
-    this.setState({ hovered: true });
-  };
-
-  onMouseLeave = () => {
-    this.setState({ hovered: false });
-  };
 
   render() {
     const logoSet = {
@@ -99,7 +92,7 @@ class Header extends Component {
       <div style={color}>
         {headerImage()}
         <div style={isMobile ? null : nav}>
-          <nav>
+        <nav>
             {navLinks.map(({ navLinkId, scrollToId }, idx) => (
               <NavLink
                 key={idx}
@@ -107,21 +100,15 @@ class Header extends Component {
                 scrollToId={scrollToId}
               />
             ))}
-            <a
-              href={Resume}
-              style={styleSheet}
-              target="_blank"
-              rel="noreferrer"
-            >
               <Button
-                onMouseOver={this.onMouseEnter}
-                onMouseOut={this.onMouseLeave}
-                style={this.state.hovered ? buttonSetHovered : resumeButton}
+                onClick = {() => {
+                  window.open(Resume, "_blank");
+                }}
+                variant="contained"
+                style ={{marginRight: "1rem", marginLeft: "1rem", width: "4rem", backgroundColor: "#6BD0FF"}}
               >
-                {" "}
                 Resume
               </Button>
-            </a>
           </nav>
         </div>
       </div>

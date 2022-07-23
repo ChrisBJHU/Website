@@ -92,6 +92,8 @@ const About = () => {
     top: "100px",
     blur: "20px",
     marginLeft: "40px",
+    marginRight: "2%",
+
   };
 
   const picStyleMobile = {

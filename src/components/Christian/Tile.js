@@ -25,11 +25,8 @@ class Tile extends Component {
       backgroundColor: this.state.hovered
         ? "rgba(25, 25, 25, 0.6)"
         : "rgba(25, 25, 25, 0.8)",
-      width: "300px",
-      height: "300px",
       borderRadius: "10px",
       cursor: this.state.clickable ? "pointer" : "default",
-      margin: "10px",
     };
 
     const titleStyle = {
@@ -83,10 +80,6 @@ class Tile extends Component {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
             class="feather feather-external-link"
           >
             <title>External Link</title>

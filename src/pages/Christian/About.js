@@ -62,7 +62,7 @@ const About = () => {
   };
 
   const textStyle = {
-    fontSize: "20px",
+    fontSize: "large",
     color: "rgba(43, 43, 43, 0.8)",
   };
 
@@ -77,7 +77,7 @@ const About = () => {
     position: "relative",
     backgroundColor: "white",
     padding: "1rem",
-    marginRight: "5%",
+    marginRight: "2%",
     borderTopLeftRadius: "30px",
     borderBottomRightRadius: "30px",
     borderStyle: "dotted solid",
@@ -87,6 +87,7 @@ const About = () => {
     top: "100px",
     blur: "20px",
     display: "grid",
+    marginLeft: "40px",
   };
 
   const picStyleMobile = {
