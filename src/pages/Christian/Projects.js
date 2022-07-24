@@ -147,11 +147,11 @@ const Projects = () => {
         <FadeIn delay={1000} transitionDuration={1000} visible={inViewport}>
           <div
             className="twelveChris"
-            style={{ paddingBottom: "5%", paddingTop: "5%" }}
+            style={{ paddingBottom: "5%", paddingTop: "5%"}}
           >
             <h1>Projects</h1>
           </div>
-          <div style={{ backgroundColor: "#223882" }}>{projects()}</div>
+          <div style={{ backgroundColor: "white" }}>{projects()}</div>
         </FadeIn>
       </div>
     </section>
