@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import { useNav } from "../../customHooks/useNav";
 import useIntersection from "../../customHooks/useIntersection";
 import { useEffect } from "react";
-import {isMobile} from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 
 const Projects = () => {
   const Projref = useRef();
@@ -18,6 +18,12 @@ const Projects = () => {
       desc: "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research.",
       link: "https://covidweb.isi.jhu.edu/",
       clickable: true,
+    },
+    {
+      title: "PILOT Leader",
+      desc: "Teach fellow underclassman about Git, Java and the Java ecosystem.",
+      link: "/",
+      clickable: false,
     },
     {
       title: "AnyTown, USA",
@@ -67,7 +73,6 @@ const Projects = () => {
       link: "/",
       clickable: false,
     },
-    
   ];
 
   const gridStyle = {
@@ -83,8 +88,7 @@ const Projects = () => {
   const generalTileStyle = {
     justifyContent: "center",
     alignItems: "center",
-  }
-  
+  };
 
   const tileStyle = {
     opacity: inViewport ? 1 : 0,
@@ -93,7 +97,6 @@ const Projects = () => {
     border: "1px solid none #222629",
   };
 
-  
   useEffect(() => {
     const color = "white";
     document.body.style.backgroundColor = color;
@@ -101,43 +104,45 @@ const Projects = () => {
 
   const FormRow = (props) => {
     let rowVal = props.row * 3;
-    let row = listProjects.slice(rowVal, rowVal + 3 );
+    let row = listProjects.slice(rowVal, rowVal + 3);
 
-    return ( 
+    return (
       <React.Fragment>
         {row.map((project, index) => {
           return (
-          <Grid item key={index} style={tileStyle}>
-            <Tile
-              title={project.title}
-              desc={project.desc}
-              link={project.link}
-              clickable={project.clickable}
-            />
-          </Grid>
-          );  
-        }
-        )}
+            <Grid item key={index} style={tileStyle}>
+              <Tile
+                title={project.title}
+                desc={project.desc}
+                link={project.link}
+                clickable={project.clickable}
+              />
+            </Grid>
+          );
+        })}
       </React.Fragment>
-    )
-  }
-
+    );
+  };
 
   const projects = () => {
     let grid = [];
-    for(let i = 0; i < Math.ceil(listProjects.length / 3); i++) {
+    for (let i = 0; i < Math.ceil(listProjects.length / 3); i++) {
       grid.push(
-        <Grid container key={i} style = {isMobile ? {marginLeft: '0px'}: generalTileStyle}>
+        <Grid
+          container
+          key={i}
+          style={isMobile ? { marginLeft: "0px" } : generalTileStyle}
+        >
           <FormRow row={i} />
-      </Grid>
+        </Grid>
       );
     }
     return (
-      <Grid container spacing={1} style = {gridStyle}>
+      <Grid container spacing={1} style={gridStyle}>
         <FadeIn delay={1500} transitionDuration={500} visible={inViewport}>
           {grid}
         </FadeIn>
-    </Grid>
+      </Grid>
     );
   };
 
@@ -147,7 +152,12 @@ const Projects = () => {
         <FadeIn delay={1000} transitionDuration={1000} visible={inViewport}>
           <div
             className="twelveChris"
-            style={{ paddingBottom: "5%", paddingTop: "5%"}}
+            style={{
+              paddingBottom: "5%",
+              paddingTop: "5%",
+              marginRight: "auto",
+              marginLeft: "150px",
+            }}
           >
             <h1>Projects</h1>
           </div>
