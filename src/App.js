@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Home from "./pages/Christian/Main";
-import Home2 from "./pages/Jonathan/Main";
+import Home2 from "./pages/JonathanOld/Main";
+import LatestJonathan from "./pages/Jonathan/Main";
 import HomePage from "./pages/Split";
 
 import "./App.css";
@@ -13,7 +14,8 @@ class App extends Component {
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/homeChristian" element={<Home />} exact />
-        <Route path="/homeJonathan" element={<Home2 />} exact />
+        <Route path="/homeJonathan" element={<LatestJonathan />} exact />
+        <Route path="/homeJonathanOld" element={<Home2 />} exact />
       </Routes>
     );
   }

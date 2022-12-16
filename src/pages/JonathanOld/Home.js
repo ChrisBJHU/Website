@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Contact from "./Contact";
 
-class LatestJonathan extends Component {
+class Home extends Component {
   state = {
     height: window.innerHeight,
     width: window.innerWidth,
@@ -32,4 +32,4 @@ class LatestJonathan extends Component {
   }
 }
 
-export default LatestJonathan;
+export default Home;
