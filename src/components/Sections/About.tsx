@@ -1,20 +1,56 @@
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
+import {Carousel} from 'react-responsive-carousel';
 
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
+
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
-            <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
-              <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
-            </div>
+            <Carousel
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={5000}
+              showArrows={false}
+              showIndicators={false}
+              showStatus={false}
+              showThumbs={false}
+              stopOnHover={true}
+              transitionTime={1}>
+              <div
+                className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32"
+                style={{
+                  height: '150px',
+                  width: '150px',
+                }}>
+                <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc[0]} />
+              </div>
+              <div
+                className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32"
+                style={{
+                  height: '150px',
+                  width: '150px',
+                }}>
+                <Image alt="about-me-image2" layout="fill" objectFit="cover" src={profileImageSrc[1]} />
+              </div>
+              <div
+                className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32"
+                style={{
+                  height: '150px',
+                  width: '150px',
+                }}>
+                <Image alt="about-me-image3" layout="fill" objectFit="cover" src={profileImageSrc[2]} />
+              </div>
+            </Carousel>
           </div>
         )}
         <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>

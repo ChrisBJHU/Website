@@ -17,7 +17,18 @@ const Footer: FC = memo(() => (
       <div className="flex gap-x-4 text-neutral-500">
         <Socials />
       </div>
-      <span className="text-sm text-neutral-700">© Copyright 2022 Tim Baker</span>
+      <span className="text-sm text-neutral-700">
+        Designed & Built by
+        <a
+          href="https://github.com/ChrisBJHU/Website"
+          rel="noreferrer"
+          style={{textDecoration: 'none', color: 'inherit'}}
+          target="_blank">
+          {' '}
+          Christian Bakhit & Jonathan Bakhit
+        </a>
+      </span>
+      <span className="text-sm text-neutral-700">Version 2.0.0</span>
     </div>
   </div>
 ));

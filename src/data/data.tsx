@@ -11,7 +11,6 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import Logo from '../images/logo.png';
@@ -39,14 +38,15 @@ import {
   SkillGroup,
   Social,
   TestimonialSection,
-  TimelineItem} from './dataDef';
+  TimelineItem,
+} from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Bakhit | Software Engineers',
+  description: "Christian and Jonathan Bakhit's personal website",
 };
 
 /**
@@ -60,6 +60,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
+  Hobbies: 'hobbies',
   Testimonials: 'testimonials',
 } as const;
 
@@ -70,18 +71,16 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I am Christian Bakhit.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. My current aspirations
+        have led me to the field of AI and robotics research. I hope that one day I can work on the first AGI!
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        For the past year I have worked in the <strong className="text-stone-100">Delineo Lab</strong>. Here, I have led
+        the team in solving the problem of simulating disease spread.
       </p>
     </>
   ),
@@ -101,24 +100,21 @@ export const heroData: Hero = {
 };
 
 export const headerData: Header = {
-  returnButton: Logo
+  returnButton: Logo,
 };
 
 /**
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  profileImageSrc: [profilepic, porfolioImage11, porfolioImage1],
+  description: `Dedicated Computer Science Undergraduate with three years of experience on a multitude of teams developing services for the greater
+  community. Specialized in developing software for delivering information to specialized groups.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Age', text: '20', Icon: CalendarIcon},
+    {label: 'Location', text: 'Baltimore, MD', Icon: MapIcon},
+    {label: 'Interests', text: 'Guitar, Tennis, Astronomy', Icon: SparklesIcon},
+    {label: 'Study', text: 'Johns Hopkins University', Icon: AcademicCapIcon},
   ],
 };
 
@@ -286,6 +282,21 @@ export const education: TimelineItem[] = [
   },
 ];
 
+export const fun: TimelineItem[] = [
+  {
+    date: 'April 2007',
+    location: 'Clown college',
+    title: 'Masters in Beer tasting',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'March 2003',
+    location: 'School of Business',
+    title: 'What did you study 101',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
 export const experience: TimelineItem[] = [
   {
     date: 'March 2010 - Present',
@@ -371,7 +382,6 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
