@@ -7,7 +7,6 @@ import {HomepageMeta} from '../../data/dataDef';
 
 const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
   const {asPath: pathname} = useRouter();
-
   return (
     <>
       <Head>
@@ -34,6 +33,7 @@ const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
       {children}
     </>
   );
+  
 });
 
 Page.displayName = 'Page';
