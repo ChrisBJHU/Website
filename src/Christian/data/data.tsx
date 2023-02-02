@@ -1,10 +1,4 @@
-import {
-  AcademicCapIcon,
-  CalendarIcon,
-  DownloadIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/outline';
+import {AcademicCapIcon, CalendarIcon, DownloadIcon, MapIcon, SparklesIcon} from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -19,9 +13,10 @@ import profilepic6 from '../images/Christian/ChristianBakhitMain6.jpg';
 import heroImage from '../images/Christian/header-background.jpg';
 import testimonialImage from '../images/Christian/testimonial.jpg';
 import Logo from '../images/logo.png';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-10.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-13.jpg';
 import {
   About,
   ContactSection,
@@ -192,22 +187,32 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Delineo Modeling Project',
+    description:
+      "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research. We are currently working on a simulation of the COVID-19 pandemic. In particular, I've worked on the website, developing the Python package, and handling backend communications.",
+    url: 'https://covidweb.isi.jhu.edu/',
+    image: porfolioImage4,
+  },
+  {
+    title: 'AnyTown, USA',
+    description:
+      "This Unity Project was a team project to implement a 'sims' like simulation of COVID to support Delineo.",
+    url: 'https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
+    title: 'Gemini Discord Bot V2',
+    description:
+      'A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.',
+    url: 'https://github.com/ChrisBJHU/DiscordBot',
+    image: porfolioImage3,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
+    title: 'Covid Tracker (HopHacks 2020)',
+    description:
+      'A 48 hour hackathon project that aimed to give users information from the JHU dashboard using an API and providing a private tracing list. (Wordpress, Python)',
+    url: 'https://github.com/ChrisBJHU/CovidTracker2020',
+    image: porfolioImage2,
   },
 ];
 
