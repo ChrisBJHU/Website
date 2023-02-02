@@ -2,7 +2,6 @@ import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
 import '../styles/Split.css'
 
-
 import type {AppProps} from 'next/app';
 import {memo} from 'react';
 

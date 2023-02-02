@@ -33,7 +33,7 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      axios.post('https://formsubmit.co/4a5c53d7c49b0edd1f37694a5d6bfa13', data).then(response => {
+      axios.post('https://formsubmit.co/4a5c53d7c49b0edd1f37694a5d6bfa13', data).then(() => {
         window.location.reload();
       });
     },
