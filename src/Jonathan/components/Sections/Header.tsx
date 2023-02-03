@@ -50,7 +50,7 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
               top: '2px',
               cursor: 'pointer',
             }}>
-            <Image alt="returnHome" src={returnButton!} />
+            <h1 className = "customH1">{returnButton}</h1>
           </div>
         </Link>
         <nav className="flex justify-center gap-x-8">

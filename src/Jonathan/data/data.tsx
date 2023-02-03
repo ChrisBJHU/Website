@@ -13,7 +13,6 @@ import covidImg from '../images/Jonathan/Covid.jpg';
 import DoItImg from '../images/Jonathan/Doit.png';
 import heroImage from '../images/Jonathan/Moon.jpg';
 import testimonialImage from '../images/Jonathan/Space.png';
-import Logo from '../images/logo.png';
 import UnityImg from '../images/Jonathan/Unity.jpg';
 import DiscordImg from '../images/Jonathan/Discord.png';
 import portImg from '../images/portfolio/portfolio-12.jpg';
@@ -91,7 +90,7 @@ export const heroData: Hero = {
 };
 
 export const headerData: Header = {
-  returnButton: Logo,
+  returnButton: 'Home',
 };
 
 /**
