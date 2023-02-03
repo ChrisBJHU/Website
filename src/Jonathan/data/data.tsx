@@ -64,12 +64,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. Currently, I am envisioning solutions to help 
-        make AI technology more accessible to the general public and to use AI to help solve real world problems.
+        I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. Currently, I am
+        envisioning solutions to help make AI technology more accessible to the general public and to use AI to help
+        solve real world problems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I've worked on a variety of projects ranging from <strong className="text-stone-100">web development</strong> to <strong className="text-stone-100">machine learning</strong>. 
-        I hope to continue to learn and grow as a software engineer and to become a reliable and valuable member of any team.
+        I've worked on a variety of projects ranging from <strong className="text-stone-100">web development</strong> to{' '}
+        <strong className="text-stone-100">machine learning</strong>. I hope to continue to learn and grow as a software
+        engineer and to become a reliable and valuable member of any team.
       </p>
     </>
   ),
@@ -141,7 +143,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'JavaScript',
         level: 9,
-      }, 
+      },
       {
         name: 'C / C++',
         level: 8,
@@ -149,10 +151,11 @@ export const skills: SkillGroup[] = [
       {
         name: 'HTML',
         level: 7,
-      }, {
+      },
+      {
         name: 'SQL',
         level: 5,
-      }
+      },
     ],
   },
   {
@@ -201,7 +204,8 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'DoIt',
-    description: 'A "Social Media" app that allows users to chat with their friends and challenge them to do "tasks". (React, mongoDB, Node.js, Express)',
+    description:
+      'A "Social Media" app that allows users to chat with their friends and challenge them to do "tasks". (React, mongoDB, Node.js, Express)',
     url: 'https://doit-oose.herokuapp.com/',
     image: DoIt,
   },
@@ -231,7 +235,7 @@ export const portfolioItems: PortfolioItem[] = [
       'A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.',
     url: 'https://github.com/ChrisBJHU/DiscordBot',
     image: DiscordImg,
-  },  
+  },
   {
     title: 'Covid Tracker (HopHacks 2020)',
     description:
@@ -263,10 +267,19 @@ export const experience: TimelineItem[] = [
     title: 'Fullstack Software Engineer & Team Leader',
     content: (
       <ul>
-        <li> Managed team of full-stack undergraduates to develop Delineo's robust front-end and back-end for easy navigation of website.</li>
-        <li> Created the AnyTown simulation, a visual for COVID-19 leveraging Unity, C#, and React, allowing Delineo to be interesting to all-age groups</li>
         <li>
-          Supported Student Leader in working with Microsoft Research and AWS to develop a cloud-based simulation for Delineo as well as updates to Microsoft's COVID UI Dashboard
+          {' '}
+          Managed team of full-stack undergraduates to develop Delineo's robust front-end and back-end for easy
+          navigation of website.
+        </li>
+        <li>
+          {' '}
+          Created the AnyTown simulation, a visual for COVID-19 leveraging Unity, C#, and React, allowing Delineo to be
+          interesting to all-age groups
+        </li>
+        <li>
+          Supported Student Leader in working with Microsoft Research and AWS to develop a cloud-based simulation for
+          Delineo as well as updates to Microsoft's COVID UI Dashboard
         </li>
       </ul>
     ),
@@ -278,8 +291,16 @@ export const experience: TimelineItem[] = [
     content: (
       <ul>
         <li> Designed and developed a website for Saint Mary Community Church using React and CSS </li>
-        <li> Developed a robust backend which allows the church to easily update the website with new information and keeps the website secure </li>
-        <li> Developed a mobile-friendly website that is easy to navigate and allows users to easily access information about the church, greatly increasing the usefulness of the website </li>
+        <li>
+          {' '}
+          Developed a robust backend which allows the church to easily update the website with new information and keeps
+          the website secure{' '}
+        </li>
+        <li>
+          {' '}
+          Developed a mobile-friendly website that is easy to navigate and allows users to easily access information
+          about the church, greatly increasing the usefulness of the website{' '}
+        </li>
       </ul>
     ),
   },
@@ -319,7 +340,7 @@ export const testimonial: TestimonialSection = {
       name: 'Doctor Who',
       text: 'Benedict said that you are more in need of confession than any man breathing. But when the offer was made you replied that it would take to much time.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/13.jpg',
-    }
+    },
   ],
 };
 
