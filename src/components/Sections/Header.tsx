@@ -4,7 +4,8 @@ import {MenuAlt3Icon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Link from 'next/link';
 import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
-import {headerData, SectionId} from '../../data/data';
+
+import {SectionId} from '../../data/data';
 import {useNavObserver} from '../../hooks/useNavObserver';
 
 export const headerID = 'headerNav';
