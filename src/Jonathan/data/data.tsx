@@ -17,6 +17,7 @@ import UnityImg from '../images/Jonathan/Unity.jpg';
 import DiscordImg from '../images/Jonathan/Discord.png';
 import portImg from '../images/portfolio/portfolio-12.jpg';
 
+
 import {
   About,
   ContactSection,
@@ -314,12 +315,10 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Twelfth Doctor',
       text: 'Hey, you know, maybe there’s no point to any of this at all. But it’s the best I can do. So I’m going to do it. And I will stand here doing it until it kills me. And you’re going to die too! Some day.. And how will that be? Have you thought about it? What would you die for? Who I am is where I stand. Where I stand is where I fall.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/12.jpg',
     },
     {
       name: 'Doctor Who',
       text: 'Benedict said that you are more in need of confession than any man breathing. But when the offer was made you replied that it would take to much time.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/13.jpg',
     }
   ],
 };
