@@ -41,19 +41,12 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
-        <Link href="/" passHref>
-          <div
-            style={{
-              height: '50px',
-              width: '50px',
-              position: 'absolute',
-              top: '2px',
-              cursor: 'pointer',
-            }}>
-            <h1 className = "customH1">{returnButton}</h1>
-          </div>
-        </Link>
         <nav className="flex justify-center gap-x-8">
+          <Link href="/" passHref>
+            <a className={classNames(inactiveClass)} key="Home">
+              Home
+            </a>
+          </Link>
           {navSections.map(section => (
             <NavItem
               activeClass={activeClass}
@@ -112,6 +105,11 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
               leaveTo="-translate-x-full">
               <div className="relative w-4/5 bg-stone-800">
                 <nav className="mt-5 flex flex-col gap-y-2 px-2">
+                  <Link href="/" passHref>
+                    <a className={classNames(inactiveClass)} key="Home">
+                      Home
+                    </a>
+                  </Link>
                   {navSections.map(section => (
                     <NavItem
                       activeClass={activeClass}

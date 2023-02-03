@@ -2,7 +2,6 @@
 import {Dialog, Transition} from '@headlessui/react';
 import {MenuAlt3Icon} from '@heroicons/react/outline';
 import classNames from 'classnames';
-import Image from 'next/image';
 import Link from 'next/link';
 import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 
@@ -41,19 +40,14 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
-        <Link href="/" passHref>
-          <div
-            style={{
-              height: '50px',
-              width: '50px',
-              position: 'absolute',
-              top: '2px',
-              cursor: 'pointer',
-            }}>
-            <Image alt="returnHome" src={returnButton!} />
-          </div>
-        </Link>
         <nav className="flex justify-center gap-x-8">
+          <NavItem
+            activeClass={activeClass}
+            current={currentSection === null}
+            inactiveClass={inactiveClass}
+            key=""
+            section="Home"
+          />
           {navSections.map(section => (
             <NavItem
               activeClass={activeClass}
