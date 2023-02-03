@@ -30,8 +30,9 @@ const Hero: FC = memo(() => {
               <TypeAnimation
                 repeat={Infinity}
                 // eslint-disable-next-line react-memo/require-usememo
-                sequence={[name, 2000, '']}
-                speed={20}></TypeAnimation>
+                sequence={[name, 100000000000, '']}
+                speed={20}
+                wrapper="span"></TypeAnimation>
             </h1>
             {description}
             <div className="flex gap-x-4 text-neutral-100">
