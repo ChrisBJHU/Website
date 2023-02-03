@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {FC, memo, useEffect} from 'react';
-import { isMobile } from 'react-device-detect';
+import {isMobile} from 'react-device-detect';
 
 
 const Split: FC = memo(() => {
