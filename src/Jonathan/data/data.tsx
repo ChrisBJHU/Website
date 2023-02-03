@@ -10,7 +10,7 @@ import profilepic3 from '../images/Christian/ChristianBakhitMain3.jpg';
 import profilepic4 from '../images/Christian/ChristianBakhitMain4.jpg';
 import profilepic5 from '../images/Christian/ChristianBakhitMain5.jpg';
 import profilepic6 from '../images/Christian/ChristianBakhitMain6.jpg';
-import heroImage from '../images/Christian/header-background.jpg';
+import heroImage from '../images/Jonathan/Moon.jpg';
 import testimonialImage from '../images/Christian/testimonial.jpg';
 import Logo from '../images/logo.png';
 import porfolioImage1 from '../images/portfolio/portfolio-4.jpg';
@@ -61,7 +61,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I am Christian Bakhit.`,
+  name: `I am Jonathan Bakhit.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -225,7 +225,7 @@ export const education: TimelineItem[] = [
     location: 'Johns Hopkins University',
     title:
       'B.S. Computer Science, Applied Mathematics and Statistics' +
-      '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ' +
+      '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ' +
       'Minor in Robotics, Psychology',
     content: <p></p>,
   },

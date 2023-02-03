@@ -1,9 +1,9 @@
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(207, 194, 194, 0.068);
-  --left-button-hover-color: rgba(207, 194, 194, 0.3);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --left-splitButton-hover-color: rgba(207, 194, 194, 0.3);
+  --right-bg-color: rgba(207, 194, 194, 0.068);
+  --right-splitButton-hover-color: rgba(207, 194, 194, 0.3);
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
@@ -34,40 +34,12 @@ body {
   overflow-x: hidden;
 }
 
-.splitH1 {
-  font-size: 4rem;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.split.left .button:hover {
-  background-color: var(--left-button-hover-color);
-  border-color: var(--left-button-hover-color);
-}
-
-.split.right .button:hover {
-  background-color: var(--right-button-hover-color);
-  border-color: var(--right-button-hover-color);
-}
-
-.ele {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: var(--container-bg-color);
-}
-
 .splitButton {
   display: block;
   position: absolute;
   left: 50%;
   top: 40%;
-  height: 3.6rem;
+  height: 3.5rem;
   width: 15rem;
   text-align: center;
   color: #fff;
@@ -78,15 +50,40 @@ body {
   text-decoration: none;
   transform: translateX(-50%);
 }
-
-.split.left .button:hover {
-  background-color: var(--left-button-hover-color);
-  border-color: var(--left-button-hover-color);
+.splitH1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
-.split.right .button:hover {
-  background-color: var(--right-button-hover-color);
-  border-color: var(--right-button-hover-color);
+.splitH5 {
+  font-size: 3rem;
+  color: #fff;
+  position: realtive;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.split.left .splitButton:hover {
+  background-color: var(--left-splitButton-hover-color);
+  border-color: var(--left-splitButton-hover-color);
+}
+
+.split.right .splitButton:hover {
+  background-color: var(--right-splitButton-hover-color);
+  border-color: var(--right-splitButton-hover-color);
+}
+
+.ele {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
 }
 
 .split {
@@ -98,13 +95,13 @@ body {
 
 .split.left {
   left: 0;
-  background: url('../images/header-background.jpg') center center no-repeat;
+  background: url("../images/header-background.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .split.left:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background: var(--left-bg-color);
@@ -112,15 +109,16 @@ body {
 
 .split.right {
   right: 0;
-  background: url('../images/header-background.webp') center center no-repeat;
+  background: url('../images/Moon.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .split.right:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
+  background: var(--right-bg-color);
 }
 
 .split.left,
@@ -154,18 +152,37 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 800px) {
-  h1 {
-    font-size: 2rem;
+@media screen and (max-width: 768px) {
+  .split {
+    width: 100%;
+    height: 50%;
   }
 
-  .splitButton {
-    width: 12rem;
+  .split.left {
+    top: 0;
   }
-}
+  .split.left:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+  }
 
-@media (max-height: 700px) {
-  .splitButton {
-    top: 70%;
+  .split.right {
+    bottom: 0;
   }
+  .split.right:before {
+    width: 100%;
+    height: 50%;
+  }
+
+  .splitH1 {
+    font-size: 2.5rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+  }
+  
 }
