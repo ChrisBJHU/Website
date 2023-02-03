@@ -10,7 +10,7 @@ import profilepic4 from '../images/Jonathan/4.jpg';
 import profilepic5 from '../images/Jonathan/5.jpg';
 import churchImg from '../images/Jonathan/Church.jpg';
 import covidImg from '../images/Jonathan/Covid.jpg';
-import DoItImg from '../images/Jonathan/Doit.png';
+import DoItImg from '../images/Jonathan/DOIT.png';
 import heroImage from '../images/Jonathan/Moon.jpg';
 import testimonialImage from '../images/Jonathan/Space.png';
 import UnityImg from '../images/Jonathan/Unity.jpg';
