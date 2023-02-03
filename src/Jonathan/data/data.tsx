@@ -11,7 +11,7 @@ import profilepic5 from '../images/Jonathan/5.jpg';
 import churchImg from '../images/Jonathan/Church.jpg';
 import covidImg from '../images/Jonathan/Covid.jpg';
 import DiscordImg from '../images/Jonathan/Discord.png';
-import DoItImg from '../images/Jonathan/Doit.png';
+import DoIt from '../images/Jonathan/DOIT.png';
 import heroImage from '../images/Jonathan/Moon.jpg';
 import testimonialImage from '../images/Jonathan/Space.png';
 import UnityImg from '../images/Jonathan/Unity.jpg';
@@ -203,7 +203,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'DoIt',
     description: 'A "Social Media" app that allows users to chat with their friends and challenge them to do "tasks". (React, mongoDB, Node.js, Express)',
     url: 'https://doit-oose.herokuapp.com/',
-    image: DoItImg,
+    image: DoIt,
   },
   {
     title: 'Saint Mary & Archangel Michael Church Website',
