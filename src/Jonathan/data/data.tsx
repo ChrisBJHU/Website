@@ -3,20 +3,21 @@ import {AcademicCapIcon, CalendarIcon, DownloadIcon, MapIcon, SparklesIcon} from
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import profilepic from '../images/Christian/ChristianBakhitMain.jpg';
-import profilepic2 from '../images/Christian/ChristianBakhitMain2.jpg';
-import profilepic3 from '../images/Christian/ChristianBakhitMain3.jpg';
-import profilepic4 from '../images/Christian/ChristianBakhitMain4.jpg';
-import profilepic5 from '../images/Christian/ChristianBakhitMain5.jpg';
-import profilepic6 from '../images/Christian/ChristianBakhitMain6.jpg';
+import profilepic from '../images/Jonathan/1.jpg';
+import profilepic2 from '../images/Jonathan/2.jpg';
+import profilepic3 from '../images/Jonathan/3.jpg';
+import profilepic4 from '../images/Jonathan/4.jpg';
+import profilepic5 from '../images/Jonathan/5.jpg';
+import churchImg from '../images/Jonathan/Church.jpg';
+import covidImg from '../images/Jonathan/Covid.jpg';
+import DoItImg from '../images/Jonathan/Doit.png';
 import heroImage from '../images/Jonathan/Moon.jpg';
-import testimonialImage from '../images/Christian/testimonial.jpg';
+import testimonialImage from '../images/Jonathan/Space.png';
 import Logo from '../images/logo.png';
-import porfolioImage1 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-13.jpg';
+import UnityImg from '../images/Jonathan/Unity.jpg';
+import DiscordImg from '../images/Jonathan/Discord.png';
+import portImg from '../images/portfolio/portfolio-12.jpg';
+
 import {
   About,
   ContactSection,
@@ -65,18 +66,18 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. My current aspirations
-        have led me to the field of AI and robotics research. I hope that one day I can work on the first AGI!
+        I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. Currently, I am envisioning solutions to help 
+        make AI technology more accessible to the general public and to use AI to help solve real world problems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        For the past three years I have worked in the <strong className="text-stone-100">Delineo Lab</strong>. Here, I
-        have led the team in solving the problem of simulating disease spread.
+        I've worked on a variety of projects ranging from <strong className="text-stone-100">web development</strong> to <strong className="text-stone-100">machine learning</strong>. 
+        I hope to continue to learn and grow as a software engineer and to become a reliable and valuable member of any team.
       </p>
     </>
   ),
   actions: [
     {
-      href: 'assets/resume.pdf',
+      href: 'assets/JonResume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -97,13 +98,12 @@ export const headerData: Header = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: [profilepic, profilepic2, profilepic3, profilepic4, profilepic5, profilepic6],
-  description: `Dedicated Computer Science Undergraduate with three years of experience on a multitude of teams developing services for the greater
-  community. Specialized in developing software for delivering information to specialized groups.`,
+  profileImageSrc: [profilepic, profilepic2, profilepic3, profilepic4, profilepic5],
+  description: `Self-Driven and energetic computer science student with a desire to learn and expand his horizons. Over 10 years of experience with a repertoire of knowledge in a lot of different computer-science adjacent fields. Worked in research, industry, and community-based projects which have impacted thousands of people.  `,
   aboutItems: [
     {label: 'Age', text: '20', Icon: CalendarIcon},
     {label: 'Location', text: 'Baltimore, MD', Icon: MapIcon},
-    {label: 'Interests', text: 'Guitar, Tennis, Astronomy, Baking', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Astronomy, Hiking, Training, American Law', Icon: SparklesIcon},
     {label: 'Study', text: 'Johns Hopkins University', Icon: AcademicCapIcon},
   ],
 };
@@ -130,7 +130,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Languages',
+    name: 'Programming Languages',
     skills: [
       {
         name: 'Java',
@@ -138,12 +138,23 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Python',
-        level: 9,
+        level: 10,
       },
+      {
+        name: 'JavaScript',
+        level: 9,
+      }, 
       {
         name: 'C / C++',
         level: 8,
       },
+      {
+        name: 'HTML',
+        level: 7,
+      }, {
+        name: 'SQL',
+        level: 5,
+      }
     ],
   },
   {
@@ -158,7 +169,11 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'SQL',
+        name: 'Express',
+        level: 8,
+      },
+      {
+        name: 'MongoDB',
         level: 7,
       },
     ],
@@ -187,32 +202,44 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'DoIt',
+    description: 'A "Social Media" app that allows users to chat with their friends and challenge them to do "tasks". (React, mongoDB, Node.js, Express)',
+    url: 'https://doit-oose.herokuapp.com/',
+    image: DoItImg,
+  },
+  {
+    title: 'Saint Mary & Archangel Michael Church Website',
+    description: 'A website for a local church in Houston, TX. (React)',
+    url: 'https://testingwebsiteforchurch.netlify.app/',
+    image: churchImg,
+  },
+  {
     title: 'Delineo Modeling Project',
     description:
       "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research. We are currently working on a simulation of the COVID-19 pandemic. In particular, I've worked on the website, developing the Python package, and handling backend communications.",
     url: 'https://covidweb.isi.jhu.edu/',
-    image: porfolioImage4,
+    image: covidImg,
   },
   {
     title: 'AnyTown, USA',
     description:
       "This Unity Project was a team project to implement a 'sims' like simulation of COVID to support Delineo.",
     url: 'https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/',
-    image: porfolioImage1,
+    image: UnityImg,
   },
   {
     title: 'Gemini Discord Bot V2',
     description:
       'A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.',
     url: 'https://github.com/ChrisBJHU/DiscordBot',
-    image: porfolioImage3,
-  },
+    image: DiscordImg,
+  },  
   {
     title: 'Covid Tracker (HopHacks 2020)',
     description:
       'A 48 hour hackathon project that aimed to give users information from the JHU dashboard using an API and providing a private tracing list. (Wordpress, Python)',
     url: 'https://github.com/ChrisBJHU/CovidTracker2020',
-    image: porfolioImage2,
+    image: portImg,
   },
 ];
 
@@ -231,34 +258,18 @@ export const education: TimelineItem[] = [
   },
 ];
 
-export const fun: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
 export const experience: TimelineItem[] = [
   {
     date: 'Jan 2021 - Present',
     location: 'Delineo Disease Modeling',
-    title: 'Student Leader',
+    title: 'Fullstack Software Engineer & Team Leader',
     content: (
       <ul>
-        <li> Manage a team of fifty Computer Science students to implement Agile Project Management</li>
-        <li> Created the AnyTown simulation, a visual for COVID-19 leveraging Unity, C#, and React</li>
+        <li> Managed team of full-stack undergraduates to develop Delineo's robust front-end and back-end for easy navigation of website.</li>
+        <li> Created the AnyTown simulation, a visual for COVID-19 leveraging Unity, C#, and React, allowing Delineo to be interesting to all-age groups</li>
         <li>
-          Facilitated communication with Microsoft Research and AWS and tested a COVID-19 dashboard on Azure Kubernetes
+          Supported Student Leader in working with Microsoft Research and AWS to develop a cloud-based simulation for Delineo as well as updates to Microsoft's COVID UI Dashboard
         </li>
-        <li> Developed an API and Database using SQL to store user simulation runs</li>
       </ul>
     ),
   },
@@ -268,14 +279,14 @@ export const experience: TimelineItem[] = [
     title: 'Web Developer',
     content: (
       <ul>
-        <li> Developed a website for the church using React, HTML, and CSS</li>
-        <li> Created a database using SQL to store user information</li>
-        <li> Implemented a login system using React and Firebase</li>
+        <li> Designed and developed a website for Saint Mary Community Church using React and CSS </li>
+        <li> Developed a robust backend which allows the church to easily update the website with new information and keeps the website secure </li>
+        <li> Developed a mobile-friendly website that is easy to navigate and allows users to easily access information about the church, greatly increasing the usefulness of the website </li>
       </ul>
     ),
   },
   {
-    date: 'Aug 2022 - Dec 2022',
+    date: 'Aug 2022 - Present',
     location: 'Johns Hopkins University',
     title: 'PILOT Leader',
     content: (
@@ -283,26 +294,12 @@ export const experience: TimelineItem[] = [
         <li>
           {' '}
           Served as a student resource for students taking the Gateway Computing course, providing instruction for 5
-          students
+          students and allowing students to pass the course with a B+ or higher
         </li>
         <li>
           {' '}
-          Prepared lesson plans with other student PILOT leaders weekly, discussing classwork done by students during
-          week
-        </li>
-      </ul>
-    ),
-  },
-  {
-    date: 'Jan 2023 - Present',
-    location: 'Johns Hopkins University',
-    title: 'Individualized Tutor',
-    content: (
-      <ul>
-        <li>Acted as a resource for students taking computer science classes at Johns Hopkins University</li>
-        <li>
-          Prepared individualized tutoring plans for each student depending on need and class difficulty; for
-          Javascript, Python, Java, C, C++
+          Prepared lesson plans with other PILOT leaders weekly to provide students with the necessary skills to be
+          successful in the course and in other future courses
         </li>
       </ul>
     ),
@@ -316,10 +313,15 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Dylan Thomas',
-      text: '"Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light."',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Twelfth Doctor',
+      text: 'Hey, you know, maybe there’s no point to any of this at all. But it’s the best I can do. So I’m going to do it. And I will stand here doing it until it kills me. And you’re going to die too! Some day.. And how will that be? Have you thought about it? What would you die for? Who I am is where I stand. Where I stand is where I fall.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/12.jpg',
     },
+    {
+      name: 'Doctor Who',
+      text: 'Benedict said that you are more in need of confession than any man breathing. But when the offer was made you replied that it would take to much time.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/13.jpg',
+    }
   ],
 };
 
@@ -328,14 +330,14 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch',
+  headerText: 'Contact Me',
   description:
     'I am currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!',
   items: [
     {
       type: ContactType.Email,
-      text: 'cbakhit1@jh.edu',
-      href: 'mailto:cbakhit1@jh.edu',
+      text: 'jbakhit1@jh.edu',
+      href: 'mailto:jbakhit1@jh.edu',
     },
     {
       type: ContactType.Location,
@@ -344,13 +346,13 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Instagram,
-      text: '@chrisbakhit',
-      href: 'https://www.instagram.com/chrisbakhit/',
+      text: '@BakhitJonathan',
+      href: 'https://www.instagram.com/BakhitJonathan/',
     },
     {
       type: ContactType.Github,
-      text: 'ChrisBJHU',
-      href: 'https://github.com/ChrisBJHU',
+      text: 'Jonathan Bakhit',
+      href: 'https://github.com/syncre02',
     },
   ],
 };
@@ -359,8 +361,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ChrisBJHU'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/christianbakhit/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/chrisbakhit/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/ChristianBakhit'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/syncre02'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jonathanbakhit/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/bakhitjonathan/'},
 ];
