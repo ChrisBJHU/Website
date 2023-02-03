@@ -37,8 +37,8 @@ const ContactForm: FC = memo(() => {
       event.preventDefault();
       axios
         .post("https://formsubmit.co/eae57692992e508b05f1b8568f867beb", data)
-        .then((response) => {
-          console.log(response);
+        .then(() => {
+          window.location.reload();
         });
     },
     [data]
