@@ -3,6 +3,7 @@ import {AcademicCapIcon, CalendarIcon, DownloadIcon, MapIcon, SparklesIcon} from
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import DoIt from '../images/Christian/DOIT.png';
 import profilepic from '../images/Jonathan/1.jpg';
 import profilepic2 from '../images/Jonathan/2.jpg';
 import profilepic3 from '../images/Jonathan/3.jpg';
@@ -11,7 +12,6 @@ import profilepic5 from '../images/Jonathan/5.jpg';
 import churchImg from '../images/Jonathan/Church.jpg';
 import covidImg from '../images/Jonathan/Covid.jpg';
 import DiscordImg from '../images/Jonathan/Discord.png';
-import DoIt from '../images/Jonathan/DOIT.png';
 import heroImage from '../images/Jonathan/Moon.jpg';
 import testimonialImage from '../images/Jonathan/Space.png';
 import UnityImg from '../images/Jonathan/Unity.jpg';
