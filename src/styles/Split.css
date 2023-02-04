@@ -95,7 +95,8 @@ body {
 
 .split.left {
   left: 0;
-  background: url("../images/header-background.jpg") center center no-repeat;
+  background: url("../Christian/images/Christian/header-background.jpg") center
+    center no-repeat;
   background-size: cover;
 }
 
@@ -109,7 +110,7 @@ body {
 
 .split.right {
   right: 0;
-  background: url('../images/Moon.jpg') center center no-repeat;
+  background: url("../images/Moon.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -184,7 +185,6 @@ body {
     top: 10%;
     transform: translateX(-50%);
   }
-  
 }
 
 /* Jonathan's code */
@@ -198,6 +198,5 @@ body {
   text-align: center;
   padding: 0.375rem;
   font-size: 1.25rem;
-  margin-top: 10%
-  
+  margin-top: 10%;
 }
