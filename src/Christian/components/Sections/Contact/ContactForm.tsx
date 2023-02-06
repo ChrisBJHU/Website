@@ -34,8 +34,7 @@ const ContactForm: FC = memo(() => {
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       axios.post('https://formsubmit.co/327b6d31f3087e86ab2ed70225a69cb5', data).then(() => {
-        //window.location.reload();
-        console.log('Message sent successfully');
+        window.location.reload();
       });
     },
     [data],
