@@ -2,10 +2,10 @@ import Link from 'next/link';
 import {FC, memo, useEffect} from 'react';
 import {isMobile} from 'react-device-detect';
 
-
 const Split: FC = memo(() => {
   useEffect(() => {
-    if (!isMobile) {
+    let screenWidth = window.innerWidth;
+      if (!isMobile && screenWidth > 768) {
       const left = document.querySelector('.left') as HTMLElement;
       const right = document.querySelector('.right') as HTMLElement;
       const container = document.querySelector('.ele') as HTMLElement;
