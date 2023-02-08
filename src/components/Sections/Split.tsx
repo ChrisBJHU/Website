@@ -4,7 +4,7 @@ import {isMobile} from 'react-device-detect';
 
 const Split: FC = memo(() => {
   useEffect(() => {
-    let screenWidth = window.innerWidth;
+    const screenWidth = window.innerWidth;
       if (!isMobile && screenWidth > 768) {
       const left = document.querySelector('.left') as HTMLElement;
       const right = document.querySelector('.right') as HTMLElement;
