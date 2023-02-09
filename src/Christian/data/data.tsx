@@ -66,7 +66,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. My current aspirations
-        have led me to the field of AI and robotics research. I hope that one day I can work on the first AGI!
+        have led me to the field of Artificial Intelligence and robotics research. I hope that one day I can work on the first Artificial General Intelligence!
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         For the past three years I have worked in the <strong className="text-stone-100">Delineo Lab</strong>. Here, I
