@@ -70,7 +70,7 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         For the past three years I have worked in the <strong className="text-stone-100">Delineo Lab</strong>. Here, I
-        have led the team in solving the problem of simulating disease spread.
+        have led the team in solving the problem of Agent Based modeling of COVID-19 spread.
       </p>
     </>
   ),
