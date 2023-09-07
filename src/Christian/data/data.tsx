@@ -17,17 +17,12 @@ import profilepic4 from "../images/Christian/ChristianBakhitMain4.jpg";
 import profilepic5 from "../images/Christian/ChristianBakhitMain5.jpg";
 import profilepic6 from "../images/Christian/ChristianBakhitMain6.jpg";
 import heroImage from "../images/Christian/header-background.jpg";
-import bluejay from "../images/Christian/portfolio/HopMC_Logo_Blue_Feet.png";
 import testimonialImage from "../images/Christian/testimonial.jpg";
 import Logo from "../images/logo.png";
 import porfolioImage1 from "../images/portfolio/portfolio-4.jpg";
-import portfolioImage5 from "../images/portfolio/portfolio-5.jpg";
-import portfolioImage6 from "../images/portfolio/portfolio-6.jpg";
 import portfolioImage7 from "../images/portfolio/portfolio-7.jpg";
 import porfolioImage2 from "../images/portfolio/portfolio-8.jpg";
-import portfolioImage8 from "../images/portfolio/portfolio-9.jpg";
 import porfolioImage3 from "../images/portfolio/portfolio-10.jpg";
-import portfolioImage9 from "../images/portfolio/portfolio-11.jpg";
 import portfolioImage10 from "../images/portfolio/portfolio-12.jpg";
 import porfolioImage4 from "../images/portfolio/portfolio-13.jpg";
 import {
