@@ -12,14 +12,13 @@ import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import TwitterIcon from "../components/Icon/TwitterIcon";
 import profilepic3 from "../images/Christian/ChristianBakhitMain3.jpg";
 import heroImage from "../images/Christian/header-background.jpg";
+import image1 from "../images/Christian/image1.png";
+import image2 from "../images/Christian/image2.jpg";
 import testimonialImage from "../images/Christian/testimonial.jpg";
 import Logo from "../images/logo.png";
-import porfolioImage1 from "../images/portfolio/portfolio-4.jpg";
 import portfolioImage7 from "../images/portfolio/portfolio-7.jpg";
 import porfolioImage2 from "../images/portfolio/portfolio-8.jpg";
 import porfolioImage3 from "../images/portfolio/portfolio-10.jpg";
-import portfolioImage10 from "../images/portfolio/portfolio-12.jpg";
-import porfolioImage4 from "../images/portfolio/portfolio-13.jpg";
 import {
   About,
   ContactSection,
@@ -199,16 +198,9 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "Delineo Modeling Project",
     description:
-      "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research. We are currently working on a simulation of the COVID-19 pandemic. In particular, I've worked on the website, developing the Python package, and handling backend communications.",
+      "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research.",
     url: "https://covidweb.isi.jhu.edu/",
-    image: porfolioImage4,
-  },
-  {
-    title: "AnyTown, USA",
-    description:
-      "This Unity Project was a team project to implement a 'sims' like simulation of COVID to support Delineo.",
-    url: "https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/",
-    image: porfolioImage1,
+    image: image1,
   },
   {
     title: "Gemini Discord Bot V2",
@@ -236,7 +228,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "A Minecraft server that I ran for a few years. It was a great way to learn about server management and how to run a community.",
     url: "https://studentaffairs.jhu.edu/dmc/hopmc/",
-    image: portfolioImage10,
+    image: image2,
   },
 ];
 
