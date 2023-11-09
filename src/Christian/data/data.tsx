@@ -10,12 +10,7 @@ import GithubIcon from "../components/Icon/GithubIcon";
 import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import TwitterIcon from "../components/Icon/TwitterIcon";
-import profilepic from "../images/Christian/ChristianBakhitMain.jpg";
-import profilepic2 from "../images/Christian/ChristianBakhitMain2.jpg";
 import profilepic3 from "../images/Christian/ChristianBakhitMain3.jpg";
-import profilepic4 from "../images/Christian/ChristianBakhitMain4.jpg";
-import profilepic5 from "../images/Christian/ChristianBakhitMain5.jpg";
-import profilepic6 from "../images/Christian/ChristianBakhitMain6.jpg";
 import heroImage from "../images/Christian/header-background.jpg";
 import testimonialImage from "../images/Christian/testimonial.jpg";
 import Logo from "../images/logo.png";
@@ -59,7 +54,6 @@ export const SectionId = {
   Skills: "skills",
   Stats: "stats",
   Hobbies: "hobbies",
-  Testimonials: "Words",
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -82,7 +76,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm currently working on a Startup Idea with the FFU team. We are
         working on a new way to connect people with similar interests. Find out
-        more about it <a className="text-stone-100 hover:underline hover:text-stone-200"
+        more about it <a className="text-stone-100 underline hover:text-stone-200"
           href="https://www.skilllink.org/"
         >here</a>!
       </p>
@@ -112,17 +106,12 @@ export const headerData: Header = {
  */
 export const aboutData: About = {
   profileImageSrc: [
-    profilepic,
-    profilepic2,
-    profilepic3,
-    profilepic4,
-    profilepic5,
-    profilepic6,
+    profilepic3
   ],
   description: `Dedicated Computer Science Undergraduate with three years of experience on a multitude of teams developing services for the greater
   community. Specialized in developing software for delivering information to specialized groups.`,
   aboutItems: [
-    {label: "Age", text: "20", Icon: CalendarIcon},
+    {label: "Age", text: "21", Icon: CalendarIcon},
     {label: "Location", text: "Baltimore, MD", Icon: MapIcon},
     {
       label: "Interests",
@@ -148,10 +137,6 @@ export const skills: SkillGroup[] = [
         name: "Arabic",
         level: 4,
       },
-      {
-        name: "Spanish",
-        level: 2,
-      },
     ],
   },
   {
@@ -163,7 +148,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: "Python",
-        level: 9,
+        level: 10,
       },
       {
         name: "C / C++",
@@ -176,15 +161,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: "Node.js",
-        level: 8,
+        level: 10,
       },
       {
         name: "React",
-        level: 8,
+        level: 10,
       },
       {
         name: "SQL",
-        level: 7,
+        level: 8,
       },
     ],
   },
@@ -294,55 +279,44 @@ export const fun: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: "Jan 2021 - Present",
-    location: "Delineo Disease Modeling",
-    title: "Student Leader",
+    date: "August 2023 - Present",
+    location: "FFU | SkillLink",
+    title: "Co-Founder",
     content: (
-      <ul>
+      <ul style={{
+        listStyleType: "circle",
+      }}
+      >
         <li>
           {" "}
-          Manage a team of fifty Computer Science students to implement Agile
-          Project Management
+          Developing a new way to connect people with similar interests using
+          artificial intelligence and machine learning to match people with
+          similar interests.
         </li>
-        <li>
+        
+        <li >
           {" "}
-          Created the AnyTown simulation, a visual for COVID-19 leveraging
-          Unity, C#, and React
-        </li>
-        <li>
-          Facilitated communication with Microsoft Research and AWS and tested a
-          COVID-19 dashboard on Azure Kubernetes
-        </li>
-        <li>
-          {" "}
-          Developed an API and Database using SQL to store user simulation runs
+          Currently working with FFU to develop a business plan and meet with
+          potential investors.
         </li>
       </ul>
     ),
   },
   {
-    date: "June 2022 - Present",
-    location: "Saint Mary and Archangel Michael Church",
-    title: "Web Developer",
-    content: (
-      <ul>
-        <li> Developed a website for the church using React, HTML, and CSS</li>
-        <li> Created a database using SQL to store user information</li>
-        <li> Implemented a login system using React and Firebase</li>
-      </ul>
-    ),
-  },
-  {
-    date: "Aug 2022 - Dec 2022",
+    date: "Aug 2022 - Present",
     location: "Johns Hopkins University",
     title: "PILOT Leader",
     content: (
-      <ul>
+      <ul style={{
+        listStyleType: "circle",
+      }}
+      >
         <li>
           {" "}
           Served as a student resource for students taking the Gateway Computing
           course, providing instruction for 5 students
         </li>
+        
         <li>
           {" "}
           Prepared lesson plans with other student PILOT leaders weekly,
@@ -352,15 +326,69 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "Jan 2023 - Present",
+    date: "Jan 2021 - May 2023",
+    location: "Delineo Disease Modeling",
+    title: "Student Leader",
+    content: (
+      <ul style={{
+        listStyleType: "circle",
+      }}
+      >
+        <li>
+          {" "}
+          Manage a team of fifty Computer Science students to implement Agile
+          Project Management
+        </li>
+        
+        <li>
+          {" "}
+          Created the AnyTown simulation, a visual for COVID-19 leveraging
+          Unity, C#, and React
+        </li>
+        
+        <li>
+          Facilitated communication with Microsoft Research and AWS and tested a
+          COVID-19 dashboard on Azure Kubernetes
+        </li>
+        
+        <li>
+          {" "}
+          Developed an API and Database using SQL to store user simulation runs
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: "June 2022 - August 2023",
+    location: "Saint Mary and Archangel Michael Church",
+    title: "Web Developer",
+    content: (
+      <ul style={{
+        listStyleType: "circle",
+      }}
+      >
+        <li> Developed a website for the church using React, HTML, and CSS</li>
+        
+        <li> Created a database using SQL to store user information</li>
+        
+        <li> Implemented a login system using React and Firebase</li>
+      </ul>
+    ),
+  },
+  {
+    date: "Jan 2023 - Aug 2023",
     location: "Johns Hopkins University",
     title: "Individualized Tutor",
     content: (
-      <ul>
+      <ul style={{
+        listStyleType: "circle",
+      }}
+      >
         <li>
           Acted as a resource for students taking computer science classes at
           Johns Hopkins University
         </li>
+        
         <li>
           Prepared individualized tutoring plans for each student depending on
           need and class difficulty; for Javascript, Python, Java, C, C++

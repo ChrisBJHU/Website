@@ -91,21 +91,6 @@ const Testimonials: FC = memo(() => {
                 );
               })}
             </div>
-            <div className="flex gap-x-4">
-              {[...Array(testimonials.length)].map((_, index) => {
-                const isActive = index === activeIndex;
-                return (
-                  <button
-                    className={classNames(
-                      'h-3 w-3 rounded-full bg-gray-300 transition-all duration-500 sm:h-4 sm:w-4',
-                      isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-60',
-                    )}
-                    disabled={isActive}
-                    key={`select-button-${index}`}
-                    onClick={setTestimonial(index)}></button>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>
