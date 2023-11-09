@@ -53,6 +53,7 @@ export const SectionId = {
   Skills: "skills",
   Stats: "stats",
   Hobbies: "hobbies",
+  Testimonials: "testimonials",
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -75,9 +76,14 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm currently working on a Startup Idea with the FFU team. We are
         working on a new way to connect people with similar interests. Find out
-        more about it <a className="text-stone-100 underline hover:text-stone-200"
+        more about it{" "}
+        <a
+          className="text-stone-100 underline hover:text-stone-200"
           href="https://www.skilllink.org/"
-        >here</a>!
+        >
+          here
+        </a>
+        !
       </p>
     </>
   ),
@@ -104,20 +110,18 @@ export const headerData: Header = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: [
-    profilepic3
-  ],
+  profileImageSrc: [profilepic3],
   description: `Dedicated Computer Science Undergraduate with three years of experience on a multitude of teams developing services for the greater
   community. Specialized in developing software for delivering information to specialized groups.`,
   aboutItems: [
-    {label: "Age", text: "21", Icon: CalendarIcon},
-    {label: "Location", text: "Baltimore, MD", Icon: MapIcon},
+    { label: "Age", text: "21", Icon: CalendarIcon },
+    { label: "Location", text: "Baltimore, MD", Icon: MapIcon },
     {
       label: "Interests",
       text: "Guitar, Tennis, Astronomy, Baking",
       Icon: SparklesIcon,
     },
-    {label: "Study", text: "Johns Hopkins University", Icon: AcademicCapIcon},
+    { label: "Study", text: "Johns Hopkins University", Icon: AcademicCapIcon },
   ],
 };
 
@@ -275,9 +279,10 @@ export const experience: TimelineItem[] = [
     location: "FFU | SkillLink",
     title: "Co-Founder",
     content: (
-      <ul style={{
-        listStyleType: "circle",
-      }}
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
       >
         <li>
           {" "}
@@ -285,8 +290,8 @@ export const experience: TimelineItem[] = [
           artificial intelligence and machine learning to match people with
           similar interests.
         </li>
-        
-        <li >
+
+        <li>
           {" "}
           Currently working with FFU to develop a business plan and meet with
           potential investors.
@@ -299,16 +304,17 @@ export const experience: TimelineItem[] = [
     location: "Johns Hopkins University",
     title: "PILOT Leader",
     content: (
-      <ul style={{
-        listStyleType: "circle",
-      }}
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
       >
         <li>
           {" "}
           Served as a student resource for students taking the Gateway Computing
           course, providing instruction for 5 students
         </li>
-        
+
         <li>
           {" "}
           Prepared lesson plans with other student PILOT leaders weekly,
@@ -322,27 +328,28 @@ export const experience: TimelineItem[] = [
     location: "Delineo Disease Modeling",
     title: "Student Leader",
     content: (
-      <ul style={{
-        listStyleType: "circle",
-      }}
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
       >
         <li>
           {" "}
           Manage a team of fifty Computer Science students to implement Agile
           Project Management
         </li>
-        
+
         <li>
           {" "}
           Created the AnyTown simulation, a visual for COVID-19 leveraging
           Unity, C#, and React
         </li>
-        
+
         <li>
           Facilitated communication with Microsoft Research and AWS and tested a
           COVID-19 dashboard on Azure Kubernetes
         </li>
-        
+
         <li>
           {" "}
           Developed an API and Database using SQL to store user simulation runs
@@ -355,14 +362,15 @@ export const experience: TimelineItem[] = [
     location: "Saint Mary and Archangel Michael Church",
     title: "Web Developer",
     content: (
-      <ul style={{
-        listStyleType: "circle",
-      }}
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
       >
         <li> Developed a website for the church using React, HTML, and CSS</li>
-        
+
         <li> Created a database using SQL to store user information</li>
-        
+
         <li> Implemented a login system using React and Firebase</li>
       </ul>
     ),
@@ -372,15 +380,16 @@ export const experience: TimelineItem[] = [
     location: "Johns Hopkins University",
     title: "Individualized Tutor",
     content: (
-      <ul style={{
-        listStyleType: "circle",
-      }}
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
       >
         <li>
           Acted as a resource for students taking computer science classes at
           Johns Hopkins University
         </li>
-        
+
         <li>
           Prepared individualized tutoring plans for each student depending on
           need and class difficulty; for Javascript, Python, Java, C, C++
@@ -441,7 +450,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: "Github", Icon: GithubIcon, href: "https://github.com/ChrisBJHU"},
+  { label: "Github", Icon: GithubIcon, href: "https://github.com/ChrisBJHU" },
   {
     label: "LinkedIn",
     Icon: LinkedInIcon,
