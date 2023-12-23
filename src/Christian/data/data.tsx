@@ -405,7 +405,7 @@ export const experience: TimelineItem[] = [
 
 export const leadership: TimelineItem[] = [
   {
-    date: "Aug 2020 - Present",
+    date: "Aug 2020 - Aug 2020",
     location: "HopHacks",
     title: "Participant",
     content: (
