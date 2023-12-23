@@ -114,14 +114,14 @@ export const aboutData: About = {
   description: `Dedicated Computer Science Undergraduate with three years of experience on a multitude of teams developing services for the greater
   community. Specialized in developing software for delivering information to specialized groups.`,
   aboutItems: [
-    { label: "Age", text: "21", Icon: CalendarIcon },
-    { label: "Location", text: "Baltimore, MD", Icon: MapIcon },
+    {label: "Age", text: "21", Icon: CalendarIcon},
+    {label: "Location", text: "Baltimore, MD", Icon: MapIcon},
     {
       label: "Interests",
       text: "Guitar, Tennis, Astronomy, Baking",
       Icon: SparklesIcon,
     },
-    { label: "Study", text: "Johns Hopkins University", Icon: AcademicCapIcon },
+    {label: "Study", text: "Johns Hopkins University", Icon: AcademicCapIcon},
   ],
 };
 
@@ -400,6 +400,135 @@ export const experience: TimelineItem[] = [
 ];
 
 /**
+ * Leadership section
+ */
+
+export const leadership: TimelineItem[] = [
+  {
+    date: "Aug 2020 - Present",
+    location: "HopHacks",
+    title: "Participant",
+    content: (
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
+      >
+        <li>
+          {" "}
+          Lead a team of 4 students to develop a website that allows users to
+          track covid-19 cases nearby, and fed it constant data from the JHU API
+          and the CDC
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: "May 2023 - Present",
+    location: "Student Government Association (SGA)",
+    title: "Senior Class Senator",
+    content: (
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
+      >
+        <li>
+          {" "}
+          Organized 2+ events on campus as part of Senior Class Programming
+          Board
+        </li>
+        <li>
+          {" "}
+          Designed Initiatives with other Senators to improve Campus Student
+          Life, such as improving Library Access
+        </li>
+        <li>
+          {" "}
+          Advocated for and implemented a campus prayer room by liaising with
+          Sheridan Libraries representatives once a month, ensuring a dedicated
+          space for spiritual needs
+        </li>
+        <li>
+          {" "}
+          Managed and improved student services, including library resources,
+          health and wellness programs, housing accommodations, career
+          counseling, and financial aid suppor
+        </li>
+        <li>
+          {" "}
+          Structured curriculum development within the Whiting School of
+          Engineering, addressing student-specific concerns and enhancing
+          academic programs through monthly meetings with faculty and staff
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: "Aug 2023 - Present",
+    location: "Orthodox Christian College Ministry (OCCM)",
+    title: "President",
+    content: (
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
+      >
+        <li>
+          {" "}
+          Developed a club for 10+ students and facilitated a space for people
+          to open communication
+        </li>
+        <li> Organized weekly meetings and events for students to attend</li>
+        <li>
+          {" "}
+          Coordinated with LEED office to assign a space for weekly General Body
+          Meetings
+        </li>
+        <li>
+          {" "}
+          Drove initiative to assist members of executive staff in reaching out
+          to other OCCM representatives to allow cross school communication
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: "Aug 2020 - May 2022",
+    location: "Hopkins Minecraft Club (HopMC)",
+    title: "President",
+    content: (
+      <ul
+        style={{
+          listStyleType: "circle",
+        }}
+      >
+        <li>
+          {" "}
+          Coordinated project with the Digital Media Center at Hopkins to
+          provide students with a place to play video games, such as Minecraft
+          for 60+ students{" "}
+        </li>
+        <li>
+          {" "}
+          Built tailored advertising campaigns and organized events designed to
+          cater to distinct groups and interests, such as designers, musicians,
+          and competitive students, resulting in a noticeable increase in
+          attendance and engagement within these target communities{" "}
+        </li>
+        <li>
+          {" "}
+          Delivered timely updates and swift responses to critical data
+          breaches, including addressing the Log4j vulnerability, ensuring
+          minimal downtime and maximum security for organization's systems and
+          data{" "}
+        </li>
+      </ul>
+    ),
+  },
+];
+
+/**
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
@@ -450,7 +579,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: "Github", Icon: GithubIcon, href: "https://github.com/ChrisBJHU" },
+  {label: "Github", Icon: GithubIcon, href: "https://github.com/ChrisBJHU"},
   {
     label: "LinkedIn",
     Icon: LinkedInIcon,
