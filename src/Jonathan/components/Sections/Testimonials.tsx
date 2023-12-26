@@ -79,7 +79,7 @@ const Testimonials: FC = memo(() => {
         )}
         style={imageSrc ? {backgroundImage: `url(${resolveSrc}`} : undefined}>
         <div className="z-10 w-full max-w-screen-md px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/60 p-6 shadow-lg">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/60 p-6 shadow-lg">     
             <div
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
               onScroll={handleScroll}
@@ -91,7 +91,7 @@ const Testimonials: FC = memo(() => {
                 );
               })}
             </div>
-            <div className="flex gap-x-4">
+            {/*<div className="flex gap-x-4">
               {[...Array(testimonials.length)].map((_, index) => {
                 const isActive = index === activeIndex;
                 return (
@@ -105,7 +105,7 @@ const Testimonials: FC = memo(() => {
                     onClick={setTestimonial(index)}></button>
                 );
               })}
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>

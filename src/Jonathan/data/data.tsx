@@ -4,10 +4,6 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import profilepic from '../images/Jonathan/1.jpg';
-import profilepic2 from '../images/Jonathan/2.jpg';
-import profilepic3 from '../images/Jonathan/3.jpg';
-import profilepic4 from '../images/Jonathan/4.jpg';
-import profilepic5 from '../images/Jonathan/5.jpg';
 import churchImg from '../images/Jonathan/Church.jpg';
 import covidImg from '../images/Jonathan/Covid.jpg';
 import DoItImg from '../images/Jonathan/DOIT.png';
@@ -16,6 +12,7 @@ import testimonialImage from '../images/Jonathan/Space.png';
 import UnityImg from '../images/Jonathan/Unity.jpg';
 import DiscordImg from '../images/Jonathan/Discord.png';
 import portImg from '../images/portfolio/portfolio-12.jpg';
+import HopMC from '../images/Jonathan/HopMC.jpg';
 
 
 import {
@@ -66,12 +63,15 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a Junior at <strong className="text-stone-100">Johns Hopkins University</strong>. Currently, I am envisioning solutions to help 
+        I am a Senior at <strong className="text-stone-100">Johns Hopkins University</strong>. Currently, I am envisioning solutions to help 
         make AI technology more accessible to the general public and to use AI to help solve real world problems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I've worked on a variety of projects ranging from <strong className="text-stone-100">web development</strong> to <strong className="text-stone-100">machine learning</strong>. 
         I hope to continue to learn and grow as a software engineer and to become a reliable and valuable member of any team.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm curently working on a new initative, <a href="https://skilllink.org/" className="text-stone-100"><strong className = "text-stone-100">SkillLink,</strong></a> which is a platform that allows students and job seekers to connect with mentors and professionals in their field of interest.
       </p>
     </>
   ),
@@ -98,13 +98,13 @@ export const headerData: Header = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: [profilepic, profilepic2, profilepic3, profilepic4, profilepic5],
+  profileImageSrc: [profilepic],
   description: `Self-Driven and energetic computer science student with a desire to learn and expand his horizons. Over 10 years of experience with a repertoire of knowledge in a lot of different computer-science adjacent fields. Worked in research, industry, and community-based projects which have impacted thousands of people.  `,
   aboutItems: [
-    {label: 'Age', text: '20', Icon: CalendarIcon},
-    {label: 'Location', text: 'Baltimore, MD', Icon: MapIcon},
-    {label: 'Interests', text: 'Astronomy, Hiking, Training, American Law', Icon: SparklesIcon},
-    {label: 'Study', text: 'Johns Hopkins University', Icon: AcademicCapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Location', text: 'Houston, TX', Icon: MapIcon},
+    {label: 'Interests', text: 'Astronomy, Hiking, Personal Training', Icon: SparklesIcon},
+    {label: 'College', text: 'Johns Hopkins University', Icon: AcademicCapIcon},
   ],
 };
 
@@ -241,6 +241,13 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://github.com/ChrisBJHU/CovidTracker2020',
     image: portImg,
   },
+  {
+    title: 'HopMC',
+    description:
+      'A Minecraft Server where I worked on the backend and website. (Java, JSON)',
+    url: 'https://studentaffairs.jhu.edu/dmc/hopmc/',
+    image: HopMC,
+  },
 ];
 
 /**
@@ -248,23 +255,46 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'Aug 2020 - Present',
+    date: 'Aug 2020 - May 2024',
     location: 'Johns Hopkins University',
     title:
       'B.S. Computer Science, Applied Mathematics and Statistics' +
       '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ' +
-      'Minor in Robotics, Psychology',
+      'Minor(s) in Robotics, Psychology, Mathematics',
     content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Jan 2021 - Present',
+    date: 'Aug 2023 - Present',
+    location: 'FFU | SkillLink',
+    title: 'Co-Founder',
+    content: (
+      <ul className="list-disc">
+        <li>Spearheaded the development of a dynamic, personalized website and a robust backend system, seamlessly managing client payments, communication channels, and administrative controls</li>
+        <li>Engineered a personalized website and backend handling client payments, communication, and administration control</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Aug 2022 - Present',
+    location: 'Johns Hopkins University',
+    title: 'Head PILOT Leader',
+    content: (
+      <ul className="list-disc">
+        <li>Managed a team of 3 PILOT leaders to provide support for 16 students taking the Gateway Computing course, allowing students to pass the course with a B+ or higher</li>
+      </ul>
+    ),
+
+  },
+  
+  {
+    date: 'Jan 2021 - Mar 2023',
     location: 'Delineo Disease Modeling',
     title: 'Fullstack Software Engineer & Team Leader',
     content: (
-      <ul>
+      <ul className="list-disc">
         <li> Managed team of full-stack undergraduates to develop Delineo's robust front-end and back-end for easy navigation of website.</li>
         <li> Created the AnyTown simulation, a visual for COVID-19 leveraging Unity, C#, and React, allowing Delineo to be interesting to all-age groups</li>
         <li>
@@ -278,7 +308,7 @@ export const experience: TimelineItem[] = [
     location: 'Saint Mary and Archangel Michael Church',
     title: 'Web Developer',
     content: (
-      <ul>
+      <ul className="list-disc">
         <li> Designed and developed a website for Saint Mary Community Church using React and CSS </li>
         <li> Developed a robust backend which allows the church to easily update the website with new information and keeps the website secure </li>
         <li> Developed a mobile-friendly website that is easy to navigate and allows users to easily access information about the church, greatly increasing the usefulness of the website </li>
@@ -290,7 +320,7 @@ export const experience: TimelineItem[] = [
     location: 'Johns Hopkins University',
     title: 'PILOT Leader',
     content: (
-      <ul>
+      <ul className="list-disc">
         <li>
           {' '}
           Served as a student resource for students taking the Gateway Computing course, providing instruction for 5
@@ -316,10 +346,6 @@ export const testimonial: TestimonialSection = {
       name: 'Twelfth Doctor',
       text: 'Hey, you know, maybe there’s no point to any of this at all. But it’s the best I can do. So I’m going to do it. And I will stand here doing it until it kills me. And you’re going to die too! Some day.. And how will that be? Have you thought about it? What would you die for? Who I am is where I stand. Where I stand is where I fall.',
     },
-    {
-      name: 'Doctor Who',
-      text: 'Benedict said that you are more in need of confession than any man breathing. But when the offer was made you replied that it would take to much time.',
-    }
   ],
 };
 
@@ -339,8 +365,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Baltimore, MD, USA',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Houston, TX, USA',
+      href: 'https://www.google.ca/maps/place/Houston,+TX/@29.7559698,-95.3573194,3a,75y,90t'
     },
     {
       type: ContactType.Instagram,
