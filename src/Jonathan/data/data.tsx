@@ -259,9 +259,10 @@ export const education: TimelineItem[] = [
     location: 'Johns Hopkins University',
     title:
       'B.S. Computer Science, Applied Mathematics and Statistics' +
-      '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ' +
-      'Minor(s) in Robotics, Psychology, Mathematics',
-    content: <p></p>,
+      '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ',
+    content: <p className="text-sm text-neutral-800">
+        Minor(s) in Robotics, Psychology, Mathematics
+      </p>,
   },
 ];
 
