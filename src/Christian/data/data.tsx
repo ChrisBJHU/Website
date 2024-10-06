@@ -15,6 +15,7 @@ import heroImage from "../images/Christian/header-background.jpg";
 import image1 from "../images/Christian/image1.png";
 import image2 from "../images/Christian/image2.jpg";
 import testimonialImage from "../images/Christian/testimonial.jpg";
+import dylanthomas from "../images/dylanthomas.jpg";
 import Logo from "../images/logo.png";
 import portfolioImage7 from "../images/portfolio/portfolio-7.jpg";
 import porfolioImage2 from "../images/portfolio/portfolio-8.jpg";
@@ -402,7 +403,7 @@ export const testimonial: TestimonialSection = {
       name: "Dylan Thomas",
       text: '"Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light."',
       image:
-        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg",
+        dylanthomas,
     },
   ],
 };
